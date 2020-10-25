@@ -1,0 +1,479 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1180px !important;
+}
+
+header nav {
+    max-height: 110px;
+    padding-top: 0px !important;
+    padding-bottom: 25px !important;
+    box-shadow: 0px 2px 5px #E5E5E5;
+}
+
+header nav > .container {
+    align-items: flex-end !important;
+}
+
+header .navbar-brand {
+    padding-bottom: 0px;
+}
+
+header .navbar-brand img {
+    width: 115px;
+}
+
+header nav ul.navbar-nav {
+    justify-content: space-between;
+    width: 440px;
+}
+
+header .navbar-light .navbar-nav .nav-link {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #4E4E4E;
+}
+
+header .header-phone {
+    display: flex;
+}
+
+header .header-phone > img {
+    width: 46px;
+    height: 46px;
+}
+
+header nav .header-soc-icons {
+    margin: 0 46px;
+}
+
+header nav .header-soc-icons a:not(:last-child) {
+    margin-right: 14px;
+}
+
+header nav .header-phone > div {
+    padding-left: 10px;
+}
+
+header nav .header-phone > div a {
+    /* font-family: 'Helvetica LT Std'; */
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
+
+header nav .header-phone > div p {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #595959;
+    margin-bottom: 0;
+}
+
+header .header {
+    margin-bottom: 85px;
+    height: 850px;
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: 0px -85px;
+    background-size: 100%;
+    background-image: url('../images/header-bg.png');
+}
+
+header .header:before {
+    display: block;
+    content: '';
+    background-image: url('../images/man-1.png');
+    /*height: 550px;;
+    width: 402px;*/
+    height: 63.64%;
+    width: 20.93%;
+    right: 20.5%;
+    bottom: -1.5%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: 100%;
+}
+
+header .header > div {
+    width: 750px;
+    margin-left: 24%;
+    text-align: center;
+    padding-top: 10.5%;
+}
+
+header .header h1 {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 120%;
+    color: #FFCC00;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header .header p.subtitle {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 30px;
+    line-height: 150%;
+    color: #B5FD3F;
+}
+
+header .header p.description {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFDA44;
+    width: 80%;
+    margin: 0 auto 1.5rem;
+}
+
+header .header .btn-order {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    background: rgba(99, 173, 0, 1);
+    border-radius: 50px;
+    padding: 10px 25px;
+}
+
+#s01 .container {
+    max-width: 1180px !important;
+    padding: 0 !important;
+}
+
+#s01 .s01-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 200px;
+}
+
+#s01 .advantage-card {
+    position: relative;
+    width: calc(25% - 10px);
+    margin: 0 5px 65px;
+    background: #F3FCFF;
+    border: 3px solid #FFDA44;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 65px 20px 10px;
+}
+
+#s01 .advantage-card .image {
+    position: absolute;
+    top: -45px;
+    right: 0;
+}
+
+#s01 .advantage-card h4 {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 22px;
+    color: #069100;
+}
+
+#s01 .advantage-card p {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 150%;
+    color: #4E4E4E;
+}
+
+#s02 .container {
+    padding: 0 !important;
+}
+
+#s02 .tab-content > .active {
+    display: flex;
+    justify-content: space-between;
+}
+
+#s02 .tab-content {
+    background: rgba(229, 249, 255, 1);
+    padding: 75px 80px 50px;
+}
+
+#s02 .tab-content .tariff-card {
+    width: 310px;
+    background-color: #FFF;
+    position: relative;
+    border: 1px solid #88BFFD;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+#s02 .tab-content .tariff-card .tariff-title {
+    background-repeat: no-repeat;
+    position: relative;
+    top: -70px;
+    height: 180px;
+}
+
+#s02 .tab-content .tariff-card .tariff-title.green {background-image: url('../images/cloud-green.png');}
+#s02 .tab-content .tariff-card .tariff-title.orange {background-image: url('../images/cloud-orange.png');}
+#s02 .tab-content .tariff-card .tariff-title.blue {background-image: url('../images/cloud-blue.png');}
+
+#s02 .tab-content .tariff-card h3 {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative;
+    top: 45%;
+}
+
+#s02 .tab-content .tariff-card .tariff-description {
+    margin-top: -65px;
+    padding: 5px;
+}
+
+#s02 .tab-content .tariff-card p.method {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: #5B454B;
+    margin-bottom: 10px;
+}
+
+#s02 .tab-content .tariff-card p.method-text {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: #4E4E4E;
+}
+
+#s02 .tab-content .tariff-card .price-from {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+}
+
+#s02 .tab-content .tariff-card .price-from img {
+    width:36px;
+    height: 36px;
+    margin-right: 15px;
+}
+
+#s02 .tab-content .tariff-card .price-from p {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18.1967px;
+    line-height: 28px;
+    text-align: center;
+    color: #168F22;
+    margin-bottom: 0px;
+}
+
+#s02 .tab-content .tariff-card .price-from p span {
+    font-size: 27px;
+}
+
+#s02 .tab-content .tariff-card table {
+    width: 100%;
+}
+
+#s02 .tab-content .tariff-card table tr:nth-child(2n+1) {
+    background-color: #DDFFDC;
+}
+
+#s02 .tab-content .tariff-card table tr td {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #4E4E4E;
+    padding: 15px 10px;
+}
+
+#s02 .tab-content .tariff-card table tr td:last-child {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer .footer {
+    background-image: url('../images/footer-bg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    min-height: 530px;
+}
+
+footer .footer > .container {
+    padding-top: 175px;
+}
+
+footer .footer h3 {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #FFCC00;
+    margin-bottom: 40px;
+}
+
+footer .footer ul {
+    list-style: none;
+    padding: 0px;
+}
+
+footer .footer ul li {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding-bottom: 24px;
+}
+
+footer .footer address {
+    color: #fff;
+}
+
+footer .footer address > div {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+footer .footer address i {
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+footer .footer address a {
+    color: #fff;
+}
+
+footer .footer address p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 0px;
+}
+
+footer .footer address .phones p a,
+footer .footer address .e-mail p a {
+    font-weight: bold;
+}
+
+footer .footer address .phones p.work-time {
+    font-size: 12px;
+    line-height: 15px;
+    opacity: 0.5;
+}
+
+footer .footer .footer-logo img {
+    width: 126px;
+    height: 95px;
+}
+
+footer .footer .requisites {
+    margin-top: 10px;
+}
+
+footer .footer .requisites p {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 0px;
+    color: #FFFFFF;
+}
+
+footer .footer .footer-soc-icons {
+    margin-top: 55px;
+}
+
+footer .footer .footer-soc-icons a {
+    margin-right: 30px;
+}
+
+footer .footer .copyright {
+    padding: 20px 0 0px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer .footer .copyright .row {
+    align-items: center;
+}
+
+footer .footer .copyright .row > div:last-child {
+    text-align: right;
+    padding-right: 50px;
+}
+
+footer .footer .copyright p {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFCC00;
+    margin: 0px;
+}
+
+footer .footer .copyright a {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFCC00;
+}
+
+footer .footer.tablet {
+    display: none;
+}

@@ -1,0 +1,361 @@
+@media(max-width: 1600px) {
+    footer .footer {
+        background-size: auto;
+        background-position: 50% 100%;
+    }
+}
+
+@media(max-width: 1440px) {
+    header .header {
+        background-position: 0 -65px;
+    }
+
+    header .header:before {
+        right: 18.5%;
+        bottom: 16.5%;
+    }
+
+    header .header > div {
+        margin-left: 18%;
+        padding-top: 10.5%;
+    }
+
+    header .header h1 {
+        font-size: 35px;
+    }
+
+    header .header p.subtitle {
+        font-size: 29px;
+    }
+
+    header .header p.description {
+        font-size: 16px;
+        width: 65%;
+    }
+
+    header .header .btn-order {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 1280px) {
+    header nav {
+        max-height: 150px;
+    }
+
+    header nav > .container {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+
+    header nav .navbar-collapse {
+        flex-grow: 0;
+        align-items: flex-end;
+        padding-bottom: 25px;
+    }
+
+    header nav .tablet {
+        width: 100%;
+    }
+
+    header .header {
+        background-position: 0 -50px;
+    }
+
+    header .header:before {
+        bottom: 19.5%;
+    }
+
+    header .header > div {
+        margin-left: 21%;
+        text-align: left;
+        padding-top: 11.5%;
+    }
+
+    header .header p.description {
+        margin: 0 0 1rem;
+    }
+
+    footer .footer {
+        background-position: 0% 100%;
+    }
+}
+
+@media(max-width:1200px){
+    header .header {
+        background-size: auto;
+        height: 890px;
+        background-position: -280px -70px;
+    }
+
+    header .header:before {
+        right: 6%;
+        bottom: -3.5%;
+        width: 30%;
+    }
+
+    header .header > div {
+        width: 100%;
+        margin-left: 0;
+        padding: 26.5% 12.5% 0;
+    }
+
+    header .header p.description {
+        width: 55%;
+    }
+}
+
+@media(max-width:1024px) {
+    header .header {
+        background-size: auto;
+        background-position: -280px -70px;
+        height: 790px;
+    }
+
+    header .header:before {
+        right: 8%;
+        bottom: -10%;
+        width: 35%;
+    }
+
+    header .header > div {
+        width: 100%;
+        margin-left: 0;
+        padding: 26.5% 8.5% 0;
+    }
+
+    header .header p.description {
+        width: 50%;
+    }
+}
+
+@media(max-width: 800px) {
+    header .header {
+        background-size: auto;
+        background-position: -500px -70px;
+    }
+
+    header .header:before {
+        right: 7%;
+        bottom: -10.5%;
+        width: 39.8%;
+    }
+
+    header .header > div {
+        width: 100%;
+        margin-left: 0;
+        padding: 26.5% 8.5% 0;
+    }
+
+    header .header p.description {
+        width: 75%;
+    }
+
+    footer .footer {
+        display: none;
+    }
+
+    footer .footer.tablet {
+        display: block;
+        background-image: url('../images/footer-md-bg.png');
+        background-position: 0 0%;
+    }
+
+    footer .footer.tablet .container .row > div:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 35px;
+    }
+
+    footer .footer.tablet .footer-logo img {
+        position: relative;
+        top: -50px;
+    }
+
+    footer .footer.tablet .footer-soc-icons {
+        margin-top: -10px;
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width: 600px) {
+    header nav > .container {
+        align-items: center !important;
+        justify-content: space-around !important;
+    }
+
+    header nav .navbar-toggler img {
+        width: 45px;
+        height: 45px;
+    }
+
+    header nav .mobile-icon a img {
+        width: 45px;
+        height: 45px;
+    }
+
+    header nav ul.navbar-nav {
+        width: 100%
+    }
+
+    header .header {
+        background-position: -545px -70px;
+    }
+
+    header .header:before {
+        width: 50%;
+    }
+
+    header .header > div {
+        padding: 34.5% 6.5% 0;
+    }
+
+    header .header h1 {
+        font-size: 30px;
+    }
+
+    header .header p.description {
+        width: 90%;
+    }
+
+    footer .footer.tablet {
+        position: relative;
+        background: linear-gradient(180deg, #0B22C2 0%, #0419A3 41.67%, #0A1FB1 73.96%, #003789 100%);
+    }
+
+    footer .footer.tablet:before {
+        content: '';
+        display: block;
+        top: -220px;
+        position: absolute;
+        width: 100%;
+        height: 600px;
+        background-image: url(../images/Union.png);
+        background-size: 85%;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+    }
+
+    footer .footer.tablet > .container {
+        padding-top: 10px;
+    }
+
+    footer .footer.tablet .container .row div:first-child .copyright {
+        display: none;
+    }
+
+    footer .footer.tablet .container .row div:last-child .copyright {
+        display: block;
+        padding: 30px 0;
+    }
+
+    footer .footer.tablet .footer-logo img {
+        top: 0;
+        width: 157px;
+        height: 114px;
+    }
+
+    footer .footer.tablet .footer-soc-icons {
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 425px) {
+    header .header {
+        background-position: 41% -72px;
+        background-size: 375%;
+    }
+
+    header .header:before {
+        width: 60%;
+        right: 3%;
+        bottom: 6%;
+    }
+
+    header .header > div {
+        padding: 40% 6.5% 0;
+    }
+
+    header .header h1 {
+        font-size: 20px;
+    }
+
+    header .header p.subtitle {
+        font-size: 16px;
+    }
+
+    header .header p.description {
+        width: 100%;
+        font-size: 12px;
+        margin-bottom: 2rem;
+    }
+
+    header .header .btn-order {
+        font-size: 14.5px;
+        padding: 5px 22px;
+    }
+
+    footer .footer.tablet:before {
+        top: -155px;
+    }
+}
+
+@media(max-width: 375px) {
+    header .header > div {
+        padding: 36% 5% 0;
+    }
+
+    header .header h1 {
+        font-size: 18px;
+    }
+
+    header .header p.subtitle {
+        font-size: 14px;
+    }
+
+    header .header p.description {
+        font-size: 11px;
+        margin-bottom: 2rem;
+    }
+
+    header .header:before {
+        width: 55%;
+        bottom: 13%;
+    }
+
+    footer .footer.tablet:before {
+        top: -135px;
+    }
+}
+
+@media(max-width: 320px) {
+    header .header {
+        background-position: 41% -55px;
+    }
+    header .header > div {
+        padding: 38% 5% 0;
+    }
+
+    header .header h1 {
+        font-size: 16px;
+    }
+
+    header .header p.subtitle {
+        font-size: 12px;
+    }
+
+    header .header p.description {
+        font-size: 9px;
+        margin-bottom: 2rem;
+    }
+
+    header .header:before {
+        right: 2%;
+        bottom: 19%;
+    }
+
+    footer .footer.tablet:before {
+        top: -120px;
+    }
+}
