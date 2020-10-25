@@ -6,6 +6,16 @@ body {
     max-width: 1180px !important;
 }
 
+h2 {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 120%;
+    color: #2A68BD;
+    margin-bottom: 34px;
+}
+
 header nav {
     max-height: 110px;
     padding-top: 0px !important;
@@ -204,8 +214,48 @@ header .header .btn-order {
     color: #4E4E4E;
 }
 
+#s02 {
+    background-image: url('../images/s02-bg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0;
+    padding-bottom: 175px;
+    z-index: 10;
+    position: relative;
+}
+
 #s02 .container {
     padding: 0 !important;
+}
+
+#s02 .nav-tabs .nav-item {
+    width: 25%;
+}
+
+#s02 .nav-tabs .nav-link {
+    color: #5786B5;
+    background: #fff;
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    border: 1px solid #2A68BD;
+    box-sizing: border-box;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    height: 85px;
+    text-align: center;
+    padding-top: 35px;
+}
+
+#s02 .nav-tabs .nav-link.active,
+#s02 .nav-tabs .show > .nav-link {
+    color: #000;
+    font-weight: bold;
+    background-color: rgba(229, 249, 255, 1);
+    border: 1px solid #88BFFD;
+    box-sizing: border-box;
+;
 }
 
 #s02 .tab-content > .active {
@@ -216,6 +266,9 @@ header .header .btn-order {
 #s02 .tab-content {
     background: rgba(229, 249, 255, 1);
     padding: 75px 80px 50px;
+    border: 1px solid #88BFFD;
+    box-sizing: border-box;
+    border-radius: 0px 0px 10px 10px;
 }
 
 #s02 .tab-content .tariff-card {
@@ -327,8 +380,160 @@ header .header .btn-order {
     font-weight: bold;
 }
 
+#s02 .container button {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    background: #4F9E00;
+    border-radius: 15px;
+    margin: 40px auto 0;
+    display: block;
+    width: 585px;
+    height: 65px;
 
+}
 
+#s03 img {
+    position: relative;
+    left: -285px;
+    top: -80px;
+    z-index: 1;
+}
+
+#s03 .about-company {
+    position: relative;
+    z-index: 10;
+}
+
+#s03 .about-company h2 {
+    padding-left: 20px;
+}
+
+#s03 p {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #4E4E4E;
+}
+
+#s03 .about-company > div {
+    height: 400px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+#s03  .about-company button {
+    background: linear-gradient(180deg, #63AD00 9.29%, #72AD00 23.8%, #329100 81.98%, #069100 99.66%);
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 6px 25px;
+    border-radius: 50px;
+}
+
+#s04 .container-fluid {
+    padding: 0 50px;
+}
+
+#s04 h2 {
+    text-align: center;
+}
+
+#s04 .owl-carousel .owl-item {
+    opacity: .3;
+}
+
+#s04 .owl-carousel .owl-item.center {
+    opacity: 1;
+}
+
+#s04 .owl-nav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    top: 40%;
+    justify-content: space-between;
+    padding: 0 252px;
+}
+
+#s04 .owl-nav button:focus {
+    outline: none;
+}
+
+#s04 .owl-nav button i {
+    color: #FFBD15;
+    font-size: 100px;
+    text-shadow: 2px 2px 5px #8c8c8c;
+}
+
+#s04 .owl-carousel .description {
+    background-image: url('../images/our-works-text-bg.png');
+    bottom: 20px;
+    position: absolute;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50px 50%;
+    padding-top: 44px;
+    height: 111px;
+}
+
+#s04 .owl-carousel .description p.title {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17.2535px;
+    line-height: 17px;
+    text-align: center;
+    color: #333333;
+    margin: 5px;
+}
+
+#s04 .owl-carousel .description p.text {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13.8028px;
+    line-height: 14px;
+    text-align: center;
+    color: #333333;
+    margin: 0px;
+}
+
+#s06 {
+    background-image: url('../images/our-equipments-bg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 55px 0px 105px;
+}
+
+#s06 h4 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+    padding: 50px 0 30px;
+}
+
+#s06 p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #4E4E4E;
+}
 
 
 
