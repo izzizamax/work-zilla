@@ -61,3 +61,13 @@
 #s06 .owl-nav button i {
     font-size: 42px;
 }
+
+#s10 .owl-nav {
+    bottom: -50px;
+    top: auto;
+    padding: 0 520px;
+}
+
+#s10 .owl-nav button i {
+    font-size: 42px;
+}
