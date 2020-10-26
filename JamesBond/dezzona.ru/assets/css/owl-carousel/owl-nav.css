@@ -40,6 +40,16 @@
     font-size: 100px;
 }
 
+#s05 .owl-nav {
+    width: 100px;
+    right: 345px;
+    bottom: -50px;
+}
+
+#s05 .owl-nav button i {
+    font-size: 42px;
+}
+
 #s06 .owl-nav {
     width: 100px;
     top: 70%;
