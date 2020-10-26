@@ -457,25 +457,6 @@ header .header .btn-order {
     opacity: 1;
 }
 
-#s04 .owl-nav {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    top: 40%;
-    justify-content: space-between;
-    padding: 0 252px;
-}
-
-#s04 .owl-nav button:focus {
-    outline: none;
-}
-
-#s04 .owl-nav button i {
-    color: #FFBD15;
-    font-size: 100px;
-    text-shadow: 2px 2px 5px #8c8c8c;
-}
-
 #s04 .owl-carousel .description {
     background-image: url('../images/our-works-text-bg.png');
     bottom: 20px;
@@ -509,11 +490,59 @@ header .header .btn-order {
     margin: 0px;
 }
 
+#s05 {
+    margin-top: 120px;
+}
+
+#s05 .container-fluid {
+    background-image: url('../images/s05-bg.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#s05 .container-fluid div.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#s05 .about-specialists {
+    background: #FFFFFF;
+    border: 1px solid #88BFFD;
+    width: 760px !important;
+    min-width: 760px;
+    padding: 40px 150px 80px 35px;
+}
+
+#s05 .specialist .fio {
+    display: flex;
+}
+
+#s05 .specialist .description {
+    width: 550px;
+    background: #FFFFFF;
+    border: 3px solid #EFEFEF;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+
+
+
+
 #s06 {
     background-image: url('../images/our-equipments-bg.png');
     background-size: 100%;
     background-repeat: no-repeat;
     padding: 55px 0px 105px;
+}
+
+#s06 .owl-stage-outer {
+    overflow: visible !important;
+}
+
+#s06 img.equipment {
+    position: relative;
+    top: -75px;
 }
 
 #s06 h4 {
