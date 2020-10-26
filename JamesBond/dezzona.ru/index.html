@@ -746,15 +746,141 @@
     </div>
 
     <div id="s07">
-        
+        <div class="container">
+            <h2>Наши клиенты</h2>
+            <div class="owl-carousel carouselClients">
+                <img src="./assets/images/skoda.png" alt="..." />
+                <img src="./assets/images/skoda.png" alt="..." />
+                <img src="./assets/images/skoda.png" alt="..." />
+                <img src="./assets/images/skoda.png" alt="..." />
+                <img src="./assets/images/skoda.png" alt="..." />
+                <img src="./assets/images/skoda.png" alt="..." />
+                <img src="./assets/images/skoda.png" alt="..." />
+                <img src="./assets/images/skoda.png" alt="..." />
+                <img src="./assets/images/skoda.png" alt="..." />
+                <img src="./assets/images/skoda.png" alt="..." />
+                <img src="./assets/images/skoda.png" alt="..." />
+                <img src="./assets/images/skoda.png" alt="..." />
+            </div>
+        </div>
     </div>
 
     <div id="s08">
-
+        <div class="container">
+            <div class="form">
+                <h3>Скидка 20%</h3>
+                <p class="subtitle">
+                    на любую обработку в день обращения
+                </p>
+                <p class="before-form">
+                    Заполните форму и мы перезвоним Вам через 2 минуты
+                </p>
+                <form>
+                    <input type="text" name="name" placeholder="Ваше имя" class="form-control" />
+                    <input type="tel" name="tel" placeholder="+7 (___) ___-__-__" class="form-control" />
+                    <button type="submit" class="btn">Заказать звонок</button>
+                </form>
+                <p class="after-form">
+                    Отправка заявки ни к чему не обязыват, вы всегда можете отказаться
+                </p>
+                <ul>
+                    <li>
+                        Оперативный выезд в течении 1 часа
+                    </li>
+                    <li>
+                        Оперативный выезд в течении 2 часа
+                    </li>
+                    <li>
+                        Оперативный выезд в течении 3 часа
+                    </li>
+                    <li>
+                        Оперативный выезд в течении 4 часа
+                    </li>
+                    <li>
+                        Оперативный выезд в течении 5 часа
+                    </li>
+                    <li>
+                        Оперативный выезд в течении 6 часа
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <div id="s09">
-
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Схема работы компании:</h2>
+                </div>
+                <div class="col-xl-4 col-12">
+                    <div class="schema-card">
+                        <img src="./assets/images/scheme-img-1.png" alt="..."/>
+                        <div>
+                            <h3>1. Обращение</h3>
+                            <p>
+                                Наш специалист позвонит и уточнит информацию, затем предложил оптимальный метод решения Вашей проблемы
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-12">
+                    <div class="schema-card">
+                        <img src="./assets/images/scheme-img-2.png" alt="..."/>
+                        <div>
+                            <h3>2. Консультация</h3>
+                            <p>
+                                Вы обращаетесь к нам по телефону или оставляете заявку на консультацию от мастера
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-12">
+                    <div class="schema-card">
+                        <img src="./assets/images/scheme-img-3.png" alt="..."/>
+                        <div>
+                            <h3>3. Обращение</h3>
+                            <p>
+                                Вы обращаетесь к нам по телефону или оставляете заявку на консультацию от мастера
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-12">
+                    <div class="schema-card">
+                        <img src="./assets/images/scheme-img-4.png" alt="..."/>
+                        <div>
+                            <h3>4. Истребительные работы на участке</h3>
+                            <p>
+                                Наша компания контролирует санитарную ситуацию на Вашем участке в течение всего срока гарантии
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-12">
+                    <div class="schema-card">
+                        <img src="./assets/images/scheme-img-5.png" alt="..."/>
+                        <div>
+                            <h3>1. Обращение</h3>
+                            <p>
+                                Вы обращаетесь к нам по телефону или оставляете заявку на консультацию от мастера
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-12">
+                    <div class="schema-card">
+                        <img src="./assets/images/scheme-img-6.png" alt="..."/>
+                        <div>
+                            <h3>1. Обращение</h3>
+                            <p>
+                                Вы обращаетесь к нам по телефону или оставляете заявку на консультацию от мастера
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="s10">
@@ -992,6 +1118,15 @@
                 nav: true,
                 dots: false,
                 margin: 0,
+                loop: true,
+                navText: ['<i class="fas fa-caret-left"></i>','<i class="fas fa-caret-right"></i>']
+            });
+            $(".carouselClients").owlCarousel({
+                items: 8,
+                nav: true,
+                dots: false,
+                margin: 30,
+                // center: true,
                 loop: true,
                 navText: ['<i class="fas fa-caret-left"></i>','<i class="fas fa-caret-right"></i>']
             });

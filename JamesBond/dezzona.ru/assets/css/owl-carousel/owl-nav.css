@@ -2,11 +2,14 @@
     position: absolute;
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    top: calc(50% - 50px);
 }
 
 .owl-nav button i {
     color: #FFBD15;
     text-shadow: 2px 2px 5px #8c8c8c;
+    font-size: 100px;
 }
 
 .owl-nav button:focus {
@@ -31,7 +34,6 @@
 }
 
 #s04 .owl-nav {
-    width: 100%;
     top: 40%;
     padding: 0 252px;
 }
@@ -43,7 +45,7 @@
 #s05 .owl-nav {
     width: 100px;
     right: 345px;
-    bottom: -50px;
+    bottom: -365px;
 }
 
 #s05 .owl-nav button i {
@@ -52,7 +54,7 @@
 
 #s06 .owl-nav {
     width: 100px;
-    top: 70%;
+    top: 68%;
     right: 44%;
 }
 
