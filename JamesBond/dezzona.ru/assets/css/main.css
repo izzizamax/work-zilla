@@ -1062,6 +1062,348 @@ header .header .btn-order {
     }
 }
 
+#s13 .faq {
+    padding: 60px 145px 45px 80px;
+    background-color: #EDFFEC;
+    position: relative;
+}
+
+#s13 .faq:before {
+    content: '';
+    position: absolute;
+    width: 215px;
+    height: 572px;
+    bottom: 0;
+    right: -50px;
+    background-image: url('../images/faq-bg.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+#s13 h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: #2A68BD;
+    margin-bottom: 10px;
+}
+
+#s13 .questions > p.subtitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 35px;
+}
+
+#s13 .faq .card {
+    background-color: transparent !important;
+    /* border: none !important; */
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #F7D800;
+}
+
+#s13 .faq .card-header {
+    background-color: transparent !important;
+    border: none;
+}
+
+#s13 .faq .card-header h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    color: #333333;
+    cursor: pointer;
+}
+
+#s13 .faq .card-header h3:before {
+    font-family: 'Font Awesome 5 Free';
+    font-size: 30px;
+    color: #fff;
+    display: inline-block;
+    background: #FFCC00;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 0;
+    margin: 0 25px 0 0;
+    line-height: 50px;
+}
+
+#s13 .faq .card-header h3[aria-expanded='false']:before {
+    content: '\f067';
+}
+#s13 .faq .card-header h3[aria-expanded='true']:before {
+    content: '\f068';
+}
+
+#s13 .faq .card .card-body p {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #4E4E4E;
+    margin-left: 84px;
+}
+
+#s14 {
+    background-color: #FFCC00;
+    margin: 145px 0px;
+}
+
+#s14 .d-flex {
+    align-items: center;
+    justify-content: space-between;
+}
+
+#s14 .image {
+    display: block;
+    width: 223px;
+    height: 223px;
+    border: solid 2px #fff;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 3px 0px;
+    position: relative;
+}
+
+#s14 .image:before {
+    content: '';
+    width: 70px;
+    height: 70px;
+    display: block;
+    background-image: url('../images/s14-phone-icon.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    top: 10%;
+    left: -10%;
+    position: absolute;
+}
+
+#s14 .form p.title {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 23px;
+    line-height: 120%;
+    color: #333333;
+}
+
+#s14 form input {
+    background: #FBFBFB;
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 485px;
+    height: 60px;
+    margin-right: 24px;
+}
+
+#s14 form input::placeholder {
+    /* font-family: 'Open Sans'; */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    color: #878787;
+}
+
+#s14 form button {
+    background: #399400;
+    border-radius: 10px;
+    width: 380px;
+    height: 60px;
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+#s14 .form p.prompt {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    color: #4E4E4E;
+    margin: 16px 0 0;
+    padding-left: 9px;
+}
+
+#s15 .container {
+    padding: 0px !important;
+}
+
+#s15 h2 {
+    text-align: center;
+}
+
+#s15 .sert-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#s15 .sert-images a {
+    width: calc(33.3333% - 15px);
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+#s15 .sert-images a img {
+    width: 100%;
+}
+
+#s15 .serts {
+    margin-left: 60px;
+}
+
+#s15 .serts .sert {
+    display: flex;
+    align-items: center;
+    background-color: rgba(229, 249, 255, 1);
+    margin-bottom: 40px;
+    border-radius: 15px;
+
+}
+
+#s15 .serts .sert img {
+    margin-left: -60px;
+}
+
+#s15 .serts .sert p {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    color: #4E4E4E;
+}
+
+#s15 .warning {
+    border: 3px solid #CEE5FF;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+#s15 .warning > div {
+    background: #FFFAE5;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#s15 .warning > div img {
+    width: 100px;
+    height: 100px;
+    margin: 30px 30px 30px 10px;
+}
+
+#s15 .warning > div p {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #4E4E4E;
+}
+
+#s15 .warning > div > div p:last-child {
+    margin: 0px;
+}
+
+#s16 {
+    margin-top: 150px;
+}
+
+#s16 h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#s16 p.subtitle {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.65);
+    margin: 0 auto 50px;
+    width: 60%;
+}
+
+#s16 .news a:link,
+#s16 .news a:visited,
+#s16 .news a:active,
+#s16 .news a:hover,
+#s16 .news a:focus {
+    color: #333;
+    text-decoration: none;
+}
+
+#s16 .card {
+    border: none;
+    background: #EDFFEC;
+    border-radius: 25px;
+    padding: 24px;
+}
+
+#s16 .card h3 {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 29px;
+    line-height: 35px;
+    color: #119762;
+}
+
+#s16 .news div.date p {
+    padding-left: 10px;
+}
+
+#s16 .news a p {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+#s16 .news a p span {
+    color: rgba(42, 104, 189, 1);
+}
+
+#s16 .news a:hover div.date p,
+#s16 .news a:hover h3 {
+    text-decoration-line: underline;
+    color: #119762;
+}
+
+
+
+
 
 
 
