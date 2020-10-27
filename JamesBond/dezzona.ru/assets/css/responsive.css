@@ -151,6 +151,36 @@
         width: 75%;
     }
 
+    #s12 .road {
+        height: 114px;
+    }
+
+    #s12 .road:before {
+        height: 12px;
+        top: calc(50% - 6px);
+    }
+
+    #s12 .road ul li {
+        width: 70px;
+        height: 70px;
+    }
+
+    #s12 .road ul li > div p {
+        font-size: 11.8px;
+    }
+
+    #s12 .road ul li > p {
+        font-size: 12px;
+    }
+
+    #s12 .road ul li > p > span {
+        font-size: 18px;
+    }
+
+    #s12 .road ul li:last-child > p {
+        font-size: 10px;
+    }
+
     footer .footer {
         display: none;
     }
@@ -219,6 +249,68 @@
         width: 90%;
     }
 
+    #s12 {
+        height: 285vw;
+    }
+
+    #s12 .images {
+        transform: rotate(-90deg);
+        position: absolute;
+        left: -65vw;
+    }
+
+    #s12 .images img {
+        margin: 80vw 20vw;
+        width: 55vw;
+    }
+
+    #s12 .road {
+        width: 275%;
+        height: 40vw;
+        max-height: 175px;
+        transform: rotate(90deg);
+        right: 60vw;
+        top: 115vw;
+        border-radius: 30px;
+    }
+
+    #s12 .road .container {
+        max-width: 100% !important;
+    }
+
+    #s12 .road ul {
+        padding-left: 35px;
+    }
+
+    #s12 .road ul li {
+        width: 26.5vw;
+        height: 26.5vw;
+        max-width: 135px;
+        max-height: 135px;
+    }
+
+    #s12 .road ul li > div {
+        /* left: -85%; */
+        left: -23vw;
+    }
+
+    #s12 .road ul li > div p {
+        font-size: 4.5vw;
+        text-align: center;
+    }
+
+    #s12 .road ul li > p {
+        font-size: 4vw;
+    }
+
+    #s12 .road ul li > p > span {
+        font-size: 7.5vw;
+    }
+
+    #s12 .road ul li:last-child > p {
+        font-size: 3.5vw;
+    }
+
     footer .footer.tablet {
         position: relative;
         background: linear-gradient(180deg, #0B22C2 0%, #0419A3 41.67%, #0A1FB1 73.96%, #003789 100%);
@@ -262,6 +354,10 @@
 }
 
 @media(max-width: 425px) {
+    h2 {
+        font-size: 36px;
+    }
+
     header .header {
         background-position: 41% -72px;
         background-size: 375%;
