@@ -904,7 +904,7 @@ header .header .btn-order {
 
 }
 
-#s11 #contactForm {
+#s11 #calcForm {
     background-color: #ffffff;
     margin: 100px auto;
     padding: 40px;
@@ -912,22 +912,22 @@ header .header .btn-order {
     min-width: 300px;
 }
 
-#s11 #contactForm input {
+#s11 #calcForm input {
     padding: 10px;
     width: 100%;
     font-size: 17px;
     border: 1px solid #aaaaaa;
 }
 
-#s11 #contactForm input.invalid {
+#s11 #calcForm input.invalid {
     background-color: #ffdddd;
 }
 
-#s11 #contactForm .tab {
+#s11 #calcForm .tab {
     display: none;
 }
 
-#s11 #contactForm .step {
+#s11 #calcForm .step {
     height: 15px;
     width: 15px;
     margin: 0 2px;
@@ -938,11 +938,11 @@ header .header .btn-order {
     opacity: 0.5;
 }
 
-#s11 #contactForm .step.active {
+#s11 #calcForm .step.active {
     opacity: 1;
 }
 
-#s11 #contactForm .step.finish {
+#s11 #calcForm .step.finish {
     background-color: #4CAF50;
 }
 
