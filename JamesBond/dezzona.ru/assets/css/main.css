@@ -900,6 +900,52 @@ header .header .btn-order {
     width: 100%;
 }
 
+#s11 .form .form-container {
+
+}
+
+#s11 #contactForm {
+    background-color: #ffffff;
+    margin: 100px auto;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+}
+
+#s11 #contactForm input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    border: 1px solid #aaaaaa;
+}
+
+#s11 #contactForm input.invalid {
+    background-color: #ffdddd;
+}
+
+#s11 #contactForm .tab {
+    display: none;
+}
+
+#s11 #contactForm .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+#s11 #contactForm .step.active {
+    opacity: 1;
+}
+
+#s11 #contactForm .step.finish {
+    background-color: #4CAF50;
+}
+
 #s12 {
     margin-top: 150px;
     margin-bottom: 100px;
