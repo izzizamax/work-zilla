@@ -925,16 +925,25 @@ header .header .btn-order {
     height: 16px;
 }
 
-#s11 #calcForm label {
+#s11 .step-1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#s11 .step-1 > div {
+    width: 33.3333%;
+}
+
+#s11 #calcForm label span {
+    display: block;
+    margin-left: 25px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 150%;
+    line-height: 100%;
     color: #4E4E4E;
 }
-
-
 
 
 
@@ -949,6 +958,7 @@ header .header .btn-order {
 
 #s11 #calcForm input[type='checkbox'] + label {
     display: block;
+    position: relative;
     width: 16px;
     height: 16px;
     background: #FFFFFF;
@@ -966,8 +976,7 @@ header .header .btn-order {
 }
 #s11 #calcForm input[type='checkbox']:checked + label:before {
     position: absolute;
-    /* top: 0; */
-    /* left: 6px; */
+    left: 0px;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: '\f00c';
