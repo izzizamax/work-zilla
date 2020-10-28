@@ -167,6 +167,15 @@ header .header .btn-order {
     padding: 10px 25px;
 }
 
+#s01 {
+    margin-top: 100px;
+}
+
+#s01 h2 {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
 #s01 .container {
     max-width: 1180px !important;
     padding: 0 !important;
@@ -176,7 +185,6 @@ header .header .btn-order {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 200px;
 }
 
 #s01 .advantage-card {
@@ -222,6 +230,12 @@ header .header .btn-order {
     padding-bottom: 175px;
     z-index: 10;
     position: relative;
+    margin-top: 80px;
+}
+
+#s02 h2 {
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 #s02 .container {
@@ -255,7 +269,10 @@ header .header .btn-order {
     background-color: rgba(229, 249, 255, 1);
     border: 1px solid #88BFFD;
     box-sizing: border-box;
-;
+}
+
+#s02 .tab-content .tariffs.mobile {
+    display: none;
 }
 
 #s02 .tab-content > .active {
@@ -269,6 +286,12 @@ header .header .btn-order {
     border: 1px solid #88BFFD;
     box-sizing: border-box;
     border-radius: 0px 0px 10px 10px;
+}
+
+#s02 .tab-content .tariffs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 #s02 .tab-content .tariff-card {
@@ -380,7 +403,7 @@ header .header .btn-order {
     font-weight: bold;
 }
 
-#s02 .container button {
+#s02 .container button.btn-order {
     font-family: 'HelveticaNeueCyr';
     font-style: normal;
     font-weight: 900;
@@ -769,14 +792,7 @@ header .header .btn-order {
 }
 
 #s09 h2 {
-    font-family: 'HelveticaNeueCyr';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 42px;
-    line-height: 120%;
     text-align: center;
-    color: #2A68BD;
-    margin-bottom: 45px;
 }
 
 #s09 .schema-card {

@@ -1,7 +1,19 @@
+
 @media(max-width: 1600px) {
+    header .header:before {
+        width: 18.93%;
+        bottom: 5.5%;
+    }
+
     footer .footer {
         background-size: auto;
         background-position: 50% 100%;
+    }
+}
+
+@media(max-width: 1536px) {
+    header .header:before {
+        width: 16.93%;
     }
 }
 
@@ -11,8 +23,8 @@
     }
 
     header .header:before {
-        right: 18.5%;
-        bottom: 16.5%;
+        right: 22.5%;
+        bottom: 13.5%;
     }
 
     header .header > div {
@@ -103,6 +115,96 @@
     header .header p.description {
         width: 55%;
     }
+
+    #s01 .s01-cards {
+        width: 80%;
+        margin: auto;
+    }
+
+    #s01 .advantage-card {
+        width: calc(50% - 10px);
+    }
+
+    #s02 {
+        margin-top: 40px;
+        padding-bottom: 120px;
+    }
+
+    #s02 h2 {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    #s02 .nav-tabs {
+        white-space: nowrap;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    #s02 .nav-tabs .nav-item {
+        position: relative;
+        width: 30%;
+    }
+
+    #s02 .nav-tabs .nav-item:not(:first-child) {
+        margin-left: -5%;
+    }
+
+    #s02 .nav-tabs .nav-item:nth-child(1) {z-index:4}
+    #s02 .nav-tabs .nav-item:nth-child(2) {z-index:3}
+    #s02 .nav-tabs .nav-item:nth-child(3) {z-index:2}
+    #s02 .nav-tabs .nav-item:nth-child(4) {z-index:1}
+
+    #s02 .tab-content .tariff-card {
+        width: 100%;
+    }
+
+    #s02 .tab-content {
+        padding: 75px 0px 50px;
+    }
+
+    #s02 .tab-content .tariffs {
+        display: none;
+    }
+
+    #s02 .tab-content .tariffs.mobile {
+        display: flex;
+    }
+
+    #s02 .tab-content .owl-stage-outer {
+        padding-top: 65px;
+    }
+
+    #s03 h2 {
+        text-align: center;
+    }
+
+    #s03 .about-company {
+        padding: 0 100px;
+    }
+
+    #s03 .about-company > div {
+        height: 295px;
+    }
+
+    #s03 .about-company button {
+        margin-left: auto;
+        display: block;
+    }
+
+    #s03 img {
+        left: 0;
+        top: 0;
+        width: 90%;
+        margin: auto;
+        display: block;
+    }
+
+    #s09 .container {
+        padding: 0 40px;
+    }
+
+
 }
 
 @media(max-width:1024px) {
@@ -149,6 +251,10 @@
 
     header .header p.description {
         width: 75%;
+    }
+
+    #s01 {
+        margin-top: 150px;
     }
 
     #s12 .road {
@@ -210,6 +316,10 @@
 }
 
 @media(max-width: 600px) {
+    header nav.navbar {
+        padding: .5rem 0;
+    }
+
     header nav > .container {
         align-items: center !important;
         justify-content: space-around !important;
@@ -226,7 +336,13 @@
     }
 
     header nav ul.navbar-nav {
-        width: 100%
+        width: 100%;
+        padding-left: 50px;
+    }
+
+    header #navbarSupportedContent {
+        z-index: 100;
+        background-color: #fff;
     }
 
     header .header {
@@ -248,6 +364,91 @@
     header .header p.description {
         width: 90%;
     }
+
+    #s01 .s01-cards {
+        width: 80%;
+        margin: auto;
+    }
+
+    #s01 .advantage-card {
+        width: 100%;
+        margin: 0 0 65px;
+    }
+    #s02 {
+    padding-bottom: 0px;
+    margin-bottom: 90px;
+    background-color: #E5F9FF;
+    }
+
+    #s02 h2 {
+        padding-top: 20px;
+    }
+
+    #s02 .nav-tabs {
+        flex-wrap: wrap;
+        border: none;
+    }
+
+    #s02 .nav-tabs .nav-item {
+        width: 50%;
+        margin: 0px !important;
+    }
+
+    #s02 .nav-tabs .nav-link {
+        color: #2A68BD;
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 15px;
+        background: #fff;
+        border: 3px solid #FFD364;
+        border-radius: 50px;
+        height: 70px;
+        text-align: center;
+        padding-top: 27px;
+        margin: 20px 25px;
+    }
+
+    #s02 .nav-tabs .nav-link.active {
+        background-color: #FFE6AE;
+        border: 3px solid #FFD364;
+        color: #2A68BD;
+    }
+
+    #s02 .tab-content {
+        border: none;
+    }
+
+    #s02 .tab-content .tariff-card {
+        border: none;
+        filter: drop-shadow(0px 8.75852px 8.75852px rgba(0, 0, 0, 0.1));
+        margin-bottom: 20px;
+    }
+
+    #s02 .container button.btn-order {
+        width: auto;
+    }
+
+    #s03 .about-company {
+        padding: 0 15px;
+    }
+
+    #s03 .about-company button {
+        margin: auto;
+    }
+
+
+
+    #s09 .schema-card img {
+        width: 90px;
+        height: 90px;
+    }
+
+    #s09 .schema-card {
+        margin-bottom: 40px;
+    }
+
+
+
 
     #s12 {
         height: 285vw;
@@ -355,12 +556,13 @@
 
 @media(max-width: 425px) {
     h2 {
-        font-size: 36px;
+        font-size: 35px;
     }
 
     header .header {
         background-position: 41% -72px;
         background-size: 375%;
+        margin-bottom: 0px;
     }
 
     header .header:before {
@@ -392,12 +594,57 @@
         padding: 5px 22px;
     }
 
+    #s01 {
+        margin-top: 0px;
+    }
+
+    #s02 .nav-tabs .nav-link {
+        font-size: 15px;
+        line-height: 15px;
+        height: auto;
+        padding: 15px 5px;
+        margin: 10px;
+    }
+
+    #s02 .container button.btn-order {
+        width: auto;
+        font-size: 18px;
+        padding: 0px 38px;
+        margin: 30px auto 0px;;
+    }
+
+    #s09 {
+        padding: 45px 0 10px;
+    }
+
+    #s09 .schema-card h3 {
+        font-size: 19px;
+    }
+
+    #s09 .schema-card p {
+        font-size: 11px;
+    }
+
+
+
     footer .footer.tablet:before {
         top: -155px;
     }
 }
 
 @media(max-width: 375px) {
+    h2 {
+        font-size: 30px;
+    }
+
+    header .header {
+        height: 665px;
+    }
+
+    header .header::before {
+        bottom: 2%;
+    }
+
     header .header > div {
         padding: 36% 5% 0;
     }
@@ -420,6 +667,14 @@
         bottom: 13%;
     }
 
+    #s02 .tab-content {
+        padding: 75px 25px 50px;
+    }
+
+    #s02 .tab-content .tariff-card .tariff-title.green {
+        background-size: 100%;
+    }
+
     footer .footer.tablet:before {
         top: -135px;
     }
@@ -428,7 +683,14 @@
 @media(max-width: 320px) {
     header .header {
         background-position: 41% -55px;
+        height: 575px;
     }
+
+    header .header::before {
+        width: 47%;
+        bottom: 0%;
+    }
+
     header .header > div {
         padding: 38% 5% 0;
     }
@@ -446,12 +708,15 @@
         margin-bottom: 2rem;
     }
 
-    header .header:before {
-        right: 2%;
-        bottom: 19%;
-    }
+
 
     footer .footer.tablet:before {
         top: -120px;
+    }
+}
+
+@media(width: 1024px) {
+    #s01 {
+        margin-top: 175px;
     }
 }
