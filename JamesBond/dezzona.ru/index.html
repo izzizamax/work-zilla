@@ -1686,8 +1686,6 @@
                 responsive:{
                     0:{
                         items: 1
-                        // margin: 35,
-                        // stagePadding: 55
                     },
                     376:{
                         items: 1,
@@ -1722,6 +1720,41 @@
                 margin: 30,
                 center: true,
                 loop: true,
+                responsive:{
+                    0:{
+                        items: 1,
+                        margin: 10,
+                        stagePadding: 30
+                    },
+                    500: {
+                        items: 1,
+                        margin: 30,
+                        stagePadding: 55
+                    },
+                    800:{
+                        items: 1,
+                        margin: 60,
+                        stagePadding: 100,
+                    },
+                    1024:{
+                        items: 1.5,
+                        margin: 40,
+                        stagePadding: 75,
+                    },
+                    1200:{
+                        items: 2,
+                        margin: 50,
+                        stagePadding: 75,
+                    },
+                    1366: {
+                        items: 2,
+                    },
+                    1440: {
+                        items: 3,
+                        margin: 30,
+                        stagePadding: 0
+                    },
+                },
                 navText: ['<i class="fas fa-caret-left"></i>', '<i class="fas fa-caret-right"></i>']
             });
             $(".carouselSpecialists").owlCarousel({
