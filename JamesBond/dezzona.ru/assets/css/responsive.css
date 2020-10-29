@@ -5,6 +5,10 @@
         bottom: 5.5%;
     }
 
+    #s06:before {
+        right: 2%;
+    }
+
     footer .footer {
         background-size: auto;
         background-position: 50% 100%;
@@ -48,6 +52,27 @@
     header .header .btn-order {
         font-size: 18px;
     }
+
+    #s05 .about-specialists {
+        width: 750px !important;
+        min-width: 750px;
+        margin-right: -60px;
+    }
+
+    #s05 .carouselSpecialists {
+        margin-left: -60px;
+    }
+
+    #s06:before {
+        display: none;
+        background-image: none;
+    }
+}
+
+@media(max-width: 1366px) {
+    #s05 .specialist .description {
+        width: 100%;
+    }
 }
 
 @media(max-width: 1280px) {
@@ -86,6 +111,10 @@
 
     header .header p.description {
         margin: 0 0 1rem;
+    }
+
+    #s05 .about-specialists {
+        margin-right: -80px;
     }
 
     footer .footer {
@@ -200,6 +229,30 @@
         display: block;
     }
 
+    #s05 {
+        background-position: 23% 95%;
+    }
+
+    #s05 .about-specialists {
+        position: relative;
+        width: 85% !important;
+        max-width: 100%;
+        margin: auto;
+        padding: 40px 40px 80px;
+        z-index: -1;
+    }
+
+    #s05 .about-specialists h2 {
+        text-align: center;
+    }
+
+    #s05 .carouselSpecialists {
+        margin: auto;
+        width: 85%;
+        padding: 0 40px;
+        margin-top: -50px;
+    }
+
     #s09 .container {
         padding: 0 40px;
     }
@@ -261,6 +314,16 @@
         margin-top: 75px;
     }
 
+    #s05 {
+        background-position: 50% 90%;
+    }
+
+    #s05 .about-specialists {
+        width: 85% !important;
+        margin: auto;
+        min-width: auto;
+    }
+
     #s12 .road {
         height: 114px;
     }
@@ -316,6 +379,18 @@
     footer .footer.tablet .footer-soc-icons {
         margin-top: -10px;
         margin-bottom: 40px;
+    }
+}
+
+@media(max-width: 768px) {
+    #s04 .owl-carousel .description {
+        background-position: 50% 50%;
+        background-size: 95%;
+        padding-left: 15%;
+    }
+
+    #s05 .about-specialists {
+        width: 90% !important;
     }
 }
 
@@ -379,9 +454,9 @@
         margin: 0 0 65px;
     }
     #s02 {
-    padding-bottom: 0px;
-    margin-bottom: 90px;
-    background-color: #E5F9FF;
+        padding-bottom: 0px;
+        margin-bottom: 90px;
+        background-color: #E5F9FF;
     }
 
     #s02 h2 {
@@ -440,7 +515,14 @@
         margin: auto;
     }
 
+    #s05 {
+        background-size: 97%;
+        background-position: 160% 85%;
+    }
 
+    #s05 .carouselSpecialists {
+        width: 100%;
+    }
 
     #s09 .schema-card img {
         width: 90px;
@@ -617,6 +699,62 @@
         margin: 30px auto 0px;;
     }
 
+    #s04 .container-fluid {
+        padding: 0 10px;
+    }
+
+    #s04 .owl-carousel .description {
+        background-size: 95%;
+        padding-top: 45px;
+        bottom: 0;
+    }
+
+    #s04 .owl-carousel .description p.title {
+        font-size: 10.4299px;
+        line-height: 10px;
+    }
+
+    #s04 .owl-carousel .description p.text {
+        font-size: 8.3439px;
+        line-height: 8px;
+    }
+
+    #s05 .container-fluid {
+        padding: 0px !important;
+    }
+
+    #s05 .about-specialists {
+        background-color: #E5F9FF;
+        z-index: 1;
+        border: none;
+        width: 100% !important;
+        padding: 20px 30px;
+    }
+
+    #s05 .carouselSpecialists {
+        padding: 0px;
+    }
+
+    #s05 .specialist .fio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #s05 .specialist .fio p {
+        font-size: 14px;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    #s05 .specialist .fio p:first-child {
+        font-size: 17px;
+    }
+
+    #s05 .specialist .description li {
+        font-size: 12.2981px;
+        line-height: 150%;
+    }
+
     #s09 {
         padding: 45px 0 10px;
     }
@@ -712,7 +850,9 @@
         margin-bottom: 2rem;
     }
 
-
+    #s04 .owl-carousel .description {
+        bottom: -10px;
+    }
 
     footer .footer.tablet:before {
         top: -120px;
