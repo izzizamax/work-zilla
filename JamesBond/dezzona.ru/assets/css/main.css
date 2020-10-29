@@ -631,9 +631,13 @@ header .header .btn-order {
     background-repeat: no-repeat;
 }
 
+#s06 .carouselEquipments div.mobile-img {
+    display: none;
+}
+
 #s06 img.equipment {
     position: relative;
-    top: -75px;
+    /* top: -75px; */
 }
 
 #s06 h4 {
@@ -747,11 +751,9 @@ header .header .btn-order {
 }
 
 #s08 .form form input::placeholder {
-    font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 22px;
     color: #878787;
 }
 
@@ -864,7 +866,7 @@ header .header .btn-order {
 }
 
 #s10 .card .vk a {
-    font-family: 'Roboto Condensed';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -924,8 +926,8 @@ header .header .btn-order {
     width: 100%;
 }
 
-#s11 .form .form-container {
-
+#s11 #calcForm {
+    position: relative;
 }
 
 #s11 #calcForm .tab p {
@@ -939,7 +941,7 @@ header .header .btn-order {
 
 #s11 #calcForm {
     background-color: #ffffff;
-    padding: 40px;
+    padding: 40px 20px;
     width: 100%;
     min-width: 300px;
 }
@@ -956,6 +958,7 @@ header .header .btn-order {
 
 #s11 .step-1 > div {
     width: 33.3333%;
+    margin-bottom: 12px;
 }
 
 #s11 #calcForm label span {
@@ -988,6 +991,7 @@ header .header .btn-order {
     background: #FFFFFF;
     border: 1.92933px solid #AAA9A9;
     text-align: center;
+    margin-bottom: 0px;
 }
 #s11 #calcForm input[type='checkbox'] + label:before {
     /* content: '✔';
@@ -1008,21 +1012,34 @@ header .header .btn-order {
     line-height: 14px;
 }
 
-#s11 #calcForm .nav-buttons {
+#s11 #calcForm input[type='checkbox']:checked + label > span {
+    font-weight: bold;
+}
+
+#s11 #calcForm .nav {
     position: absolute;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    top: 27%;
+    top: 30%;
     left: 0;
 }
 
-#s11 #calcForm .nav-buttons button {
+#s11 #calcForm .nav button {
+    position: absolute;
     border: none;
     background: transparent;
     font-size: 80px;
     color: #FFD364;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#s11 #calcForm .nav button#prevBtn {
+    left: -4%;
+}
+
+#s11 #calcForm .nav button#nextBtn {
+    right: -4%;
 }
 
 #s11 #calcForm .nav-steps {
@@ -1094,7 +1111,7 @@ header .header .btn-order {
 }
 
 #s11 #calcForm .fields {
-    padding: 20px 45px;
+    padding: 20px 25px;
     background: #EDFFEC;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
