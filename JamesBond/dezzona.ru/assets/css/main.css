@@ -2,6 +2,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+button:focus {
+    outline: none;
+}
+
 .container {
     max-width: 1180px !important;
 }
@@ -167,6 +171,43 @@ header .header .btn-order {
     padding: 10px 25px;
 }
 
+header .header-page {
+    position: relative;
+    background-color: #2e43c7;
+    background-image: none;
+    height: 155px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url('../images/contacts-header-bg.png'); */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+}
+
+/* header .header-contacts:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url('../images/');
+} */
+
+header .header-page h1 {
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+header .breadcrumbs {
+    padding: 30px 0;
+    text-align: center;
+}
+
 #s01 {
     margin-top: 100px;
 }
@@ -305,6 +346,7 @@ header .header .btn-order {
 
 #s02 .tab-content .tariff-card .tariff-title {
     background-repeat: no-repeat;
+    background-position: center;
     position: relative;
     top: -70px;
     height: 180px;
@@ -606,7 +648,7 @@ header .header .btn-order {
     height: 8px;
     border-radius: 8px;
     background-color: #F4B74A;
-    margin-right: 5px;
+    margin-right: 12px;
     display: inline-block;
     margin-left: -1.5em;
 }
@@ -657,6 +699,10 @@ header .header .btn-order {
     font-size: 14px;
     line-height: 150%;
     color: #4E4E4E;
+}
+
+#s07 {
+    margin-top: 180px;
 }
 
 #s07 h2 {
@@ -928,6 +974,25 @@ header .header .btn-order {
 
 #s11 #calcForm {
     position: relative;
+    background-color: #ffffff;
+    padding: 40px 20px;
+    width: 100%;
+    min-width: 300px;
+}
+
+#s11 #calcForm input[type='text'],
+#s11 #calcForm input[type='tel'],
+#s11 #calcForm input[type='email'] {
+    background: #FBFBFB;
+    border: 1px solid #88BFFD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 20px 0px;
+    height: 50px;
+}
+
+#s11 #calcForm .tab {
+    display: none;
 }
 
 #s11 #calcForm .tab p {
@@ -939,30 +1004,19 @@ header .header .btn-order {
     color: #069100;
 }
 
-#s11 #calcForm {
-    background-color: #ffffff;
-    padding: 40px 20px;
-    width: 100%;
-    min-width: 300px;
-}
-
-#s11 #calcForm input[type='checkbox'] {
-    width: 16px;
-    height: 16px;
-}
-
-#s11 .step-1 {
+#s11 .step-1 .fields {
     display: flex;
     flex-wrap: wrap;
 }
 
-#s11 .step-1 > div {
+#s11 .step-1 .fields > div {
     width: 33.3333%;
     margin-bottom: 12px;
 }
 
-#s11 #calcForm label span {
+#s11 .step-1 .fields label span {
     display: block;
+    min-width: 180px;
     margin-left: 25px;
     font-family: 'Montserrat';
     font-style: normal;
@@ -972,12 +1026,84 @@ header .header .btn-order {
     color: #4E4E4E;
 }
 
+#s11 .step-2 .fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+#s11 .step-2 .fields > div {
+    width: calc(25% - 15px);
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
 
+#s11 .step-2 .fields label span {
+    display: block;
+    min-width: 95px;
+    margin-left: 25px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 100%;
+    color: #4E4E4E;
+    word-wrap: break-word;
+}
 
+#s11 .step-2 .fields > div > div.area-img {
+    width: 110px;
+    height: 65px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+}
 
+#s11 .step-4 .fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+#s11 .step-4 .fields > div {
+    width: calc(33.3333% - 15px);
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
 
+#s11 .step-4 .fields label span {
+    display: block;
+    min-width: 125px;
+    margin-left: 25px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 100%;
+    color: #4E4E4E;
+    word-wrap: break-word;
+}
+
+#s11 .step-4 .fields > div > div.area-img {
+    width: 153px;
+    height: 95px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#s11 .step5 .fields input[type='text'],
+#s11 .step5 .fields input[type='tel'],
+#s11 .step5 .fields input[type='email'] {
+    margin: 5px 0;
+}
+
+#s11 #calcForm input[type='checkbox'] {
+    width: 16px;
+    height: 16px;
+}
 
 #s11 #calcForm input[type='checkbox'] {
     display: none;
@@ -990,18 +1116,17 @@ header .header .btn-order {
     height: 16px;
     background: #FFFFFF;
     border: 1.92933px solid #AAA9A9;
-    text-align: center;
     margin-bottom: 0px;
 }
+
 #s11 #calcForm input[type='checkbox'] + label:before {
-    /* content: '✔';
-    font-size: 20px; */
+
 }
+
 #s11 #calcForm input[type='checkbox']:checked + label {
     background: #FFCC00;
-    /* border: 1.92933px solid #DEDEDE; */
-    /* border-radius: 30px; */
 }
+
 #s11 #calcForm input[type='checkbox']:checked + label:before {
     position: absolute;
     left: 0px;
@@ -1016,12 +1141,28 @@ header .header .btn-order {
     font-weight: bold;
 }
 
+#s11 #calcForm button[type='submit'] {
+    background: linear-gradient(180deg, #63AD00 9.29%, #72AD00 23.8%, #329100 81.98%, #069100 99.66%);
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    margin: auto;
+    display: block;
+    border-radius: 50px;
+    width: 185px;
+    height: 40px;
+}
+
 #s11 #calcForm .nav {
     position: absolute;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    top: 30%;
+    top: 32%;
     left: 0;
 }
 
@@ -1048,10 +1189,6 @@ header .header .btn-order {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-#s11 #calcForm .steps {
-
 }
 
 #s11 #calcForm .steps p {
@@ -1083,43 +1220,15 @@ header .header .btn-order {
     background: #FFCC00;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-#s11 #calcForm input[type='text'] {
-    padding: 10px;
-    width: 100%;
-    font-size: 17px;
-    border: 1px solid #aaaaaa;
-}
-
 #s11 #calcForm input.invalid {
     background-color: #ffdddd;
 }
 
-#s11 #calcForm .tab {
-    display: none;
-}
-
 #s11 #calcForm .fields {
+    min-height: 310px;
     padding: 20px 25px;
     background: #EDFFEC;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-#s11 #calcForm input[type='text'] {
-    background: #FBFBFB;
-    border: 1px solid #88BFFD;
-    margin-bottom: 8px;
 }
 
 #s11 #calcForm .step {
@@ -1139,6 +1248,11 @@ header .header .btn-order {
 
 #s11 #calcForm .step.finish {
     background-color: #4CAF50;
+}
+
+#s11 .form .image {
+    display: flex;
+    align-items: center;
 }
 
 #s12 {
@@ -1241,7 +1355,7 @@ header .header .btn-order {
     }
 
     #s12 .road ul {
-        padding-left: 70px !important;
+        /* padding-left: 70px !important; */
     }
 
     #s12 .road ul li > div p {
@@ -1249,11 +1363,11 @@ header .header .btn-order {
     }
 
     #s12 .road ul li > p {
-        font-size: 4vw !important;
+        font-size: 3vw !important;
     }
 
     #s12 .road ul li > p > span {
-        font-size: 7vw !important;
+        font-size: 6vw !important;
     }
 }
 
@@ -1312,6 +1426,8 @@ header .header .btn-order {
 }
 
 #s13 .faq .card-header h3 {
+    display: flex;
+    align-items: center;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
@@ -1330,6 +1446,7 @@ header .header .btn-order {
     border-radius: 50%;
     height: 50px;
     width: 50px;
+    min-width: 50px;
     text-align: center;
     padding: 0;
     margin: 0 25px 0 0;
@@ -1409,11 +1526,7 @@ header .header .btn-order {
 }
 
 #s14 form input::placeholder {
-    /* font-family: 'Open Sans'; */
-    font-style: normal;
-    font-weight: normal;
     font-size: 24px;
-    line-height: 33px;
     color: #878787;
 }
 
@@ -1482,6 +1595,8 @@ header .header .btn-order {
 
 #s15 .serts .sert img {
     margin-left: -60px;
+    width: 112px;
+    height: 112px;
 }
 
 #s15 .serts .sert p {
@@ -1610,6 +1725,11 @@ header .header .btn-order {
     margin-bottom: 45px;
 }
 
+#s17 .owl-stage-outer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 #s17 .last-work {
     background: #E6F9FF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1647,11 +1767,202 @@ header .header .btn-order {
     /* border-radius: 10px; */
 }
 
+#address .container {
+    padding-left: 80px;
+}
 
+#address .container address > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
 
+#address .container address > div img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
 
+#address .container address > div p {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 25px;
+    margin: 0;
+}
 
+#address .container address > div p > span {
+    color: #2A68BD;
+    font-weight: bold;
+}
 
+#map {
+    margin: 85px 0;
+}
+
+#map h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2A68BD;
+    text-transform: uppercase;
+    margin-left: 85px;
+}
+
+#requisites .container {
+    padding-left: 80px;
+}
+
+#requisites h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2A68BD;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+#requisites .container div p {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 25px;
+    margin: 0 0 30px 0;
+}
+
+#requisites .container div p > span {
+    color: #000;
+    font-weight: bold;
+}
+
+#feedback {
+    margin: 85px 0 0;
+}
+
+#feedback .feedback {
+    background-color: #FFCC00;
+    padding: 45px;
+    border-radius: 5px;
+}
+
+#feedback h3 {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 35px;
+    text-align: center;
+    color: #2A68BD;
+    margin-bottom: 50px;
+}
+
+#feedback .form {
+    width: 75%;
+    margin: auto;
+}
+
+#feedback form input[type='text'] {
+    height: 52px;
+}
+
+#feedback form textarea {
+    height: 240px;
+}
+
+#feedback form button {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #399400;
+    border-radius: 10px;
+    display: block;
+    width: 300px;
+    height: 55px;
+    margin: 30px auto 0;
+}
+
+.ymap-container {
+    position: relative;
+    margin: 3em 0 2em 0;
+    overflow: hidden;
+    cursor: pointer;
+    background: url('../images/ymap.png') #ffffff no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* box-shadow: 0 0 2em  0 rgba(0,0,0,.2); */
+}
+
+/* Блок, в котором появится Яндекс.Карта */
+#map-yandex {
+    position: relative;
+    z-index: 7;
+    width: 100%;
+    height: 400px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.loader {
+    position: absolute;
+    z-index: 15;
+    top: -100%;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: #000000;
+    transition: opacity .7s ease;
+    opacity: 0;
+    background-color: rgba(0,0,0,.55);
+}
+
+.loader:after,
+.loader:before {
+    box-sizing: border-box;
+}
+
+.loader.is-active {
+    top: 0;
+    opacity: 1;
+    z-index: 5;
+}
+
+.loader-default:after {
+    position: absolute;
+    top: calc(50% - 24px);
+    left: calc(50% - 24px);
+    width: 48px;
+    height: 48px;
+    content: '';
+    animation: rotation 1s linear infinite;
+    border: solid 8px #ffffff;
+    border-left-color: transparent;
+    border-radius: 50%;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes blink {
+    from {
+        opacity: .5;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 
 

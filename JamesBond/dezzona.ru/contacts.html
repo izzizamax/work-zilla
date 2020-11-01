@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Page Title</title>
+    <base href="[[!++site_url]]" />
+    <meta charset="[[++modx_charset]]" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="[[*description]]">
+    <meta name="keywords" content="[[+seoPro.keywords]]">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "name": "[[*pagetitle:default=`[[*longtitle]]`]]",
+            "image": "https://xn--d1acah0c.xn--p1ai/assets/images/logo.png",
+            "author": "дезер.рф",
+            "headline": "[[*pagetitle:default=`[[*longtitle]]`]]",
+            "dateModified": "[[*publishedon]]",
+            "datePublished": "[[*publishedon]]",
+            "publisher": {
+                "@type": "Organization",
+                "name": "дезер.рф",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://xn--d1acah0c.xn--p1ai/assets/images/logo.png",
+                    "width": "118",
+                    "height": "107"
+                }
+            },
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "[[~[[*id]]? &scheme=`full`]]"
+            }
+        }
+    </script>
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="[[*pagetitle:dafeult=`[[*longtitle]]`]]">
+    <meta property="og:title" content="[[*pagetitle:dafeult=`[[*longtitle]]`]]" />
+    <meta property="og:description" content="[[*description]]" />
+    <meta property="og:url" content="[[~[[*id]]? &scheme=`full`]]" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://xn--d1acah0c.xn--p1ai/assets/images/logo.png" />
+    <meta property="og:image:secure_url" content="https://xn--d1acah0c.xn--p1ai/assets/images/logo.png" />
+    <meta property="article:published_time" content="[[*publishedon]]" />
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/HelveticaLT/HelveticaLTStd.css" />
+    <link rel="stylesheet" href="./assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr.css" />
+    <link rel="stylesheet" href="./assets/fonts/Montserrat/Montserrat.css" />
+    <link rel="stylesheet" href="./assets/fonts/awesome/v5.10.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="./assets/css/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/css/owl-carousel/owl-nav.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <img src="./assets/images/gamburger-icon.png" alt="..." />
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/logo.png" alt="..." />
+                </a>
+                <div class="d-block d-md-none mobile-icon">
+                    <a href="#"><img src="./assets/images/phone.png" alt="..." /></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto d-flex d-md-none d-xl-flex">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Наши работы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Отзывы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Вакансии</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="header-soc-icons d-none d-md-flex">
+                        <a href="#"><img src="./assets/images/viber.jpg" alt="viber" /></a>
+                        <a href="#"><img src="./assets/images/whatsapp.jpg" alt="whatsapp" /></a>
+                        <a href="#"><img src="./assets/images/skype.jpg" alt="skype" /></a>
+                        <a href="#"><img src="./assets/images/telegram.jpg" alt="telegram" /></a>
+                    </div>
+                    <div class="header-phone d-none d-md-flex">
+                        <img src="./assets/images/phone.png" alt="..." />
+                        <div>
+                            <a href="tel:88002000000">8 (800) 2000 000</a>
+                            <p>
+                                Заказать звонок
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tablet d-none d-md-block d-xl-none">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Наши работы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Отзывы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Вакансии</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="header-page">
+            <h1>Контакты</h1>
+        </div>
+        <div class="breadcrumbs">
+            Главная / Контакты
+        </div>
+    </header>
+    <div id="address">
+        <div class="container">
+            <address>
+                <div>
+                    <img src="./assets/images/contacts-icon-address.png" alt="..." />
+                    <p>
+                        <span>Адрес: </span>
+                        Адрес : г. Омск , Авиамоторная ул., дом 73А, строение 16
+                    </p>
+                </div>
+                <div>
+                    <img src="./assets/images/contacts-icon-clock.png" alt="..." />
+                    <p>
+                        <span>Время работы: </span>
+                        пн-пт 10:00-20:00 сб-вс 11:00-21:00
+                    </p>
+                </div>
+                <div>
+                    <img src="./assets/images/contacts-icon-phone.png" alt="..." />
+                    <p>
+                        <span>Телефон1: </span>
+                        +7 (900) 555-95-57
+                    </p>
+                </div>
+                <div>
+                    <img src="./assets/images/contacts-icon-phone.png" alt="..." />
+                    <p>
+                        <span>Телефон2: </span>
+                        +7 (900) 555-75-71
+                    </p>
+                </div>
+                <div>
+                    <img src="./assets/images/contacts-icon-email.png" alt="..." />
+                    <p>
+                        <span>E-mail: </span>
+                        info@mail.ru
+                    </p>
+                </div>
+            </address>
+        </div>
+    </div>
+    <div id="map">
+        <div class="container c-map">
+            <h3>Схема проезда</h3>
+            <div class="ymap-container">
+                <div class="loader loader-default"></div>
+                <div id="map-yandex"></div>
+            </div>
+        </div>
+    </div>
+    <div id="requisites">
+        <div class="container">
+            <div class="requisites">
+                <h3>НАШИ РЕКВИЗИТЫ</h3>
+                <div>
+                    <p>
+                        <span>ИНН/КПП: </span>[[*inn]]
+                    </p>
+                    <p>
+                        <span>ОГРН: </span>[[*ogrn]]
+                    </p>
+                    <p>
+                        <span>Юр. адрес: </span>[[*legal_address]]
+                    </p>
+                    <p>
+                        <span>Номер счёта: </span>[[*account_number]]
+                    </p>
+                    <p>
+                        <span>Банк: </span>[[*bank]]
+                    </p>
+                    <p>
+                        <span>БИК: </span>[[*bik]]
+                    </p>
+                    <p>
+                        <span>Корр. счёт: </span>[[*correspondent_account]]
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="feedback">
+        <div class="container">
+            <div class="feedback">
+                <h3>Напишите нам</h3>
+                <div class="form">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-lg-6 col-12">
+                                <input type="text" name="name" placeholder="" class="form-control" />
+                            </div>
+                            <div class="form-group col-lg-6 col-12">
+                                <input type="text" name="name" placeholder="" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <textarea name="message" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <button class="btn">Отправить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <h3>Меню</h3>
+                        <ul>
+                            <li>О компании</li>
+                            <li>Наши работы</li>
+                            <li>Отзывы</li>
+                            <li>Обратная связь</li>
+                        </ul>
+                    </div>
+                    <div class="col-5">
+                        <h3>Наши контакты</h3>
+                        <address>
+                            <div class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>
+                                    <a href="#">Омск, ул. Первая 99 к5</a>
+                                </p>
+                            </div>
+                            <div class="phones">
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <p>
+                                        <a href="#">8 (800) 2000 000</a>
+                                    </p>
+                                    <p>
+                                        <a href="#">8 (919) 000 00 00</a>
+                                    </p>
+                                    <p class="work-time">
+                                        с 8.00 до 20.00
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="e-mail">
+                                <i class="fas fa-envelope"></i>
+                                <p>
+                                    <a href="#">info@dezhim.com</a>
+                                </p>
+                            </div>
+                        </address>
+                    </div>
+                    <div class="col-3">
+                        <a href="#" class="footer-logo"><img src="./assets/images/logo-footer.png" alt="..." /></a>
+                        <div class="requisites">
+                            <p>
+                                Название компании
+                            </p>
+                            <p>
+                                ИНН
+                            </p>
+                            <p>
+                                ОГРН
+                            </p>
+                        </div>
+                        <div class="footer-soc-icons d-flex">
+                            <a href="#"><img src="./assets/images/viber.png" alt="viber" /></a>
+                            <a href="#"><img src="./assets/images/whatsapp.png" alt="whatsapp" /></a>
+                            <a href="#"><img src="./assets/images/skype.png" alt="skype" /></a>
+                            <a href="#"><img src="./assets/images/telegram.png" alt="telegram" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <p>
+                                Государственная мед. лицензия ЛО-02-01-006458 от 22.08.2018 г.
+                            </p>
+                            <p>
+                                © 2007-2020 Все права защищены. “Компания”
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <p>
+                                <a href="#">Политика конфиденциальности</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer tablet">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div>
+                            <a href="#" class="footer-logo"><img src="./assets/images/logo-footer.png" alt="..." /></a>
+                            <div class="footer-soc-icons d-flex">
+                                <a href="#"><img src="./assets/images/viber.png" alt="viber" /></a>
+                                <a href="#"><img src="./assets/images/whatsapp.png" alt="whatsapp" /></a>
+                                <a href="#"><img src="./assets/images/skype.png" alt="skype" /></a>
+                                <a href="#"><img src="./assets/images/telegram.png" alt="telegram" /></a>
+                            </div>
+                            <div class="requisites">
+                                <p>
+                                    Название компании
+                                </p>
+                                <p>
+                                    ИНН
+                                </p>
+                                <p>
+                                    ОГРН
+                                </p>
+                            </div>
+                        </div>
+                        <div class="copyright">
+                            <p>
+                                Государственная мед. лицензия ЛО-02-01-006458 от 22.08.2018 г.
+                            </p>
+                            <p>
+                                © 2007-2020 Все права защищены. “Компания”
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h3>Меню</h3>
+                        <ul>
+                            <li>О компании</li>
+                            <li>Наши работы</li>
+                            <li>Отзывы</li>
+                            <li>Обратная связь</li>
+                        </ul>
+
+                        <h3>Наши контакты</h3>
+                        <address>
+                            <div class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>
+                                    <a href="#">Омск, ул. Первая 99 к5</a>
+                                </p>
+                            </div>
+                            <div class="phones">
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <p>
+                                        <a href="#">8 (800) 2000 000</a>
+                                    </p>
+                                    <p>
+                                        <a href="#">8 (919) 000 00 00</a>
+                                    </p>
+                                    <p class="work-time">
+                                        с 8.00 до 20.00
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="e-mail">
+                                <i class="fas fa-envelope"></i>
+                                <p>
+                                    <a href="#">info@dezhim.com</a>
+                                </p>
+                            </div>
+                        </address>
+                        <div class="copyright d-block d-md-none">
+                            <p>
+                                Государственная мед. лицензия ЛО-02-01-006458 от 22.08.2018 г.
+                            </p>
+                            <p>
+                                © 2007-2020 Все права защищены. “Компания”
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="./assets/js/owl-carousel/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var spinner = $('.ymap-container').children('.loader');
+            var check_if_load = false;
+            var myMapTemp, myPlacemarkTemp;
+
+            function init () {
+                var myMapTemp = new ymaps.Map("map-yandex", {
+                    center: [54.984606, 73.392163],
+                    zoom: 12,
+                    controls: ['zoomControl', 'fullscreenControl']
+                });
+                var myPlacemarkTemp = new ymaps.GeoObject({
+                    geometry: {
+                        type: "Point",
+                        coordinates: [54.984606, 73.392163]
+                    }
+                });
+                myMapTemp.geoObjects.add(myPlacemarkTemp);
+                var layer = myMapTemp.layers.get(0).get(0);
+                waitForTilesLoad(layer).then(function() {
+                    spinner.removeClass('is-active');
+                });
+            }
+
+            function waitForTilesLoad(layer) {
+                return new ymaps.vow.Promise(function (resolve, reject) {
+                    var tc = getTileContainer(layer), readyAll = true;
+                    tc.tiles.each(function (tile, number) {
+                        if (!tile.isReady()) {
+                            readyAll = false;
+                        }
+                    });
+                    if (readyAll) {
+                        resolve();
+                    } else {
+                        tc.events.once("ready", function() {
+                            resolve();
+                        });
+                    }
+                });
+            }
+
+            function getTileContainer(layer) {
+                for (var k in layer) {
+                    if (layer.hasOwnProperty(k)) {
+                        if (
+                            layer[k] instanceof ymaps.layer.tileContainer.CanvasContainer
+                            || layer[k] instanceof ymaps.layer.tileContainer.DomContainer
+                        ) {
+                            return layer[k];
+                        }
+                    }
+                }
+                return null;
+            }
+
+            function loadScript(url, callback){
+                var script = document.createElement("script");
+
+                if (script.readyState) {
+                    script.onreadystatechange = function(){
+                        if (script.readyState == "loaded" ||
+                            script.readyState == "complete"){
+                            script.onreadystatechange = null;
+                            callback();
+                        }
+                    };
+                } else {
+                    script.onload = function(){
+                        callback();
+                    };
+                }
+                script.src = url;
+                document.getElementsByTagName("head")[0].appendChild(script);
+            }
+            var ymap = function() {
+                $('.ymap-container').mouseenter(function(){
+                        if (!check_if_load) {
+                            check_if_load = true;
+                            spinner.addClass('is-active');
+                            loadScript("https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;loadByRequire=1", function(){
+                                ymaps.load(init);
+                            });
+                        }
+                    }
+                );
+            };
+            $(function () {
+                ymap();
+            });
+        });
+    </script>
+</body>
+
+</html>

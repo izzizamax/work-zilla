@@ -262,6 +262,14 @@
     #s10 .owl-nav {
         right: 37%;
     }
+
+    #s16 .owl-nav button.owl-prev {
+        left: 10px;
+    }
+
+    #s16 .owl-nav button.owl-next {
+        right: 10px;
+    }
 }
 
 @media(max-width: 375px) {
