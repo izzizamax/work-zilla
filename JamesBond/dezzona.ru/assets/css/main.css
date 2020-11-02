@@ -1058,7 +1058,7 @@ header .breadcrumbs {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
 #s11 .step-4 .fields {
@@ -1092,6 +1092,7 @@ header .breadcrumbs {
     margin-bottom: 10px;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 15px;
 }
 
 #s11 .step5 .fields input[type='text'],
@@ -1523,6 +1524,7 @@ header .breadcrumbs {
     width: 485px;
     height: 60px;
     margin-right: 24px;
+    font-size: 24px;
 }
 
 #s14 form input::placeholder {
