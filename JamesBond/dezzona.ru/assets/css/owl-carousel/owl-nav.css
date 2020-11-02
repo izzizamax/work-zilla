@@ -207,6 +207,22 @@
         right: auto;
         left: 2%;
     }
+
+    #news .owl-nav {
+        top: calc(50% - 50px);
+    }
+
+    #news .top-news .owl-nav button.owl-prev {
+        left: -50px;
+    }
+
+    #news .top-news .owl-nav button.owl-next {
+        right: -50px;
+    }
+
+    #news .owl-nav button i {
+        font-size: 70px;
+    }
 }
 
 @media(max-width: 800px) {

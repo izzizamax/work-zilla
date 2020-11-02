@@ -133,8 +133,123 @@
             Главная / Контакты
         </div>
     </header>
-    <div>
+    <div id="news">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-12 sidebar">
+                    <div>
+                        <div class="last-news">
+                            <h3>НОВОСТИ</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Дезинфекция: устранение трупного яда</a>
+                                </li>
+                                <li>
+                                    <a href="#">Дезинфекция: устранение насекомых</a>
+                                </li>
+                                <li>
+                                    <a href="#">Дезинфекция: устранение грызунов</a>
+                                </li>
+                                <li>
+                                    <a href="#">Дезинфекция: устранение трупного яда</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="top-news">
+                            <h3>ПОПУЛЯРНЫЕ</h3>
+                            <div class="top-desktop">
+                                <a href="#">
+                                    <div class="news-card">
+                                        <div class="news-card-img" style="background-image: url('./assets/images/review-bg-3.png');"></div>
+                                        <div class="news-card-body">
+                                            <p>
+                                                Дезинфекция: устранение трупного яда
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="news-card">
+                                        <div class="news-card-img" style="background-image: url('./assets/images/review-bg-3.png');"></div>
+                                        <div class="news-card-body">
+                                            <p>
+                                                Дезинфекция: устранение трупного яда
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="news-card">
+                                        <div class="news-card-img" style="background-image: url('./assets/images/review-bg-3.png');"></div>
+                                        <div class="news-card-body">
+                                            <p>
+                                                Дезинфекция: устранение трупного яда
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="top-mobile">
+                                <div class="owl-carousel carouselLastNews">
+                                    <a href="#">
+                                        <div class="news-card">
+                                            <div class="news-card-img" style="background-image: url('./assets/images/review-bg-3.png');"></div>
+                                            <div class="news-card-body">
+                                                <p>
+                                                    Дезинфекция: устранение трупного яда
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="news-card">
+                                            <div class="news-card-img" style="background-image: url('./assets/images/review-bg-3.png');"></div>
+                                            <div class="news-card-body">
+                                                <p>
+                                                    Дезинфекция: устранение трупного яда
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="news-card">
+                                            <div class="news-card-img" style="background-image: url('./assets/images/review-bg-3.png');"></div>
+                                            <div class="news-card-body">
+                                                <p>
+                                                    Дезинфекция: устранение трупного яда
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-12 content">
+                    <h2>Дезинфекция: устранение трупного яда</h2>
+                    <ul>
+                        <li>
+                            Что такое дезинфекция
+                        </li>
+                        <li>
+                            Цены на дезинфекцию
+                        </li>
+                    </ul>
+                    <h4>Что такое дезинфекция</h4>
+                    <p>
+                        <span>Дезинфекция</span> — это, комплексная услуга, по привлечению целевых посетителей из поисковых систем. Основная задача поисковой раскрутки сайта — увеличить посещаемость сайта, путем улучшения его позиций в результатах Google, Yandex, Bing. Эффективность работы  и продвижению обычно оценивают по количеству целевого трафика из поисковых систем.
+                    </p>
+                    <h3>Цены на дезинфекцию</h3>
+                    <p>
+                        <span>Способ распыления:</span> Горячий туман + ручная обработка + препараты длительного действия
+                    </p>
+                    <table>
 
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
     <footer>
         <div class="footer">
@@ -312,7 +427,14 @@
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="./assets/js/owl-carousel/owl.carousel.min.js"></script>
     <script>
-
+        $(".carouselLastNews").owlCarousel({
+            items: 1,
+            nav: true,
+            dots: false,
+            margin: 30,
+            loop: true,
+            navText: ['<i class="fas fa-caret-left"></i>', '<i class="fas fa-caret-right"></i>']
+        });
     </script>
 </body>
 
