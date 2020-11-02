@@ -28,31 +28,31 @@
 }
 
 @media(max-width:1200px) {
-    #s14 {
+    #s08 {
         padding: 50px 0;
     }
 
-    #s14 .d-flex {
+    #s08 .d-flex {
         flex-direction: column;
     }
 
-    #s14 .image {
+    #s08 .image {
         margin-bottom: 15px;
     }
 
-    #s14 .form {
+    #s08 .form {
         width: 75%;
     }
 
-    #s14 .form .form-row {
+    #s08 .form .form-row {
         flex-direction: column;
     }
 
-    #s14 .form input {
+    #s08 .form input {
         margin-bottom: 15px;
     }
 
-    #s14 .form button {
+    #s08 .form button {
         display: block;
         margin: 15px auto 0px;
     }
@@ -136,11 +136,11 @@
 }
 
 @media(max-width: 600px) {
-    #s14 .form {
+    #s08 .form {
         width: 100%;
     }
 
-    #s14 .form input {
+    #s08 .form input {
         width: 100%;
     }
 
@@ -262,25 +262,25 @@
 }
 
 @media(max-width: 425px) {
-    #s14 .form p.title {
+    #s08 .form p.title {
         font-size: 18px;
         text-align: center;
     }
 
-    #s14 .form input {
+    #s08 .form input {
         height: 55px;
     }
 
-    #s14 .form input::placeholder {
+    #s08 .form input::placeholder {
         font-size: 18px;
     }
 
-    #s14 .form p.prompt {
+    #s08 .form p.prompt {
         font-size: 14px;
         text-align: center;
     }
 
-    #s14 .form button {
+    #s08 .form button {
         width: 100%;
         height: 55px;
         font-size: 16px;
@@ -350,11 +350,11 @@
 }
 
 @media(max-width: 375px) {
-    #s14 .form p.title {
+    #s08 .form p.title {
         font-size: 22px;
     }
 
-    #s14 .form p.prompt {
+    #s08 .form p.prompt {
         font-size: 16px;
     }
 
@@ -364,7 +364,7 @@
 }
 
 @media(max-width: 320px) {
-    #s14 .form p.title {
+    #s08 .form p.title {
         font-size: 20px;
     }
 
