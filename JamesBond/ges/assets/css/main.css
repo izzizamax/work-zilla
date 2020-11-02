@@ -1,0 +1,137 @@
+footer .footer {
+    background-color: #023076;
+    min-height: 430px;
+}
+
+footer .footer > .container {
+    padding-top: 60px;
+}
+
+footer .footer h3 {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+footer .footer ul {
+    list-style: none;
+    padding: 0px;
+}
+
+footer .footer ul li {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding-bottom: 24px;
+}
+
+footer .footer address {
+    color: #fff;
+}
+
+footer .footer address > div {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+footer .footer address i {
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+footer .footer address a {
+    color: #fff;
+}
+
+footer .footer address p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 0px;
+}
+
+footer .footer address .phones p a,
+footer .footer address .e-mail p a {
+    font-weight: bold;
+}
+
+footer .footer address .phones p.work-time {
+    font-size: 12px;
+    line-height: 15px;
+    opacity: 0.5;
+}
+
+footer .footer .footer-logo img {
+    width: 103px;
+    height: 103px;
+}
+
+footer .footer .requisites {
+    margin-top: 10px;
+}
+
+footer .footer .requisites p {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 0px;
+    color: #FFFFFF;
+}
+
+footer .footer .footer-soc-icons {
+    margin-top: 55px;
+}
+
+footer .footer .footer-soc-icons a {
+    margin-right: 30px;
+}
+
+footer .footer .copyright {
+    padding: 20px 0 0px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer .footer .copyright .row {
+    align-items: center;
+}
+
+footer .footer .copyright .row > div:last-child {
+    text-align: right;
+    padding-right: 50px;
+}
+
+footer .footer .copyright p {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    margin: 0px;
+}
+
+footer .footer .copyright a {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+}
+
+footer .footer.tablet {
+    display: none;
+}
