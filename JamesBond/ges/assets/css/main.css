@@ -1,3 +1,91 @@
+#s14 {
+    background-color: #023076;
+    margin: 145px 0px;
+}
+
+#s14 .d-flex {
+    align-items: center;
+    justify-content: space-between;
+}
+
+#s14 .image {
+    display: block;
+    min-width: 230px;
+    width: 230px;
+    height: 230px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    margin: 3px 20px 3px 0px;
+    position: relative;
+}
+
+#s14 .image:before {
+    content: '';
+    width: 70px;
+    height: 70px;
+    display: block;
+    background-image: url('../images/s14-phone-icon.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    top: 10%;
+    left: -10%;
+    position: absolute;
+}
+
+#s14 .form {
+    width: 100%;
+}
+
+#s14 .form p.title {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 23px;
+    line-height: 120%;
+    color: #ffffff;
+}
+
+#s14 form input {
+    background: #FBFBFB;
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    margin-right: 24px;
+    font-size: 24px;
+}
+
+#s14 form input::placeholder {
+    font-size: 24px;
+    color: #878787;
+}
+
+#s14 form button {
+    background: #399400;
+    width: 100%;
+    height: 60px;
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+#s14 .form p.prompt {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    color: #ffffff;
+    margin: 16px 0 0;
+    padding-left: 9px;
+}
+
 footer .footer {
     background-color: #023076;
     min-height: 430px;
