@@ -44,55 +44,6 @@
     background: red;
 }
 
-#s04 .owl-nav button.owl-prev {
-    left: 15%;
-}
-
-#s04 .owl-nav button.owl-next {
-    right: 15%;
-}
-
-#s05 .owl-nav {
-    /* width: 100px; */
-    width: auto;
-    right: 50%;
-    top: 100%;
-    display: flex;
-}
-
-#s05 .owl-nav button {
-    position: relative;
-}
-
-#s05 .owl-nav button i {
-    font-size: 42px;
-}
-
-#s05 .owl-dots {
-    width: auto;
-    position: relative;
-    display: inline-flex;
-    margin: 0 5px;
-}
-
-#s05 .owl-dots button {
-    display: none !important;
-    position: relative;
-    margin: 0 5px;
-    color: #c4c4c4;
-    font-size: 90%;
-}
-
-#s05 .owl-dots button.active {
-    display: inline-block !important;
-    color: #000;
-    font-size: 110%;
-}
-
-#s05 .owl-dots button.show {
-    display: inline-block !important;
-}
-
 #s06 .owl-nav {
     width: auto;
     top: 68%;

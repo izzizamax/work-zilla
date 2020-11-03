@@ -1,3 +1,385 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 120%;
+    text-decoration-line: underline;
+    color: #000000;
+}
+
+h2 span {
+    color: #023076;
+}
+
+button.orange {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17.8537px;
+    line-height: 120%;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    background: #FF9100;
+    filter: drop-shadow(0px 2.97561px 2.97561px rgba(0, 0, 0, 0.25));
+}
+
+header {
+
+}
+
+#s01 .about-company {
+    background: #F2F2F2;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+#s01 .about-company h2 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 120%;
+    text-decoration: underline;
+    color: #000000;
+}
+
+#s01 .about-company img {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 100%;
+    height: 250px;
+    margin: 20px 0;
+}
+
+#s01 .feedback {
+    background: #F2F2F2;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+}
+
+#s01 .feedback-header {
+    background: #023076;
+
+}
+
+#s01 .feedback-header h2 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 120%;
+    color: #FFFFFF;
+    width: 80%;
+    padding: 20px 40px;
+}
+
+#s01 .form {
+    padding: 25px 40px;
+}
+
+#s01 .form p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #415A6B;
+    margin-bottom: 35px;
+}
+
+#s01 .form .form-group {
+    margin-bottom: 34px;
+}
+
+#s01 .form input {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    color: #786E6E;
+    height: 45px;
+}
+
+#s01 .form select {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    color: #786E6E;
+    height: 45px;
+}
+
+#s01 .form textarea {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    color: #786E6E;
+    height: 395px;
+}
+
+#s02 {
+    margin: 100px 0px;
+}
+
+
+#s02 .our-works {
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    height: 895px;
+}
+
+#s02 .our-works .title {
+    background: #023076;
+}
+
+#s02 .our-works .title  h2{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 120%;
+    color: #FFFFFF;
+    padding: 20px 25px;
+}
+
+#s02 .cards {
+    overflow-y: scroll;
+    height: 720px;
+}
+
+#s02 .our-work-card {
+    padding: 20px 20px 30px;
+    background: #EFEFEF;
+    border-radius: 10px;
+    margin: 20px 20px 30px 20px;
+}
+
+#s02 .our-work-card img {
+    background: url(Living-in-a-modern-style-11.jpg);
+    border-radius: 10px;
+    width: 100%;
+    height: 172px;
+    padding-bottom: 30px;
+}
+
+#s02 .our-work-card .content p.work-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+}
+
+#s02 .our-work-card .content p.address {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #333333;
+}
+
+#s02 .info {
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    padding: 30px 30px 20px 15px;
+    height: 895px;
+}
+
+#s02 .faq .card {
+    border: none;
+}
+
+#s02 .faq .card-header {
+    background: #EFEFEF;
+    border-radius: 10px;
+    border-bottom: none;
+    padding: 12px 20px;
+    margin-bottom: 3px;
+}
+
+#s02 .faq .card-header h3 {
+    display: flex;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #333333;
+}
+
+#s02 .faq .card-header h3:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 30px;
+    color: #fff;
+    display: inline-block;
+    background: #FF9100;
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+    min-width: 50px;
+    text-align: center;
+    padding: 0;
+    margin: 0 25px 0 0;
+    line-height: 50px;
+}
+
+#s02 .faq .card-header h3[aria-expanded='false']:before {
+    content: '\f067';
+}
+
+#s02 .faq .card-header h3[aria-expanded='true']:before {
+    content: '\f00d';
+}
+
+#s02 .faq .card-body p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #4E4E4E;
+    margin-bottom: 0;
+}
+
+#s02 .info button.orange {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+}
+
+#s03 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+/*
+#s03 .container div.wrapper {
+    display: flex;
+    justify-content: center;
+} */
+#s03 .specialists {
+    display: flex;
+}
+
+#s03 .about-specialists {
+    background: #FFFFFF;
+    border: 15px solid #C4C4C4;
+    box-sizing: border-box;
+    width: 775px;
+    min-width: 775px;
+    padding: 40px 190px 80px 35px;
+    /* margin-left: auto;
+    margin-right: -130px; */
+}
+
+#s03 .about-specialists h2 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 120%;
+    color: #333333;
+    margin: 0px 0px 25px 30px;
+    text-decoration: none;
+}
+
+#s03 .about-specialists p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #4E4E4E;
+}
+
+#s03 .carousel {
+    width: 520px;
+    margin-left: -180px;
+}
+
+#s03 .specialist {
+    background: #023076;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+#s03 .specialist .fio {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+#s03 .specialist .fio img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin: 0px 0 5px 10px;
+}
+
+#s03 .specialist .fio p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-left: 30px;
+    margin-bottom: 0;
+}
+
+#s03 .specialist .fio p:first-child {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+#s03 .specialist .description {
+    /* width: 100%; */
+    background: #FFFFFF;
+    border: 3px solid #EFEFEF;
+    box-sizing: border-box;
+}
+
+#s03 .specialist .description ul {
+    list-style: none;
+    margin: 20px 5px 20px;
+    padding-left: 25px;
+}
+
+#s03 .specialist .description li {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #4E4E4E;
+    margin-bottom: 7px;
+}
+
+#s03 .specialist .description li:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background-color: #F4B74A;
+    margin-right: 12px;
+    display: inline-block;
+    margin-left: -1.5em;
+}
+
+
+
+
+
+
+
 #s08 {
     background-color: #023076;
     margin: 145px 0px;
