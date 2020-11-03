@@ -44,6 +44,29 @@
     background: red;
 }
 
+#s03 .owl-dots {
+    position: absolute;
+    top: 14%;
+    right: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+#s03 .owl-dots button {
+    margin-bottom: 5px;
+}
+
+#s03 .owl-dots button span {
+    background-color: #fff;
+    opacity: .5;
+    width: 9px;
+    height: 9px;
+}
+
+#s03 .owl-dots button.active span {
+    opacity: 1;
+}
+
 #s04 .owl-nav button.owl-prev {
     left: 15%;
 }
