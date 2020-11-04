@@ -59,10 +59,97 @@
 }
 
 @media(max-width:1024px) {
+    header .container-fluid {
+        padding: 0;
+    }
+
+    header .container {
+        max-width: 100%;
+    }
+
+    header #navigation .topnav nav .navbar-brand img {
+        width: 65px;
+        height: 65px;
+    }
+
+    header #navigation .contacts .header-middle {
+        padding-left: 100px;
+    }
+
+    header #navigation .contacts .header-middle p {
+        font-size: 14.6px;
+        font-weight: 600;
+        padding: 10px;
+    }
+
+    header #navigation .contacts .header-middle p.phone, header #navigation .contacts .header-middle p.email {
+        font-size: 11px;
+    }
+
+    header #navigation .topnav nav ul.navbar-nav .nav-item .nav-link {
+        font-size: 11px;
+    }
+
+    header .header.container-fluid {
+        height: 330px;
+    }
+
+    header .header .container div.header-image {
+        padding-right: 25px;
+    }
+
+    header .header .container div.image {
+        height: 330px;
+    }
+
+    header .header .container .row > div:last-child > div {
+        width: 135%;
+        border: solid 9px #fff;
+        padding: 10px 10px 0px 90px;
+    }
+
+    header .header .container .row > div:last-child > div p {
+        font-size: 19px;
+        line-height: 120%;
+    }
+
+    header .header .container .row > div:last-child > div form input::placeholder {
+        font-size: 10px;
+    }
+
+    button.orange {
+        font-size: 10px;
+    }
+
+    header .header-bottom .advantages > div {
+        padding: 10px 20px;
+    }
+
+    header .header-bottom .advantages > div:not(:last-child)::after {
+        height: 25px;
+    }
+
+    header .header-bottom .advantages > div img {
+        width: 25px;
+        height: 25px;
+    }
+
+    header .header-bottom .advantages > div p {
+        font-size: 11px;
+    }
+
+
+
 
 }
 
 @media(max-width: 800px) {
+    header .header .container .row > div:last-child > div {
+        width: 135%;
+        border: solid 9px #fff;
+        padding: 10px 10px 0px 75px;
+    }
+
     footer .footer {
         min-height: 300px;
     }
@@ -262,6 +349,52 @@
 }
 
 @media(max-width: 425px) {
+    header #navigation {
+        display: none;
+    }
+
+    header #mobile-navigation {
+            display: block;
+    }
+
+    header #mobile-navigation nav {
+        background: #023076;
+    }
+
+    header #mobile-navigation nav .container {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    header #mobile-navigation nav .geo  {
+        text-align: right;
+    }
+
+    header #mobile-navigation nav .geo i {
+        background: #FF9100;
+        font-size: 8px;
+    }
+
+    header #mobile-navigation nav .geo span {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 8px;
+        line-height: 9px;
+        text-decoration-line: underline;
+        color: #FFFFFF;
+        text-align: left;
+    }
+
+    header #mobile-navigation nav p.title-nav {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 120%;
+        color: #FFFFFF;
+        width: 75%;
+    }
+
+
     #s08 .form p.title {
         font-size: 18px;
         text-align: center;
