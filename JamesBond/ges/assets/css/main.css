@@ -204,6 +204,7 @@ header .header .container .row > div:last-child > div {
     position: absolute;
     width: 645px;
     right: 15px;
+    top: 9%;
     border: solid 15px #fff;
     padding: 20px 10px 20px 100px;
     margin-bottom: 40px;
