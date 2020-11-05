@@ -763,6 +763,113 @@
             </div>
         </div>
     </div>
+    <div id="s04">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-12">
+                    <div class="equipments">
+                        <div class="block-title">
+                            <h3>Оборудование</h3>
+                        </div>
+                        <div class="cards">
+                            <p>Наведите на один из объектов и посмотрите его детали</p>
+                            <div class="card">
+                                <div class="overlay-text">
+                                    <p>
+                                        text text text text...
+                                    </p>
+                                </div>
+                                <div class="image">
+                                    <img src="./assets/images/equip_01.png" alt="..." />
+                                </div>
+                                <p>Опрыскиватель</p>
+                            </div>
+                            <div class="card">
+                                <div class="overlay-text">
+                                    <p>
+                                        text text text text...
+                                    </p>
+                                </div>
+                                <div class="image">
+                                    <img src="./assets/images/equip_01.png" alt="..." />
+                                </div>
+                                <p>Опрыскиватель</p>
+                            </div>
+                            <div class="card">
+                                <div class="overlay-text">
+                                    <p>
+                                        text text text text...
+                                    </p>
+                                </div>
+                                <div class="image">
+                                    <img src="./assets/images/equip_01.png" alt="..." />
+                                </div>
+                                <p>Опрыскиватель</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-12">
+                    <div class="chemical">
+                        <div class="block-title">
+                            <h3>Химия</h3>
+                        </div>
+                        <div class="cards">
+                            <p>Наведите на один из объектов и посмотрите его детали</p>
+                            <div class="card">
+                                <div class="overlay-text">
+                                    <p>
+                                        text text text text...
+                                    </p>
+                                </div>
+                                <p>Средство спрей для мытья плитки и сантехники — Sir Derz 750мл</p>
+                                <div class="image">
+                                    <img src="./assets/images/chem_01.png" alt="..." />
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="overlay-text">
+                                    <p>
+                                        text text text text...
+                                    </p>
+                                </div>
+                                <p>Средство спрей для мытья плитки и сантехники — Sir Derz 750мл</p>
+                                <div class="image">
+                                    <img src="./assets/images/chem_01.png" alt="..." />
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="overlay-text">
+                                    <p>
+                                        text text text text...
+                                    </p>
+                                </div>
+                                <p>Средство спрей для мытья плитки и сантехники — Sir Derz 750мл</p>
+                                <div class="image">
+                                    <img src="./assets/images/chem_01.png" alt="..." />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-12">
+                    <div class="certificates">
+                        <div class="block-title">
+                            <h3>Сертификати</h3>
+                        </div>
+                        <div class="certs">
+                            <a href="./assets/images/sert_01.png" data-fancybox="gallery"><img src="./assets/images/sert_01.png" alt="..." /></a>
+                            <a href="./assets/images/sert_01.png" data-fancybox="gallery"><img src="./assets/images/sert_01.png" alt="..." /></a>
+                            <a href="./assets/images/sert_01.png" data-fancybox="gallery"><img src="./assets/images/sert_01.png" alt="..." /></a>
+                            <a href="./assets/images/sert_01.png" data-fancybox="gallery"><img src="./assets/images/sert_01.png" alt="..." /></a>
+                            <a href="./assets/images/sert_01.png" data-fancybox="gallery"><img src="./assets/images/sert_01.png" alt="..." /></a>
+                            <a href="./assets/images/sert_01.png" data-fancybox="gallery"><img src="./assets/images/sert_01.png" alt="..." /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div id="s08">
         <div class="container">
@@ -978,20 +1085,14 @@
             loop: false,
             navText: ['<i class="fas fa-caret-left"></i>', '<i class="fas fa-caret-right"></i>']
         });
-        // $('#s03 .carouselSpecialists .owl-nav > button:first-child').after('<div class="pagination"></div>').trigger('refresh');
-        // $('#s03 .carouselSpecialists .owl-dots .owl-dot').each(function(i, elem) {
-        //     i++;
-        //     $(this).text(i);
-        //     $('#s03 .carouselSpecialists .owl-dots').detach().prependTo('#s03 .owl-nav > div.pagination');
-        //     if (i < 4) {
-        //         $(this).addClass('show');
-        //     }
-        // });
-        // $('#s03 .owl-dots, #s03 .owl-nav').on('click', function() {
-        //     $('.owl-carousel .pagination .owl-dots .owl-dot').removeClass('show');
-        //     $('.owl-carousel .pagination .owl-dots .owl-dot.active').next().addClass('show');
-        //     $('.owl-carousel .pagination .owl-dots .owl-dot.active').prev().addClass('show');
-        // });
+
+        $('#s04 .cards .card').on('mouseover', function() {
+            $(this).children('.overlay-text').show();
+        });
+
+        $('#s04 .cards .card').on('mouseout', function() {
+            $(this).children('.overlay-text').hide();
+        });
     </script>
 </body>
 
