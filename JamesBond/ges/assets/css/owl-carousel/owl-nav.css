@@ -248,7 +248,18 @@
     }
 }
 
+@media(max-width: 1024px) {
+    #s03 .owl-dots {
+        top: 12%;
+    }
+}
+
 @media(max-width: 800px) {
+    #s03 .owl-dots button span {
+        width: 6px;
+        height: 6px;
+    }
+    
     #s04 .owl-nav button.owl-prev {
         left: 5%;
     }

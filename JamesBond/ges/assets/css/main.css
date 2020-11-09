@@ -181,6 +181,37 @@ header .header.container-fluid > div.blue-background {
     z-index: 10;
 }
 
+header .header .search-form {
+    position: absolute;
+    z-index: 20;
+    right: 15px;
+    width: calc(58% - 15px);
+    margin: 5px 0px;
+    z-index: 100;
+}
+
+header .header .search-form form .input-group-text {
+    background: transparent;
+    border-left: none;
+    border-radius: 0;
+}
+
+header .header .search-form form .input-group-text:hover {
+    cursor: pointer;
+}
+
+header .header .search-form form input {
+    border: 0.794341px solid #C4C4C4;
+    border-radius: 0px;
+    border-right: none;
+}
+
+header .header .search-form form input:focus,
+header .header .search-form form input:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
 header .header .container div.header-image {
     padding-right: 50px;
 }
@@ -443,11 +474,12 @@ header .header .container .wrapper form input::placeholder {
     background: #023076;
 }
 
-#s02 .our-works .title  h2{
-    font-style: normal;
+#s02 .our-works .title h2 {
+    /* font-style: normal;
     font-weight: 900;
     font-size: 30px;
     line-height: 120%;
+    color: #FFFFFF; */
     color: #FFFFFF;
     padding: 20px 25px;
 }
@@ -519,6 +551,7 @@ header .header .container .wrapper form input::placeholder {
     display: flex;
     align-items: center;
     color: #333333;
+    margin-bottom: 0px;
 }
 
 #s02 .faq .card-header h3:before {
