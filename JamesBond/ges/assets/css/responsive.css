@@ -473,6 +473,20 @@
         border-radius: 0px;
         height: 37px;
     }
+
+    #news .list-news {
+        margin-bottom: 50px;
+    }
+
+    #news .list-news .last-news {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2vw;
+    }
+
+    #news .list-news .last-news a.news-card {
+        margin-bottom: 0px;
+    }
 }
 
 @media(max-width: 800px) {
@@ -675,6 +689,14 @@
         width: 80%;
     }
 
+    #news .list-news .last-news {
+        grid-gap: 1.5vw;
+    }
+
+    #news .list-news .last-news a.news-card {
+        padding: 5px 30px;
+        font-size: 12px;
+    }
 
     footer .footer {
         min-height: 300px;
