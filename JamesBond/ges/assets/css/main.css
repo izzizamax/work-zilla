@@ -1616,16 +1616,108 @@ header .header .container .wrapper form input::placeholder {
     padding: 10px 50px;
 }
 
+#news h1 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    color: #023076;
+}
 
+#news .list-news {
+    border: 2px solid #C4C4C4;
+}
 
+#news .list-news .title {
+    background-color: #023076;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 20px 30px;
+}
 
+#news .list-news .title h3 {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
 
+#news .list-news .last-news {
+    padding: 25px 10px;
+}
 
+#news .list-news .last-news a.news-card {
+    display: block;
+    padding: 25px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #333333;
+    background-color: #EFEFEF;
+}
 
+#news .list-news .last-news a.news-card.active {
+    background-color: #023076;
+    color: #fff;
+}
 
+#news .content {
+    padding-left: 30px;
+}
 
+#news .content h3 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 35px;
+    color: #023076;
+}
 
+#news .content table tr {
+    height: 65px;
+}
 
+#news .content table thead tr {
+    background-color: #D9F1FF;
+}
+
+#news .content table tbody tr:nth-child(2n) {
+    background-color: #f0f0f0;
+}
+
+#news .content table thead td {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 100%;
+    color: #023076;
+}
+
+#news .content table td {
+    text-align: center;
+    color: #3A7CA5;
+}
+
+#news .content ul {
+    list-style: none;
+}
+
+#news .content ul li {
+    display: flex;
+    align-items: center;
+}
+
+#news .content ul li:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background-color: #F4B74A;
+    margin-right: 7px;
+    /* margin-right: 5px;
+    display: inline-block;
+    margin-left: 0px; */
+}
 
 
 #modalOrder .modal-dialog {
