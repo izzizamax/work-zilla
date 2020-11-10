@@ -24,34 +24,7 @@
 }
 
 @media(max-width:1200px) {
-    #s08 {
-        padding: 50px 0;
-    }
 
-    #s08 .d-flex {
-        flex-direction: column;
-    }
-
-    #s08 .image {
-        margin-bottom: 15px;
-    }
-
-    #s08 .form {
-        width: 75%;
-    }
-
-    #s08 .form .form-row {
-        flex-direction: column;
-    }
-
-    #s08 .form input {
-        margin-bottom: 15px;
-    }
-
-    #s08 .form button {
-        display: block;
-        margin: 15px auto 0px;
-    }
 }
 
 @media(max-width:1024px) {
@@ -351,6 +324,155 @@
         font-size: 11px;
         padding: 10px 60px;
     }
+
+    #s06 .container-fluid {
+        height: 450px;
+    }
+
+    #s06 .container-fluid .background-blue {
+        height: 450px;
+    }
+
+    #s06 h2 {
+        font-size: 22px;
+        padding-top: 50px;
+    }
+
+    #s06 .wrapper {
+        margin-top: 40px;
+    }
+
+    #s06 .schema {
+        grid-gap: 28px;
+    }
+
+    #s06 .schema .step {
+        padding-right: 30px;
+    }
+
+    #s06 .schema .step-cnt p {
+        font-size: 30px;
+    }
+
+    #s06 .schema .body {
+        margin-top: -15px;
+    }
+
+    #s06 .schema .body h5 {
+        font-size: 11px;
+        line-height: 120%;
+    }
+
+    #s06 .schema .body p {
+        font-size: 7px;
+        margin-bottom: 0px;
+    }
+
+    #s06 .wrapper {
+        border: 9px solid #C4C4C4;
+        padding: 26px;
+        margin-left: 15px;
+    }
+
+    #s06 .form h3 {
+        font-size: 16px;
+    }
+
+    #s06 .form p.subtitle {
+        font-size: 10px;
+    }
+
+    #s06 .form p.text-before {
+        font-size: 7px;
+    }
+
+    #s06 .form input {
+        height: 33px;
+    }
+
+    #s06 .form input::placeholder {
+        font-size: 8px;
+    }
+
+    #s06 .form button.orange {
+        font-size: 11px;
+        padding: 8px 24px;
+    }
+
+    #s06 .form p.text-after {
+        font-size: 6px;
+    }
+
+    #s07 .reviews,
+    #s07 .clients {
+        height: 590px;
+    }
+
+    #s07 .reviews h2 {
+        font-size: 19px;
+    }
+
+    #s07 .reviews .card-body .card-title p {
+        font-size: 10px;
+    }
+
+    #s07 .reviews .card-body p.card-text {
+        font-size: 8px;
+    }
+
+    #s07 .reviews .card img {
+        width: 75px;
+        height: 95px;
+    }
+
+    #s07 .clients .block-title h3 {
+        font-size: 19px;
+    }
+
+    #s08 .image {
+        width: 115px;
+        height: 115px;
+    }
+
+    #s08 .image:before {
+        width: 45px;
+        height: 45px;
+        background-size: 100%;
+    }
+
+    #s08 .form {
+        width: 83%;
+    }
+
+    #s08 .form p.title {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    #s08 form input {
+        height: 37px;
+        border-radius: 0px;
+    }
+
+    #s08 form input::placeholder {
+        font-size: 15px;
+    }
+
+    #s08 .form p.prompt {
+        font-size: 11px;
+        margin-top: 10px;
+        padding-left: 0px;
+    }
+
+    #s08 form div.button {
+        padding-left: 25px;
+    }
+
+    #s08 form button {
+        font-size: 11px;
+        border-radius: 0px;
+        height: 37px;
+    }
 }
 
 @media(max-width: 800px) {
@@ -532,6 +654,27 @@
     #s04 .certificates .certs {
         padding: 62px 10px 0;
     }
+
+    #s06 .container-fluid .background-blue {
+        width: 70%;
+    }
+
+    #s06 .wrapper {
+        margin-left: -25px;
+    }
+
+    #s06 .form {
+        padding: 24px 15px;
+    }
+
+    #s07 .clients .client-list img {
+        height: 80px;
+    }
+
+    #s08 .form {
+        width: 80%;
+    }
+
 
     footer .footer {
         min-height: 300px;
@@ -895,13 +1038,133 @@
         grid-gap: 10px;
     }
 
+    #s06 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #s06 .container-fluid {
+        height: auto;
+    }
+
+    #s06 .container-fluid .background-blue {
+        width: 100%;
+    }
+
+    #s06 .container-fluid .container {
+        width: 80%;
+    }
+
+    #s06 .wrapper {
+        margin-left: 0;
+        padding: 0;
+    }
+
+
+    #s07 .container {
+        width: 80%;
+    }
+
+    #s07 .reviews {
+        height: 385px;
+        margin-bottom: 30px;
+    }
+
+    #s07 .reviews .card {
+        padding: 12px;
+    }
+
+    #s07 .reviews .cards .card > div {
+        flex-direction: column;
+    }
+
+    #s07 .reviews .cards .card > div > div:first-child {
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    #s07 .reviews .card img {
+        width: 75px;
+        height: 50px;
+        margin-right: 15px;
+    }
+
+    #s07 .reviews .card-title {
+        margin-bottom: 0px;
+    }
+
+    #s07 .reviews .card-title p {
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 150%;
+        color: #333333;
+        margin-bottom: 0;
+    }
+
+    #s07 .reviews .card-body {
+        padding: 0;
+    }
+
+    #s08 {
+        margin-top: 30px;
+    }
+
+    #s08 .container {
+        width: 80%;
+    }
+
+    #s08 .d-flex {
+        flex-direction: column;
+    }
+
+    #s08 .image {
+        width: 225px;
+        height: 225px;
+    }
+
+    #s08 .image:before {
+        width: 70px;
+        height: 70px;
+    }
+
+    #s08 .form p.title {
+        font-size: 24px;
+        margin: 20px 0px;
+        text-align: center;
+    }
+
+    #s08 form input {
+        width: 100%;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+
+    #s08 form input::placeholder {
+        font-size: 24px;
+    }
+
     #s08 .form {
         width: 100%;
     }
 
-    #s08 .form input {
-        width: 100%;
+    #s08 .form p.prompt {
+        font-size: 18px;
+        text-align: center;
+        padding: 0 20px;
+        margin-bottom: 20px;
     }
+
+    #s08 form div.button {
+        padding-left: 5px;
+        margin-bottom: 50px;
+    }
+
+    #s08 form button {
+        font-size: 16px;
+        height: 60px;
+    }
+
+
 
     footer .footer {
         display: none;
@@ -1127,7 +1390,70 @@
         width: 100%;
     }
 
-    #s08 .form p.title {
+    #s06 .container-fluid .container {
+        width: 100%;
+    }
+
+    #s06 h2 {
+        padding-top: 30px;
+    }
+
+    #s06 .schema {
+        grid-gap: 12px;
+    }
+
+    #s06 .schema .step {
+        padding-right: 0px;
+    }
+
+    #s07 .container {
+        width: 100%;
+    }
+
+    #s07 .reviews {
+        height: 365px;
+    }
+
+    #s07 .reviews .card {
+        padding: 12px;
+    }
+
+    #s07 .reviews .cards .card > div {
+        flex-direction: column;
+    }
+
+    #s07 .reviews .cards .card > div > div:first-child {
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    #s07 .reviews .card img {
+        width: 75px;
+        height: 50px;
+        margin-right: 15px;
+    }
+
+    #s07 .reviews .card-title {
+        margin-bottom: 0px;
+    }
+
+    #s07 .reviews .card-title p {
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 150%;
+        color: #333333;
+        margin-bottom: 0;
+    }
+
+    #s07 .reviews .card-body {
+        padding: 0;
+    }
+
+    #s08 .container {
+        width: 95%;
+    }
+
+    /* #s08 .form p.title {
         font-size: 18px;
         text-align: center;
     }
@@ -1149,7 +1475,9 @@
         width: 100%;
         height: 55px;
         font-size: 16px;
-    }
+    } */
+
+
     footer .footer.tablet .logo {
         display: flex;
         align-items: center;
@@ -1259,6 +1587,10 @@
         padding: 5px 10px;
     }
 
+    #s07 .reviews {
+        height: 390px;
+    }
+
     #s08 .form p.title {
         font-size: 22px;
     }
@@ -1331,8 +1663,12 @@
         padding: 5px;
     }
 
-    #s08 .form p.title {
-        font-size: 20px;
+    #s07 .reviews {
+        height: 460px;
+    }
+
+    #s08 .container {
+        width: 100%;
     }
 
     footer .footer.tablet:before {

@@ -1213,9 +1213,9 @@ header .header .container .wrapper form input::placeholder {
 
 
 #s08 {
-    /* background-color: #023076; */
-    background-color: #134899;
-    margin: 145px 0px 0px;
+    background-color: #023076;
+    /* background-color: #134899; */
+    margin: 80px 0px 75px;
 }
 
 #s08 .d-flex {
@@ -1223,6 +1223,33 @@ header .header .container .wrapper form input::placeholder {
     justify-content: space-between;
 }
 
+#s08 .image {
+    display: block;
+    width: 223px;
+    height: 223px;
+    border: solid 2px #fff;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 12px 0px;
+    position: relative;
+}
+
+#s08 .image:before {
+    content: '';
+    width: 70px;
+    height: 70px;
+    display: block;
+    background-image: url('../images/s08-phone-icon.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    top: 10%;
+    left: -10%;
+    position: absolute;
+}
+
+/*
 #s08 .image {
     display: block;
     min-width: 230px;
@@ -1246,10 +1273,10 @@ header .header .container .wrapper form input::placeholder {
     top: 10%;
     left: -10%;
     position: absolute;
-}
+} */
 
 #s08 .form {
-    width: 100%;
+    width: 75%;
 }
 
 #s08 .form p.title {
@@ -1277,7 +1304,6 @@ header .header .container .wrapper form input::placeholder {
 }
 
 #s08 form button {
-    background: #399400;
     width: 100%;
     height: 60px;
     font-family: 'HelveticaNeueCyr';
