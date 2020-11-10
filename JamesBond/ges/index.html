@@ -960,7 +960,7 @@
                                                 <td>
                                                     1-комнатная квартира
                                                 </td>
-                                                <td>
+                                                <td class="price">
                                                     от 2990
                                                 </td>
                                                 <td>
@@ -971,7 +971,7 @@
                                                 <td>
                                                     1-комнатная квартира
                                                 </td>
-                                                <td>
+                                                <td class="price">
                                                     от 2990
                                                 </td>
                                                 <td>
@@ -982,7 +982,7 @@
                                                 <td>
                                                     1-комнатная квартира
                                                 </td>
-                                                <td>
+                                                <td class="price">
                                                     от 2990
                                                 </td>
                                                 <td>
@@ -993,7 +993,40 @@
                                                 <td>
                                                     1-комнатная квартира
                                                 </td>
+                                                <td class="price">
+                                                    от 2990
+                                                </td>
                                                 <td>
+                                                    <button class="btn btn-blue">оставить заявку</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    2-комнатная квартира
+                                                </td>
+                                                <td class="price">
+                                                    от 2990
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-blue">оставить заявку</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    3-комнатная квартира
+                                                </td>
+                                                <td class="price">
+                                                    от 2990
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-blue">оставить заявку</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    4-комнатная квартира
+                                                </td>
+                                                <td class="price">
                                                     от 2990
                                                 </td>
                                                 <td>
@@ -1003,9 +1036,7 @@
                                         </tbody>
                                     </table>
                                     <div class="">
-                                        <button class="show-more">Развернуть прайс
-
-                                        </button>
+                                        <button class="show-more">Развернуть прайс</button>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="pest-2-price" role="tabpanel" aria-labelledby="pest-2-tab">price 2</div>
@@ -1494,6 +1525,16 @@
 
         $('#s04 .cards .card').on('mouseout', function() {
             $(this).children('.overlay-text').hide();
+        });
+
+        $('#s05 button.show-more').on('click', function() {
+            $.fn.extend({
+                toggleText: function(a, b){
+                    return this.text(this.text() == b ? a : b);
+                }
+            });
+            $('#s05 .tab-content .table-price tbody tr').toggleClass('open');
+            $(this).toggleText('Развернуть прайс', 'Свернуть прайс');
         });
     </script>
 </body>

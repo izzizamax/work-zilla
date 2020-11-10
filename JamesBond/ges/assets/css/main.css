@@ -836,10 +836,10 @@ header .header .container .wrapper form input::placeholder {
 }
 
 #s05 h2 {
-    font-style: normal;
+    /* font-style: normal;
     font-weight: 900;
     font-size: 30px;
-    line-height: 120%;
+    line-height: 120%; */
     text-align: center;
     color: #FFFFFF;
     padding: 15px 0px;
@@ -890,7 +890,7 @@ header .header .container .wrapper form input::placeholder {
 
 #s05 ul.list-pests {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
     grid-gap: 10px;
 }
 
