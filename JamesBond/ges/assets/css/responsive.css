@@ -10,7 +10,9 @@
 }
 
 @media(max-width: 1440px) {
-
+    header .header.contacts .container .wrapper {
+        width: 615px;
+    }
 }
 
 @media(max-width: 1366px) {
@@ -114,6 +116,46 @@
 
     header .header-bottom .advantages > div p {
         font-size: 11px;
+    }
+
+    header .header.contacts .background-blue {
+        height: 90%;
+        top: 5%;
+    }
+
+    header .header.contacts .container .wrapper p,
+    header .header.contacts .container .wrapper span {
+        font-size: 20px;
+    }
+
+    header .header.contacts .container .wrapper {
+        width: 50%;
+        border: solid 9px #fff;
+        padding: 15px 10px 15px 30px;
+        top: 14%;
+    }
+
+    header .header.contacts .container .wrapper p {
+        margin-bottom: 10px;
+    }
+
+    header .header.contacts .container .wrapper form input {
+        width: 200px;
+        height: 22px;
+        border-radius: 0px;
+    }
+
+    header .header.contacts .container .wrapper form input::placeholder {
+        font-size: 8px;
+    }
+
+    header .header.contacts .photo {
+        width: 60%;
+    }
+
+    button.orange {
+        font-size: 11px;
+        padding: 7px 20px;
     }
 
     #s01 .container {
@@ -487,6 +529,77 @@
     #news .list-news .last-news a.news-card {
         margin-bottom: 0px;
     }
+
+    #news .list-news {
+        background: #FAFAFA;
+        border: 1px solid #023076;
+    }
+
+    #news .content {
+        padding-left: 0px;
+    }
+
+    #address .container {
+        padding-left: 15px;
+    }
+
+    #address .container address > div {
+        margin-bottom: 15px;
+    }
+
+    #address .container address > div img {
+        width: 25px;
+        height: 25px;
+    }
+
+    #address .container address > div p {
+        font-size: 15px;
+    }
+
+    #map {
+        margin: 40px 0px;
+    }
+
+    #map h3 {
+        font-size: 15px;
+    }
+
+    #map .container, .container-lg, .container-md, .container-sm {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    #map .ymap-container {
+        margin-top: 20px;
+    }
+
+    #requisites h3 {
+        font-size: 16px;
+    }
+
+    #requisites .container div p {
+        font-size: 16px;
+        line-height: 10px;
+    }
+
+    #feedback form button {
+        font-size: 16px;
+    }
+
+    #sales .sales {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #sales .sales .card-body .price p {
+        font-size: 26px;
+    }
+
+    #sales .sales .card-footer button {
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+
 }
 
 @media(max-width: 800px) {
@@ -698,6 +811,18 @@
         font-size: 12px;
     }
 
+    #map h3 {
+        margin-left: 75px;
+    }
+
+    #feedback h3 {
+        font-size: 26px;
+    }
+
+    #feedback .form {
+        width: 100%;
+    }
+
     footer .footer {
         min-height: 300px;
     }
@@ -845,6 +970,10 @@
         padding-right: 5px;
     }
 
+    header .header .search-form {
+        display: block;
+    }
+
     header .header.container-fluid > div.blue-background {
         width: 58%;
         height: 80%;
@@ -892,6 +1021,35 @@
 
     header .header-bottom .advantages > div:nth-child(2n):after {
         display: none;
+    }
+
+    header .header.contacts .background-blue {
+        width: 50%;
+        height: 80%;
+        top: 15%;
+    }
+
+    header .header.contacts .container .wrapper {
+        top: 25%;
+    }
+
+    header .header.contacts .container .wrapper p,
+    header .header.contacts .container .wrapper span {
+        font-size: 11px;
+    }
+
+    header .header.contacts .search-form {
+        left: 15px;
+        right: auto;
+        width: 47%;
+    }
+
+    header .header.contacts .search-form span.input-group-text {
+        background-color: #fff;
+    }
+
+    header .header.contacts .photo {
+        width: 100%;
     }
 
     #s01 .container .row > div {
@@ -1186,7 +1344,58 @@
         height: 60px;
     }
 
+    #news .list-news .title h3 {
+        font-size: 20px;
+        text-align: center;
+    }
 
+    #news .list-news .last-news {
+        padding: 25px 10px 0px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #news .list-news .last-news .news-card:nth-of-type(n+4) {
+        display: none;
+    }
+
+    #news .list-news .last-news .news-card.open {
+        display: block;
+    }
+
+    #news .list-news span.show-more {
+        color: #C4C4C4;
+        font-size: 24px;
+        display: block;
+        text-align: center;
+    }
+
+    #news h1 {
+        font-size: 18px;
+    }
+
+    #news .content {
+        font-size: 14px;
+    }
+
+    #news .content img {
+        width: 100%;
+    }
+
+    #news .content h3 {
+        font-size: 16px;
+    }
+
+    #requisites .container {
+        padding-left: 15px;
+    }
+
+    #sales .container, .container-sm {
+        width: 70%;
+    }
+
+    #sales .sales {
+        grid-template-columns: 1fr;
+    }
 
     footer .footer {
         display: none;
@@ -1261,6 +1470,11 @@
 }
 
 @media(max-width: 425px) {
+    button.orange {
+        font-size: 10px;
+        padding: 5px 20px;
+    }
+
     header #mobile-navigation nav {
         background: #023076;
         padding-top: 0;
@@ -1342,6 +1556,36 @@
 
     header .header-bottom .advantages > div:nth-child(2n+1) {
         padding-left: 0px;
+    }
+
+    header .header.contacts .search-form {
+        width: 59%;
+    }
+
+    header .header.contacts .search-form input::placeholder {
+        font-size: 11px;
+    }
+
+    header .header.contacts .background-blue {
+        width: 63%;
+    }
+
+    header .header.contacts .container .wrapper {
+        top: 28%;
+    }
+
+    header .header.contacts .container .wrapper {
+        width: 53%;
+        border: solid 7px #fff;
+        padding: 15px 10px 15px 15px;
+    }
+
+    header .header.contacts .container .wrapper form input {
+        width: 175px;
+    }
+
+    header .header.contacts .form-group {
+        margin-bottom: 10px;
     }
 
     #s01 .about-company,
@@ -1499,6 +1743,30 @@
         font-size: 16px;
     } */
 
+    #address .container address > div p {
+        font-size: 13px;
+    }
+
+    #feedback .feedback {
+        padding: 25px 15px;
+        border-radius: 0px;
+    }
+
+    #feedback h3 {
+        margin-bottom: 15px;
+    }
+
+    #feedback form button {
+        font-size: 14px;
+        display: block;
+        width: 170px;
+        height: 44px;
+        margin: 5px auto 0;
+    }
+
+    #sales .container, .container-sm {
+        width: 90%;
+    }
 
     footer .footer.tablet .logo {
         display: flex;
@@ -1576,6 +1844,10 @@
         padding-right: 0px
     }
 
+    header .header.contacts .container .wrapper form input {
+        width: 155px;
+    }
+
     #s01 .about-company p,
     #s01 .calc p {
         font-size: 9px;
@@ -1621,9 +1893,14 @@
         font-size: 16px;
     }
 
+    #sales .container, .container-sm {
+        width: 100%;
+    }
+    
     footer .footer.tablet:before {
         top: -135px;
     }
+
 }
 
 @media(max-width: 320px) {
@@ -1650,6 +1927,10 @@
 
     header .header.container-fluid > div.blue-background {
         width: 77%;
+    }
+
+    header .header.contacts .container .wrapper form input {
+        width: 130px;
     }
 
     #s02 .cards {
