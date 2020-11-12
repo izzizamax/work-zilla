@@ -1,0 +1,371 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #333;
+}
+
+h2.title {
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+}
+h2.title span {
+  font-weight: 700;
+  background: linear-gradient(90deg, #88898f 0%, #5f5e64 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-grey {
+  font-family: "Exo 2", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 0;
+  background: linear-gradient(50deg, #85878d 0%, #969798 50%, #5f5e64 100%);
+  text-shadow: 2px 2px 2px #5b5b5b;
+}
+.btn-grey:hover {
+  color: #fff;
+}
+
+.container-fluid {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+header nav.navbar {
+  padding: 0.5rem 0 1.5rem;
+}
+header nav.navbar .navbar-brand {
+  padding-left: 50px;
+}
+header nav.navbar .container-fluid {
+  padding-left: 20px;
+  padding-right: 0px;
+}
+header nav.navbar .container-fluid > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+header nav.navbar .container-fluid .top-line {
+  display: flex;
+  width: 95%;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 50px;
+  border-bottom: solid 5px #C4C4C4;
+}
+header nav.navbar .container-fluid .top-line p {
+  font-family: "Exo 2", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  color: #000;
+  text-transform: uppercase;
+  padding-right: 50px;
+  margin-bottom: 0;
+}
+header nav.navbar .container-fluid .top-line div.phone {
+  width: 365px;
+}
+header nav.navbar .container-fluid .top-line div.phone > a {
+  font-family: "Exo 2", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+}
+header nav.navbar .container-fluid .top-line div.phone > a:link, header nav.navbar .container-fluid .top-line div.phone > a:visited {
+  color: #333;
+}
+header nav.navbar .container-fluid .top-line div.phone > a:active, header nav.navbar .container-fluid .top-line div.phone > a:hover {
+  text-decoration: none;
+  color: #3b5998;
+}
+header nav.navbar .container-fluid .bottom-line {
+  width: 95%;
+  display: flex;
+  padding: 0 50px;
+}
+header nav.navbar .container-fluid .bottom-line ul.navbar-nav {
+  width: 100%;
+  margin-left: auto;
+  padding-right: 20px;
+}
+header nav.navbar .container-fluid .bottom-line ul.navbar-nav li.nav-item a.nav-link {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+header nav.navbar .container-fluid .bottom-line .callback {
+  width: 365px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3px 0 5px;
+  background: #858585;
+  text-align: center;
+  border-radius: 50% 50% 0 0/100% 100% 0 0;
+}
+header nav.navbar .container-fluid .bottom-line .callback a {
+  font-family: "Exo 2", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: underline;
+}
+header #headerCarousel {
+  position: relative;
+  height: calc(100vh - 150px);
+  overflow: hidden;
+}
+header #headerCarousel .carousel-inner {
+  height: 100%;
+}
+header #headerCarousel .carousel-inner .carousel-item {
+  height: 100%;
+}
+header #headerCarousel .carousel-inner .carousel-item div.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+header #headerCarousel .carousel-inner .carousel-item .slide-text {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  padding: 75px 100px 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 25;
+}
+header #headerCarousel .carousel-inner .carousel-item .slide-text p.title {
+  font-family: "Exo 2", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+header #headerCarousel .carousel-inner .carousel-item .slide-text p.subtitle {
+  width: 80%;
+  font-family: "Exo 2", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 110%;
+  margin-bottom: 40px;
+}
+header #headerCarousel .carousel-inner .carousel-item .slide-text button {
+  height: 75px;
+  line-height: 100%;
+  padding-bottom: 12px;
+}
+header #headerCarousel .carousel-banners {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: absolute;
+  height: 120px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+}
+header #headerCarousel .carousel-banners div.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 100%);
+}
+header #headerCarousel .carousel-banners div.banner p {
+  font-size: 14px;
+  color: #fff;
+  margin: 10px 0 0;
+}
+
+#s01 {
+  margin: 75px 0;
+}
+#s01 .container-fluid {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#s01 div.categories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2px;
+}
+#s01 div.categories div.block div.block-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  background: linear-gradient(90deg, #88898f 0%, #5f5e64 100%);
+}
+#s01 div.categories div.block div.block-title h3 {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0;
+}
+#s01 div.categories div.block div.block-title:before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: #fff;
+}
+#s01 div.categories div.block div.block-title:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: #fff;
+}
+#s01 div.categories div.block div.block-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 25px;
+  height: 100%;
+}
+#s01 div.categories div.block div.block-content div {
+  margin: 25px 0;
+}
+#s01 div.categories div.block div.block-content div img {
+  display: block;
+  margin: auto;
+}
+#s01 div.categories div.block div.block-content div p {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+#s02 {
+  margin: 0 0 50px;
+}
+#s02 .cars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+#s02 .cars .car-card {
+  padding: 30px 15px 50px;
+  box-shadow: 0px 5px 15px rgba(215, 215, 215, 0.35);
+}
+#s02 .cars .car-card h3 {
+  text-align: center;
+}
+#s02 .cars .car-card .content {
+  padding: 0 25px;
+}
+#s02 .cars .car-card .content > img {
+  display: block;
+  margin: 15px auto;
+}
+#s02 .cars .car-card .content .params > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 0;
+}
+#s02 .cars .car-card .content .params > div img {
+  min-width: 40px;
+  min-height: 40px;
+  margin-right: 15px;
+}
+#s02 .cars .car-card .content .params > div p {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+#s02 .cars .car-card .footer {
+  padding-top: 25px;
+}
+#s02 .cars .car-card .footer .border-wrap {
+  position: relative;
+  max-width: 50%;
+  background: linear-gradient(90deg, #88898f 0%, #5f5e64 100%);
+  padding: 3px;
+  margin: auto;
+}
+#s02 .cars .car-card .footer .link {
+  background: #fff;
+  color: white;
+}
+#s02 .cars .car-card .footer .link a.btn {
+  font-family: "Exo 2", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  display: block;
+  margin: auto;
+  background: linear-gradient(90deg, #88898f 0%, #5f5e64 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#s02 .btn-catalog {
+  margin-top: 50px;
+}
+#s02 .btn-catalog a.btn-go-catalog.btn-grey {
+  width: 25%;
+  height: 85px;
+  display: block;
+  margin: auto;
+  line-height: 65px;
+}
+
+#s03 {
+  margin-top: 50px;
+  margin-bottom: 75px;
+}
+#s03 .last-news {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+#s03 .last-news .news-card p.published {
+  font-family: "Exo 2", sans-serif;
+  font-size: 17px;
+}
+#s03 .last-news .news-card > div {
+  display: flex;
+}
+#s03 .last-news .news-card > div img {
+  min-width: 135px;
+  min-height: 135px;
+  width: 135px;
+  height: 135px;
+  margin-right: 30px;
+}
+#s03 .last-news .news-card > div > div p {
+  font-family: "Exo 2", sans-serif;
+  font-size: 20px;
+  line-height: 110%;
+}
+#s03 .last-news .news-card > div > div a {
+  font-family: "Exo 2", sans-serif;
+  font-size: 20px;
+  background: linear-gradient(90deg, #88898f 0%, #5f5e64 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#s03 .last-news .news-card > div > div a:after {
+  font-family: "Font Awesome 5 Free";
+  font-size: 20px;
+  font-weight: 700;
+  content: "";
+  margin-left: 10px;
+  background: orange;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#s03 .last-news .news-card > div > div a:hover {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main.css.map */
