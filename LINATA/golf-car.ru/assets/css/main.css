@@ -326,7 +326,7 @@ header #headerCarousel .carousel-banners div.banner p {
 #s03 .last-news {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
+  grid-gap: 25px;
 }
 #s03 .last-news .news-card p.published {
   font-family: "Exo 2", sans-serif;
@@ -340,7 +340,7 @@ header #headerCarousel .carousel-banners div.banner p {
   min-height: 135px;
   width: 135px;
   height: 135px;
-  margin-right: 30px;
+  margin-right: 25px;
 }
 #s03 .last-news .news-card > div > div p {
   font-family: "Exo 2", sans-serif;
@@ -366,6 +366,32 @@ header #headerCarousel .carousel-banners div.banner p {
 }
 #s03 .last-news .news-card > div > div a:hover {
   text-decoration: none;
+}
+
+#s05 {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+#s05 h2.title {
+  text-align: left;
+}
+#s05 p {
+  font-family: "Exo 2", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+#s05 form input {
+  font-size: 20px;
+  height: 60px;
+  border: none;
+  border-radius: 0px;
+  box-shadow: 0px 5px 15px rgba(215, 215, 215, 0.35);
+}
+#s05 form input::placeholder {
+  font-size: 20px;
+}
+#s05 form button {
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=main.css.map */
