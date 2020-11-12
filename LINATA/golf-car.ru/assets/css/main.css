@@ -374,11 +374,15 @@ header #headerCarousel .carousel-banners div.banner p {
 }
 #s05 h2.title {
   text-align: left;
+  margin-bottom: 25px;
 }
 #s05 p {
   font-family: "Exo 2", sans-serif;
   font-size: 32px;
   font-weight: 400;
+}
+#s05 p:first-child {
+  margin-bottom: 30px;
 }
 #s05 form input {
   font-size: 20px;
@@ -392,6 +396,7 @@ header #headerCarousel .carousel-banners div.banner p {
 }
 #s05 form button {
   margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */
