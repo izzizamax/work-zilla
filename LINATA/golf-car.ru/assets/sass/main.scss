@@ -534,20 +534,21 @@ header {
             color: #fff;
         }
 
-        img {
+        & > img {
             display: block;
             margin: auto;
         }
 
-        p.subtitle {
+        & > p.subtitle {
             padding-top: 10px;
             font-family: 'Exo 2', sans-serif;
             font-size: 24px;
+            font-weight: 600;
             color: #fff;
             text-align: center;
         }
 
-        a {
+        & > a {
             margin: 40px auto;
             display: block;
             width: 365px;
@@ -557,10 +558,152 @@ header {
     div.trio {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 30px;
+        grid-gap: 25px;
 
         a {
+            padding: 45px 45px 30px;
+            text-align: left;
+            background: linear-gradient(50deg, rgba(87,88,91,1) 0%, rgba(95,96,96,1) 50%, rgba(67,67,70,1) 100%);
 
+            img {
+                display: block;
+                width: 75px;
+                height: 75px;
+                margin-right: auto;
+                margin-bottom: 30px;
+            }
+
+            span {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-family: 'Exo 2', sans-serif;
+                font-size: 40px;
+                color: #fff;
+                text-transform: uppercase;
+
+                &:after {
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 700;
+                    font-size: 35px;
+                    content: '\f054';
+                }
+            }
+        }
+    }
+}
+
+footer {
+    border-top: solid 2px #fff;
+    background: linear-gradient(50deg, rgba(133,135,141,1) 0%, rgba(150,151,152,1) 50%, rgba(94,93,99,1) 100%);
+
+    .ss {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-top: 30px;
+
+        .subscribe {
+            p {
+                font-family: 'Exo 2', sans-serif;
+                font-size: 20px;
+                color: #fff;
+            }
+
+            form {
+                input {
+                    width: 795px;
+                    height: 60px;
+                    font-size: 20px;
+                    color: #000;
+
+                    &::placeholder {
+                        font-size: 20px;
+                        color: #000;
+                        text-shadow: 2px 3px 15px #000;
+                    }
+                }
+
+                button {
+                    width: 210px;
+                    height: 60px;
+                    font-size: 20px;
+                    background: linear-gradient(50deg, rgba(106,108,113,1) 0%, rgba(119,120,121,1) 50%, rgba(76,76,78,1) 100%);
+                }
+            }
+        }
+
+        .soc-icons {
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                width: 60px;
+                height: 60px;
+                margin-left: 80px;
+            }
+        }
+    }
+
+    .navigation {
+        display: flex;
+        margin-top: 40px;
+        padding: 30px;
+        border-top: solid 2px #fff;
+
+        .menu {
+            padding-right: 150px;
+
+            ul {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    text-transform: uppercase;
+                    padding: 5px 0;
+
+                    a {
+                        &:link, &:visited {
+                            font-size: 20px;
+                            font-weight: bold;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .services {
+            h3 {
+                font-size: 20px;
+                font-weight: bold;
+                color: #fff;
+                padding: 0;
+                margin: 0 0 20px 0;
+                text-transform: uppercase;
+            }
+
+            div {
+                display: flex;
+
+                ul {
+                    list-style: none;
+
+                    &:first-child {
+                        padding: 0 20px 0 0;
+                    }
+
+                    li {
+                        text-transform: uppercase;
+
+                        a {
+                            font-size: 20px;
+                            font-weight: normal;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
         }
     }
 }
