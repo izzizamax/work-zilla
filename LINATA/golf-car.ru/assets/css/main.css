@@ -28,15 +28,17 @@ h2.title span {
   background: linear-gradient(50deg, #85878d 0%, #969798 50%, #5f5e64 100%);
   text-shadow: 2px 2px 2px #5b5b5b;
 }
-.btn-grey:hover {
-  color: #fff;
-}
-
-.btn-grey {
+.btn-grey.animate {
   position: relative;
   overflow: hidden;
   -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
+}
+.btn-grey:hover {
+  color: #fff;
+}
+.btn-grey:hover:after {
+  color: #fff;
 }
 
 .btn-grey:hover:after {
@@ -98,33 +100,28 @@ h2.title span {
   margin-bottom: 100px;
 }
 
-header nav.navbar {
+header .container nav.navbar {
   padding: 0.5rem 0 1.5rem;
 }
-header nav.navbar .navbar-brand {
+header .container nav.navbar .navbar-brand {
   padding-left: 50px;
 }
-header nav.navbar .container-fluid {
-  padding-left: 20px;
-  padding-right: 0px;
-}
-header nav.navbar .container-fluid > div {
+header .container nav.navbar > div {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-header nav.navbar .container-fluid .top-line {
+header .container nav.navbar .top-line {
   display: flex;
   width: 95%;
   justify-content: flex-end;
   align-items: center;
-  padding: 0 50px;
   border-bottom: solid 5px #C4C4C4;
 }
-header nav.navbar .container-fluid .top-line p {
+header .container nav.navbar .top-line p {
   font-family: "Exo 2", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   color: #000;
   text-align: center;
@@ -133,50 +130,46 @@ header nav.navbar .container-fluid .top-line p {
   margin-bottom: 0;
   flex-grow: 1;
 }
-header nav.navbar .container-fluid .top-line div.phone {
-  width: 280px;
+header .container nav.navbar .top-line div.phone {
+  width: 205px;
 }
-header nav.navbar .container-fluid .top-line div.phone > a {
+header .container nav.navbar .top-line div.phone > a {
   font-family: "Exo 2", sans-serif;
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 800;
 }
-header nav.navbar .container-fluid .top-line div.phone > a:link, header nav.navbar .container-fluid .top-line div.phone > a:visited {
+header .container nav.navbar .top-line div.phone > a:link, header .container nav.navbar .top-line div.phone > a:visited {
   color: #333;
 }
-header nav.navbar .container-fluid .top-line div.phone > a:active, header nav.navbar .container-fluid .top-line div.phone > a:hover {
+header .container nav.navbar .top-line div.phone > a:active, header .container nav.navbar .top-line div.phone > a:hover {
   text-decoration: none;
   color: #3b5998;
 }
 @media (max-width: 1366px) {
-  header nav.navbar .container-fluid .top-line p {
-    font-size: 20px;
-  }
-  header nav.navbar .container-fluid .top-line div.phone {
+  header .container nav.navbar .top-line div.phone {
     width: 210px;
   }
-  header nav.navbar .container-fluid .top-line div.phone > a {
+  header .container nav.navbar .top-line div.phone > a {
     font-size: 22px;
   }
 }
-header nav.navbar .container-fluid .bottom-line {
+header .container nav.navbar .bottom-line {
   width: 95%;
   display: flex;
-  padding: 0 50px;
 }
-header nav.navbar .container-fluid .bottom-line ul.navbar-nav {
+header .container nav.navbar .bottom-line ul.navbar-nav {
   width: 100%;
   margin-left: auto;
   padding-right: 20px;
 }
-header nav.navbar .container-fluid .bottom-line ul.navbar-nav li.nav-item a.nav-link {
+header .container nav.navbar .bottom-line ul.navbar-nav li.nav-item a.nav-link {
   font-family: "Exo 2", sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   text-transform: uppercase;
 }
-header nav.navbar .container-fluid .bottom-line .callback {
-  width: 280px;
+header .container nav.navbar .bottom-line .callback {
+  width: 205px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -185,41 +178,30 @@ header nav.navbar .container-fluid .bottom-line .callback {
   text-align: center;
   border-radius: 50% 50% 0 0/100% 100% 0 0;
 }
-header nav.navbar .container-fluid .bottom-line .callback a {
+header .container nav.navbar .bottom-line .callback a {
   font-family: "Exo 2", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   color: #fff;
   text-decoration: underline;
 }
-@media (max-width: 1366px) {
-  header nav.navbar .container-fluid .bottom-line ul.navbar-nav li.nav-item a.nav-link {
-    font-size: 16px;
-  }
-  header nav.navbar .container-fluid .bottom-line .callback {
-    width: 210px;
-  }
-  header nav.navbar .container-fluid .bottom-line .callback a {
-    font-size: 16px;
-  }
-}
-header #headerCarousel {
+header .container #headerCarousel {
   position: relative;
-  height: calc(100vh - 150px);
+  height: 450px;
   overflow: hidden;
 }
-header #headerCarousel .carousel-inner {
+header .container #headerCarousel .carousel-inner {
   height: 100%;
 }
-header #headerCarousel .carousel-inner .carousel-item {
+header .container #headerCarousel .carousel-inner .carousel-item {
   height: 100%;
 }
-header #headerCarousel .carousel-inner .carousel-item div.image {
+header .container #headerCarousel .carousel-inner .carousel-item div.image {
   display: block;
   width: 100%;
   height: 100%;
   background-size: cover;
 }
-header #headerCarousel .carousel-inner .carousel-item .slide-text {
+header .container #headerCarousel .carousel-inner .carousel-item .slide-text {
   width: 50%;
   height: 100%;
   position: absolute;
@@ -228,61 +210,65 @@ header #headerCarousel .carousel-inner .carousel-item .slide-text {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 25;
 }
-header #headerCarousel .carousel-inner .carousel-item .slide-text p.title {
+header .container #headerCarousel .carousel-inner .carousel-item .slide-text p.title {
   font-family: "Exo 2", sans-serif;
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 700;
   color: #fff;
   line-height: 120%;
   margin-bottom: 30px;
 }
-header #headerCarousel .carousel-inner .carousel-item .slide-text p.subtitle {
+@media (max-width: 1440px) {
+  header .container #headerCarousel .carousel-inner .carousel-item .slide-text p.title {
+    font-size: 35px;
+  }
+}
+header .container #headerCarousel .carousel-inner .carousel-item .slide-text p.subtitle {
   width: 80%;
   font-family: "Exo 2", sans-serif;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 400;
   color: #fff;
   line-height: 110%;
   margin-bottom: 40px;
 }
-header #headerCarousel .carousel-inner .carousel-item .slide-text button {
-  height: 75px;
+@media (max-width: 1440px) {
+  header .container #headerCarousel .carousel-inner .carousel-item .slide-text p.subtitle {
+    width: 95%;
+    font-size: 25px;
+  }
+}
+header .container #headerCarousel .carousel-inner .carousel-item .slide-text button {
+  height: 65px;
   line-height: 100%;
-  padding-bottom: 12px;
+  padding: 0 30px 8px 30px;
 }
 @media (max-width: 1440px) {
-  header #headerCarousel .carousel-inner .carousel-item .slide-text p.title {
-    font-size: 35px;
-  }
-  header #headerCarousel .carousel-inner .carousel-item .slide-text p.subtitle {
-    width: 95%;
-    font-size: 28px;
-  }
-  header #headerCarousel .carousel-inner .carousel-item .slide-text button {
+  header .container #headerCarousel .carousel-inner .carousel-item .slide-text button {
     height: 65px;
     font-size: 22px;
     padding-left: 30px;
     padding-right: 30px;
   }
 }
-header #headerCarousel .carousel-banners {
+header .container #headerCarousel .carousel-banners {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   position: absolute;
-  height: 120px;
+  height: 100px;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 50;
 }
-header #headerCarousel .carousel-banners div.banner {
+header .container #headerCarousel .carousel-banners div.banner {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 100%);
 }
-header #headerCarousel .carousel-banners div.banner p {
+header .container #headerCarousel .carousel-banners div.banner p {
   font-size: 14px;
   color: #fff;
   margin: 10px 0 0;
@@ -569,7 +555,7 @@ header #headerCarousel .carousel-banners div.banner p {
   background-color: #6d6d72;
 }
 #s06 .about-us p {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 150%;
 }
 
