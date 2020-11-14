@@ -21,7 +21,7 @@ h2.title span {
 
 .btn-grey {
   font-family: "Exo 2", sans-serif;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 600;
   color: #fff;
   border-radius: 0;
@@ -101,12 +101,12 @@ h2.title span {
 header nav.navbar {
   padding: 0.5rem 0 1.5rem;
 }
-header nav.navbar .navbar-brand {
-  padding-left: 50px;
-}
 header nav.navbar .container-fluid {
   padding-left: 20px;
   padding-right: 0px;
+}
+header nav.navbar .container-fluid .navbar-brand {
+  padding-left: 50px;
 }
 header nav.navbar .container-fluid > div {
   width: 100%;
@@ -191,20 +191,9 @@ header nav.navbar .container-fluid .bottom-line .callback a {
   color: #fff;
   text-decoration: underline;
 }
-@media (max-width: 1366px) {
-  header nav.navbar .container-fluid .bottom-line ul.navbar-nav li.nav-item a.nav-link {
-    font-size: 16px;
-  }
-  header nav.navbar .container-fluid .bottom-line .callback {
-    width: 210px;
-  }
-  header nav.navbar .container-fluid .bottom-line .callback a {
-    font-size: 16px;
-  }
-}
 header #headerCarousel {
   position: relative;
-  height: calc(100vh - 150px);
+  height: calc(100vh - 128px);
   overflow: hidden;
 }
 header #headerCarousel .carousel-inner {
@@ -230,34 +219,38 @@ header #headerCarousel .carousel-inner .carousel-item .slide-text {
 }
 header #headerCarousel .carousel-inner .carousel-item .slide-text p.title {
   font-family: "Exo 2", sans-serif;
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 700;
   color: #fff;
   line-height: 120%;
   margin-bottom: 30px;
 }
+@media (max-width: 1440px) {
+  header #headerCarousel .carousel-inner .carousel-item .slide-text p.title {
+    font-size: 35px;
+  }
+}
 header #headerCarousel .carousel-inner .carousel-item .slide-text p.subtitle {
   width: 80%;
   font-family: "Exo 2", sans-serif;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 400;
   color: #fff;
   line-height: 110%;
   margin-bottom: 40px;
 }
-header #headerCarousel .carousel-inner .carousel-item .slide-text button {
-  height: 75px;
-  line-height: 100%;
-  padding-bottom: 12px;
-}
 @media (max-width: 1440px) {
-  header #headerCarousel .carousel-inner .carousel-item .slide-text p.title {
-    font-size: 35px;
-  }
   header #headerCarousel .carousel-inner .carousel-item .slide-text p.subtitle {
     width: 95%;
     font-size: 28px;
   }
+}
+header #headerCarousel .carousel-inner .carousel-item .slide-text button {
+  height: 60px;
+  line-height: 100%;
+  padding: 0 30px 8px 30px;
+}
+@media (max-width: 1440px) {
   header #headerCarousel .carousel-inner .carousel-item .slide-text button {
     height: 65px;
     font-size: 22px;
