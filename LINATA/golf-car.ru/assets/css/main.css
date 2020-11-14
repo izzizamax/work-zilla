@@ -32,6 +32,56 @@ h2.title span {
   color: #fff;
 }
 
+.btn-grey {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+
+.btn-grey:hover:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 300px;
+  margin-left: 60px;
+  background: #fff;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.17) 100%);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.17) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.17) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#b3ffffff", endColorstr="#b3ffffff",GradientType=0 );
+  position: absolute;
+  left: -40px;
+  top: -150px;
+  z-index: 1;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-animation-name: slideme;
+  animation-name: slideme;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes slideme {
+  0% {
+    left: -30px;
+    margin-left: 0px;
+  }
+  30% {
+    left: 110%;
+    margin-left: 80px;
+  }
+  100% {
+    left: 110%;
+    margin-left: 80px;
+  }
+}
 .container-fluid {
   padding-left: 10%;
   padding-right: 10%;
@@ -299,6 +349,7 @@ header #headerCarousel .carousel-banners div.banner p {
   color: white;
 }
 #s02 .cars .car-card .footer .link a.btn {
+  position: relative;
   font-family: "Exo 2", sans-serif;
   font-size: 24px;
   font-weight: 600;
@@ -307,6 +358,34 @@ header #headerCarousel .carousel-banners div.banner p {
   background: linear-gradient(90deg, #88898f 0%, #5f5e64 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+#s02 .cars .car-card .footer .link a.btn:hover:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 60px;
+  margin-left: 60px;
+  background: #fff;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.17) 100%);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.17) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.17) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#b3ffffff", endColorstr="#b3ffffff",GradientType=0 );
+  position: absolute;
+  left: -40px;
+  top: 0;
+  z-index: 1;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-animation-name: slideme;
+  animation-name: slideme;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 #s02 .btn-catalog {
   margin-top: 50px;
@@ -546,6 +625,9 @@ footer .navigation .menu ul {
 footer .navigation .menu ul li {
   text-transform: uppercase;
   padding: 5px 0;
+}
+footer .navigation .menu ul li:first-child {
+  padding-top: 0;
 }
 footer .navigation .menu ul li a:link, footer .navigation .menu ul li a:visited {
   font-size: 20px;
