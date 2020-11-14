@@ -1,3 +1,7 @@
-
+@media (max-width: 1366px) {
+  header .top-line p {
+    font-size: 22px;
+  }
+}
 
 /*# sourceMappingURL=responsive.css.map */

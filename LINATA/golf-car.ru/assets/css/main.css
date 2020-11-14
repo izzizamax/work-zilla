@@ -86,6 +86,17 @@ h2.title span {
   padding-left: 10%;
   padding-right: 10%;
 }
+@media (max-width: 1440px) {
+  .container-fluid {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+#s07, #s06, #s05, #s04, #s03, #s02, #s01 {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
 
 header nav.navbar {
   padding: 0.5rem 0 1.5rem;
@@ -116,12 +127,14 @@ header nav.navbar .container-fluid .top-line p {
   font-size: 25px;
   font-weight: 600;
   color: #000;
+  text-align: center;
   text-transform: uppercase;
-  padding-right: 50px;
+  padding: 0 20px;
   margin-bottom: 0;
+  flex-grow: 1;
 }
 header nav.navbar .container-fluid .top-line div.phone {
-  width: 365px;
+  width: 280px;
 }
 header nav.navbar .container-fluid .top-line div.phone > a {
   font-family: "Exo 2", sans-serif;
@@ -134,6 +147,17 @@ header nav.navbar .container-fluid .top-line div.phone > a:link, header nav.navb
 header nav.navbar .container-fluid .top-line div.phone > a:active, header nav.navbar .container-fluid .top-line div.phone > a:hover {
   text-decoration: none;
   color: #3b5998;
+}
+@media (max-width: 1366px) {
+  header nav.navbar .container-fluid .top-line p {
+    font-size: 20px;
+  }
+  header nav.navbar .container-fluid .top-line div.phone {
+    width: 210px;
+  }
+  header nav.navbar .container-fluid .top-line div.phone > a {
+    font-size: 22px;
+  }
 }
 header nav.navbar .container-fluid .bottom-line {
   width: 95%;
@@ -152,7 +176,7 @@ header nav.navbar .container-fluid .bottom-line ul.navbar-nav li.nav-item a.nav-
   text-transform: uppercase;
 }
 header nav.navbar .container-fluid .bottom-line .callback {
-  width: 365px;
+  width: 280px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,6 +190,17 @@ header nav.navbar .container-fluid .bottom-line .callback a {
   font-size: 20px;
   color: #fff;
   text-decoration: underline;
+}
+@media (max-width: 1366px) {
+  header nav.navbar .container-fluid .bottom-line ul.navbar-nav li.nav-item a.nav-link {
+    font-size: 16px;
+  }
+  header nav.navbar .container-fluid .bottom-line .callback {
+    width: 210px;
+  }
+  header nav.navbar .container-fluid .bottom-line .callback a {
+    font-size: 16px;
+  }
 }
 header #headerCarousel {
   position: relative;
@@ -215,6 +250,21 @@ header #headerCarousel .carousel-inner .carousel-item .slide-text button {
   line-height: 100%;
   padding-bottom: 12px;
 }
+@media (max-width: 1440px) {
+  header #headerCarousel .carousel-inner .carousel-item .slide-text p.title {
+    font-size: 35px;
+  }
+  header #headerCarousel .carousel-inner .carousel-item .slide-text p.subtitle {
+    width: 95%;
+    font-size: 28px;
+  }
+  header #headerCarousel .carousel-inner .carousel-item .slide-text button {
+    height: 65px;
+    font-size: 22px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
 header #headerCarousel .carousel-banners {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -238,13 +288,6 @@ header #headerCarousel .carousel-banners div.banner p {
   margin: 10px 0 0;
 }
 
-#s01 {
-  margin: 75px 0;
-}
-#s01 .container-fluid {
-  padding-left: 10%;
-  padding-right: 10%;
-}
 #s01 div.categories {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -262,6 +305,11 @@ header #headerCarousel .carousel-banners div.banner p {
   color: #fff;
   text-align: center;
   margin-bottom: 0;
+}
+@media (max-width: 1440px) {
+  #s01 div.categories div.block div.block-title h3 {
+    font-size: 20px;
+  }
 }
 #s01 div.categories div.block div.block-title:before {
   content: "";
@@ -297,9 +345,6 @@ header #headerCarousel .carousel-banners div.banner p {
   margin-bottom: 0;
 }
 
-#s02 {
-  margin: 0 0 50px;
-}
 #s02 .cars {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -387,8 +432,18 @@ header #headerCarousel .carousel-banners div.banner p {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
+@media (max-width: 1440px) {
+  #s02 .cars .car-card .footer .link a.btn {
+    font-size: 20px;
+  }
+}
 #s02 .btn-catalog {
   margin-top: 50px;
+}
+@media (max-width: 1440px) {
+  #s02 .btn-catalog {
+    margin-bottom: 100px;
+  }
 }
 #s02 .btn-catalog a.btn-go-catalog.btn-grey {
   width: 25%;
@@ -398,10 +453,6 @@ header #headerCarousel .carousel-banners div.banner p {
   line-height: 65px;
 }
 
-#s03 {
-  margin-top: 50px;
-  margin-bottom: 75px;
-}
 #s03 .last-news {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -426,12 +477,22 @@ header #headerCarousel .carousel-banners div.banner p {
   font-size: 20px;
   line-height: 110%;
 }
+@media (max-width: 1440px) {
+  #s03 .last-news .news-card > div > div p {
+    font-size: 17px;
+  }
+}
 #s03 .last-news .news-card > div > div a {
   font-family: "Exo 2", sans-serif;
   font-size: 20px;
   background: linear-gradient(90deg, #88898f 0%, #5f5e64 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media (max-width: 1440px) {
+  #s03 .last-news .news-card > div > div a {
+    font-size: 17px;
+  }
 }
 #s03 .last-news .news-card > div > div a:after {
   font-family: "Font Awesome 5 Free";
@@ -443,13 +504,18 @@ header #headerCarousel .carousel-banners div.banner p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media (max-width: 1440px) {
+  #s03 .last-news .news-card > div > div a:after {
+    font-size: 17px;
+  }
+}
 #s03 .last-news .news-card > div > div a:hover {
   text-decoration: none;
 }
 
 #s05 {
-  background-color: #f5f5f5;
   padding: 75px 0;
+  background-color: #f5f5f5;
 }
 #s05 h2.title {
   text-align: left;
@@ -457,7 +523,7 @@ header #headerCarousel .carousel-banners div.banner p {
 }
 #s05 p {
   font-family: "Exo 2", sans-serif;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 400;
 }
 #s05 p:first-child {
@@ -485,10 +551,6 @@ header #headerCarousel .carousel-banners div.banner p {
   margin-left: auto;
 }
 
-#s06 {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
 #s06 .about-us:before {
   content: "";
   display: block;
@@ -507,7 +569,7 @@ header #headerCarousel .carousel-banners div.banner p {
   background-color: #6d6d72;
 }
 #s06 .about-us p {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 150%;
 }
 
