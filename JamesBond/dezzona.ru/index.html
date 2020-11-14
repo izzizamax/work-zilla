@@ -46,7 +46,8 @@
     <meta property="og:image:secure_url" content="https://xn--d1acah0c.xn--p1ai/assets/images/logo.png" />
     <meta property="article:published_time" content="[[*publishedon]]" />
 
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
 
@@ -141,6 +142,7 @@
 
     <div id="s01">
         <div class="container">
+            <h2>Наши преимущества</h2>
             <div class="s01-cards">
                 <div class="advantage-card">
                     <div class="image">
@@ -220,6 +222,7 @@
 
     <div id="s02">
         <div class="container">
+            <h2>Стоимость</h2>
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Квартиры</a>
@@ -236,170 +239,333 @@
             </ul>
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    <div class="tariff-card">
-                        <div class="tariff-title green">
-                            <h3>выгодный</h3>
-                        </div>
-                        <div class="tariff-description">
-                            <p class="method">
-                                Способ распыления
-                            </p>
-                            <p class="method-text">
-                                Горячий туман + ручная обработка + препараты длительного действия
-                            </p>
-                            <div class="price-from">
-                                <img src="./assets/images/coin.png" alt="..." />
-                                <p>
-                                    Комната от <span>2490</span>
-                                </p>
+                    <div class="tariffs">
+                        <div class="tariff-card">
+                            <div class="tariff-title green">
+                                <h3>выгодный</h3>
                             </div>
-                            <table class="price">
-                                <tr>
-                                    <td>
-                                        1-комнатная квартира
-                                    </td>
-                                    <td>
-                                        от 2990
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2-комнатная квартира
-                                    </td>
-                                    <td>
-                                        от 3390
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        3-комнатная квартира
-                                    </td>
-                                    <td>
-                                        от 3690
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        4-комнатная квартира
-                                    </td>
-                                    <td>
-                                        от 4190
-                                    </td>
-                                </tr>
-                            </table>
+                            <div class="tariff-description">
+                                <p class="method">
+                                    Способ распыления
+                                </p>
+                                <p class="method-text">
+                                    Горячий туман + ручная обработка + препараты длительного действия
+                                </p>
+                                <div class="price-from">
+                                    <img src="./assets/images/coin.png" alt="..." />
+                                    <p>
+                                        Комната от <span>2490</span>
+                                    </p>
+                                </div>
+                                <table class="price">
+                                    <tr>
+                                        <td>
+                                            1-комнатная квартира
+                                        </td>
+                                        <td>
+                                            от 2990
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            2-комнатная квартира
+                                        </td>
+                                        <td>
+                                            от 3390
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            3-комнатная квартира
+                                        </td>
+                                        <td>
+                                            от 3690
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            4-комнатная квартира
+                                        </td>
+                                        <td>
+                                            от 4190
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tariff-card">
+                            <div class="tariff-title orange">
+                                <h3>выгодный</h3>
+                            </div>
+                            <div class="tariff-description">
+                                <p class="method">
+                                    Способ распыления
+                                </p>
+                                <p class="method-text">
+                                    Горячий туман + ручная обработка + препараты длительного действия
+                                </p>
+                                <div class="price-from">
+                                    <img src="./assets/images/coin.png" alt="..." />
+                                    <p>
+                                        Комната от <span>2490</span>
+                                    </p>
+                                </div>
+                                <table class="price">
+                                    <tr>
+                                        <td>
+                                            1-комнатная квартира
+                                        </td>
+                                        <td>
+                                            от 2990
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            2-комнатная квартира
+                                        </td>
+                                        <td>
+                                            от 3390
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            3-комнатная квартира
+                                        </td>
+                                        <td>
+                                            от 3690
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            4-комнатная квартира
+                                        </td>
+                                        <td>
+                                            от 4190
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tariff-card">
+                            <div class="tariff-title blue">
+                                <h3>выгодный</h3>
+                            </div>
+                            <div class="tariff-description">
+                                <p class="method">
+                                    Способ распыления
+                                </p>
+                                <p class="method-text">
+                                    Горячий туман + ручная обработка + препараты длительного действия
+                                </p>
+                                <div class="price-from">
+                                    <img src="./assets/images/coin.png" alt="..." />
+                                    <p>
+                                        Комната от <span>2490</span>
+                                    </p>
+                                </div>
+                                <table class="price">
+                                    <tr>
+                                        <td>
+                                            1-комнатная квартира
+                                        </td>
+                                        <td>
+                                            от 2990
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            2-комнатная квартира
+                                        </td>
+                                        <td>
+                                            от 3390
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            3-комнатная квартира
+                                        </td>
+                                        <td>
+                                            от 3690
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            4-комнатная квартира
+                                        </td>
+                                        <td>
+                                            от 4190
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
-                    <div class="tariff-card">
-                        <div class="tariff-title orange">
-                            <h3>выгодный</h3>
-                        </div>
-                        <div class="tariff-description">
-                            <p class="method">
-                                Способ распыления
-                            </p>
-                            <p class="method-text">
-                                Горячий туман + ручная обработка + препараты длительного действия
-                            </p>
-                            <div class="price-from">
-                                <img src="./assets/images/coin.png" alt="..." />
-                                <p>
-                                    Комната от <span>2490</span>
-                                </p>
+                    <div class="owl-carousel carouselTariffs tariffs mobile">
+                        <div class="tariff-card">
+                            <div class="tariff-title green">
+                                <h3>выгодный</h3>
                             </div>
-                            <table class="price">
-                                <tr>
-                                    <td>
-                                        1-комнатная квартира
-                                    </td>
-                                    <td>
-                                        от 2990
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2-комнатная квартира
-                                    </td>
-                                    <td>
-                                        от 3390
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        3-комнатная квартира
-                                    </td>
-                                    <td>
-                                        от 3690
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        4-комнатная квартира
-                                    </td>
-                                    <td>
-                                        от 4190
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="tariff-card">
-                        <div class="tariff-title blue">
-                            <h3>выгодный</h3>
-                        </div>
-                        <div class="tariff-description">
-                            <p class="method">
-                                Способ распыления
-                            </p>
-                            <p class="method-text">
-                                Горячий туман + ручная обработка + препараты длительного действия
-                            </p>
-                            <div class="price-from">
-                                <img src="./assets/images/coin.png" alt="..." />
-                                <p>
-                                    Комната от <span>2490</span>
+                            <div class="tariff-description">
+                                <p class="method">
+                                    Способ распыления
                                 </p>
+                                <p class="method-text">
+                                    Горячий туман + ручная обработка + препараты длительного действия
+                                </p>
+                                <div class="price-from">
+                                    <img src="./assets/images/coin.png" alt="..." />
+                                    <p>
+                                        Комната от <span>2490</span>
+                                    </p>
+                                </div>
+                                <table class="price">
+                                    <tr>
+                                        <td>
+                                            1-комнатная квартира
+                                        </td>
+                                        <td>
+                                            от 2990
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            2-комнатная квартира
+                                        </td>
+                                        <td>
+                                            от 3390
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            3-комнатная квартира
+                                        </td>
+                                        <td>
+                                            от 3690
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            4-комнатная квартира
+                                        </td>
+                                        <td>
+                                            от 4190
+                                        </td>
+                                    </tr>
+                                </table>
                             </div>
-                            <table class="price">
-                                <tr>
-                                    <td>
-                                        1-комнатная квартира
-                                    </td>
-                                    <td>
-                                        от 2990
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2-комнатная квартира
-                                    </td>
-                                    <td>
-                                        от 3390
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        3-комнатная квартира
-                                    </td>
-                                    <td>
-                                        от 3690
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        4-комнатная квартира
-                                    </td>
-                                    <td>
-                                        от 4190
-                                    </td>
-                                </tr>
-                            </table>
+                        </div>
+                        <div class="tariff-card">
+                            <div class="tariff-title orange">
+                                <h3>выгодный</h3>
+                            </div>
+                            <div class="tariff-description">
+                                <p class="method">
+                                    Способ распыления
+                                </p>
+                                <p class="method-text">
+                                    Горячий туман + ручная обработка + препараты длительного действия
+                                </p>
+                                <div class="price-from">
+                                    <img src="./assets/images/coin.png" alt="..." />
+                                    <p>
+                                        Комната от <span>2490</span>
+                                    </p>
+                                </div>
+                                <table class="price">
+                                    <tr>
+                                        <td>
+                                            1-комнатная квартира
+                                        </td>
+                                        <td>
+                                            от 2990
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            2-комнатная квартира
+                                        </td>
+                                        <td>
+                                            от 3390
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            3-комнатная квартира
+                                        </td>
+                                        <td>
+                                            от 3690
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            4-комнатная квартира
+                                        </td>
+                                        <td>
+                                            от 4190
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tariff-card">
+                            <div class="tariff-title blue">
+                                <h3>выгодный</h3>
+                            </div>
+                            <div class="tariff-description">
+                                <p class="method">
+                                    Способ распыления
+                                </p>
+                                <p class="method-text">
+                                    Горячий туман + ручная обработка + препараты длительного действия
+                                </p>
+                                <div class="price-from">
+                                    <img src="./assets/images/coin.png" alt="..." />
+                                    <p>
+                                        Комната от <span>2490</span>
+                                    </p>
+                                </div>
+                                <table class="price">
+                                    <tr>
+                                        <td>
+                                            1-комнатная квартира
+                                        </td>
+                                        <td>
+                                            от 2990
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            2-комнатная квартира
+                                        </td>
+                                        <td>
+                                            от 3390
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            3-комнатная квартира
+                                        </td>
+                                        <td>
+                                            от 3690
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            4-комнатная квартира
+                                        </td>
+                                        <td>
+                                            от 4190
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...2</div>
                 <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...3</div>
                 <div class="tab-pane fade" id="four" role="tabpanel" aria-labelledby="four-tab">...4</div>
-                <button class="btn">Вызвать специалиста</button>
+                <button class="btn btn-order">Вызвать специалиста</button>
             </div>
         </div>
     </div>
@@ -407,12 +573,13 @@
     <div id="s03">
         <div class="container">
             <div class="row">
-                <div class="col-xl-6 col-12">
+                <div class="col-xl-6 col-12 order-sm-last order-xl-first d-none d-md-block">
                     <img src="./assets/images/about-company.jpg" alt="..." />
                 </div>
-                <div class="col-xl-6 col-12">
+                <div class="col-xl-6 col-12 order-sm-first order-xl-last">
                     <div class="about-company">
                         <h2>О компании</h2>
+                        <img src="./assets/images/about-company.jpg" alt="..."  class="d-block d-md-none"/>
                         <div>
                             <p>
                                 Компания “ДЕЗХИМ” качественно и быстро проводит выведение насекомых в квартире, на складе или участке. Команде профессиональных дезинсекторов по печу любые объемы и площади.
@@ -521,27 +688,31 @@
     <div id="s05">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-7">
+                <div class="col-xl-7 col-12">
                     <div class="about-specialists">
                         <h2>Наши специалисты</h2>
                         <p>
                             Стаж работы наших сотрудников от 3 лет! Все они проходят регулярно повышение квалификации по нормам СЭС и СанПин, проведут дезинфекцию следуя санитарным правилам и нормам и ответят на любые вопросы.
                         </p>
                         <p>
-                            Мы следим за новыми способами борьбы насекомых, бактерий, грызунов, грибов, имеется в виду не только о химических способах борьбы. Все препараты, которые применяют наши мастера для обработки не являются токсичными для детей и животных и одобрены системой Госстандарта России. Вы можете не волноваться за самочувствие своих близких.
+                            Мы следим за новыми способами борьбы насекомых, бактерий, грызунов, грибов, имеется в виду не только о химических способах борьбы. Все препараты, которые применяют наши мастера для обработки не являются токсичными для
+                            детей и животных и
+                            одобрены системой Госстандарта России. Вы можете не волноваться за самочувствие своих близких.
                         </p>
                         <p>
-                            Мастера приезжают к заказчику в строго оговоренное время, анонимно и конфиденциально. Наши специалисты предоставляют гарантийный талон на все имеющиеся у нас услуги на срок до 1 года и берут на себя все вопросы по организации дезинфекции. Мы убеждены в качестве работы наших дезинсекторов, что доказывают многочисленные отзывы довольных клиентов.
+                            Мастера приезжают к заказчику в строго оговоренное время, анонимно и конфиденциально. Наши специалисты предоставляют гарантийный талон на все имеющиеся у нас услуги на срок до 1 года и берут на себя все вопросы по
+                            организации
+                            дезинфекции. Мы убеждены в качестве работы наших дезинсекторов, что доказывают многочисленные отзывы довольных клиентов.
                         </p>
                     </div>
                 </div>
-                <div class="col-5">
+                <div class="col-xl-5 col-12">
                     <div class="owl-carousel carouselSpecialists">
                         <div class="specialist">
                             <div class="fio">
-                                <img src="./assets/images/specialist-img.jpg" alt="..."/>
+                                <img src="./assets/images/specialist-img.jpg" alt="..." />
                                 <div>
-                                    <p >
+                                    <p>
                                         Иванов Иван Иванович
                                     </p>
                                     <p>
@@ -577,9 +748,9 @@
                         </div>
                         <div class="specialist">
                             <div class="fio">
-                                <img src="./assets/images/specialist-img.jpg" alt="..."/>
+                                <img src="./assets/images/specialist-img.jpg" alt="..." />
                                 <div>
-                                    <p >
+                                    <p>
                                         Иванов Иван Иванович
                                     </p>
                                     <p>
@@ -615,9 +786,161 @@
                         </div>
                         <div class="specialist">
                             <div class="fio">
-                                <img src="./assets/images/specialist-img.jpg" alt="..."/>
+                                <img src="./assets/images/specialist-img.jpg" alt="..." />
                                 <div>
-                                    <p >
+                                    <p>
+                                        Иванов Иван Иванович
+                                    </p>
+                                    <p>
+                                        Опыт работы: 10 лет
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <ul>
+                                    <li>
+                                        Курс Проведения дератизационных, дезинфекционных, дезинсекционных работ в организациях различного профиля
+                                    </li>
+                                    <li>
+                                        Курс Удостоверение дезинфектора.
+                                    </li>
+                                    <li>
+                                        Семинар приготовление растворов и средств для дезинфекции и дезинсекции.
+                                    </li>
+                                    <li>
+                                        КУРСЫ ДЕЗИНФЕКТОРОВ.
+                                    </li>
+                                    <li>
+                                        Курс Дезинфектор, 3-й разряд.
+                                    </li>
+                                    <li>
+                                        Курс Дезинсекция (уничтожение насекомых).
+                                    </li>
+                                    <li>
+                                        Семинар сроки проведения экспозиции при дезинфекции и дезодорации
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="specialist">
+                            <div class="fio">
+                                <img src="./assets/images/specialist-img.jpg" alt="..." />
+                                <div>
+                                    <p>
+                                        Иванов Иван Иванович
+                                    </p>
+                                    <p>
+                                        Опыт работы: 10 лет
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <ul>
+                                    <li>
+                                        Курс Проведения дератизационных, дезинфекционных, дезинсекционных работ в организациях различного профиля
+                                    </li>
+                                    <li>
+                                        Курс Удостоверение дезинфектора.
+                                    </li>
+                                    <li>
+                                        Семинар приготовление растворов и средств для дезинфекции и дезинсекции.
+                                    </li>
+                                    <li>
+                                        КУРСЫ ДЕЗИНФЕКТОРОВ.
+                                    </li>
+                                    <li>
+                                        Курс Дезинфектор, 3-й разряд.
+                                    </li>
+                                    <li>
+                                        Курс Дезинсекция (уничтожение насекомых).
+                                    </li>
+                                    <li>
+                                        Семинар сроки проведения экспозиции при дезинфекции и дезодорации
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="specialist">
+                            <div class="fio">
+                                <img src="./assets/images/specialist-img.jpg" alt="..." />
+                                <div>
+                                    <p>
+                                        Иванов Иван Иванович
+                                    </p>
+                                    <p>
+                                        Опыт работы: 10 лет
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <ul>
+                                    <li>
+                                        Курс Проведения дератизационных, дезинфекционных, дезинсекционных работ в организациях различного профиля
+                                    </li>
+                                    <li>
+                                        Курс Удостоверение дезинфектора.
+                                    </li>
+                                    <li>
+                                        Семинар приготовление растворов и средств для дезинфекции и дезинсекции.
+                                    </li>
+                                    <li>
+                                        КУРСЫ ДЕЗИНФЕКТОРОВ.
+                                    </li>
+                                    <li>
+                                        Курс Дезинфектор, 3-й разряд.
+                                    </li>
+                                    <li>
+                                        Курс Дезинсекция (уничтожение насекомых).
+                                    </li>
+                                    <li>
+                                        Семинар сроки проведения экспозиции при дезинфекции и дезодорации
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="specialist">
+                            <div class="fio">
+                                <img src="./assets/images/specialist-img.jpg" alt="..." />
+                                <div>
+                                    <p>
+                                        Иванов Иван Иванович
+                                    </p>
+                                    <p>
+                                        Опыт работы: 10 лет
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <ul>
+                                    <li>
+                                        Курс Проведения дератизационных, дезинфекционных, дезинсекционных работ в организациях различного профиля
+                                    </li>
+                                    <li>
+                                        Курс Удостоверение дезинфектора.
+                                    </li>
+                                    <li>
+                                        Семинар приготовление растворов и средств для дезинфекции и дезинсекции.
+                                    </li>
+                                    <li>
+                                        КУРСЫ ДЕЗИНФЕКТОРОВ.
+                                    </li>
+                                    <li>
+                                        Курс Дезинфектор, 3-й разряд.
+                                    </li>
+                                    <li>
+                                        Курс Дезинсекция (уничтожение насекомых).
+                                    </li>
+                                    <li>
+                                        Семинар сроки проведения экспозиции при дезинфекции и дезодорации
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="specialist">
+                            <div class="fio">
+                                <img src="./assets/images/specialist-img.jpg" alt="..." />
+                                <div>
+                                    <p>
                                         Иванов Иван Иванович
                                     </p>
                                     <p>
@@ -660,7 +983,7 @@
     <div id="s06">
         <div class="container">
             <div class="row justify-content-end">
-                <div class="col-6">
+                <div class="col-xl-6 col-12">
                     <h2>Наше оборудование</h2>
                 </div>
             </div>
@@ -668,10 +991,13 @@
         <div class="owl-carousel carouselEquipments">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-xl-6 col-12 order-xl-first order-last img">
                         <img src="./assets/images/our-equipments.png" alt="..." class="equipment" />
                     </div>
-                    <div class="col-6">
+                    <div class="col-xl-6 col-12 order-xl-last order-first">
+                        <div class="mobile-img">
+                            <img src="./assets/images/our-equipments.png" alt="..." class="equipment" />
+                        </div>
                         <h4>Опрыскиватель</h4>
                         <p>
                             Опрыскиватель с удобной помповой системой используется для борьбы с вредителями и различными заболеваниями растений на садовых, огородных и приусадебных участках.
@@ -687,11 +1013,14 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-xl-6 col-12 order-xl-first order-last img">
                         <img src="./assets/images/our-equipments.png" alt="..." class="equipment" />
                     </div>
-                    <div class="col-6">
+                    <div class="col-xl-6 col-12 order-xl-last order-first">
                         <h4>Опрыскиватель</h4>
+                        <div class="mobile-img">
+                            <img src="./assets/images/our-equipments.png" alt="..." class="equipment" />
+                        </div>
                         <p>
                             Опрыскиватель с удобной помповой системой используется для борьбы с вредителями и различными заболеваниями растений на садовых, огородных и приусадебных участках.
                         </p>
@@ -706,30 +1035,14 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-xl-6 col-12 order-xl-first order-last img">
                         <img src="./assets/images/our-equipments.png" alt="..." class="equipment" />
                     </div>
-                    <div class="col-6">
+                    <div class="col-xl-6 col-12 order-xl-last order-first">
                         <h4>Опрыскиватель</h4>
-                        <p>
-                            Опрыскиватель с удобной помповой системой используется для борьбы с вредителями и различными заболеваниями растений на садовых, огородных и приусадебных участках.
-                        </p>
-                        <p>
-                            Облегчает нанесение воды, химических средств и других препаратов на стебли и листья деревьев, кустарников и других культур. Конструкция удобная в эксплуатации.
-                        </p>
-                        <p>
-                            Представляет собой компактный резервуар с помповым устройством. Ремни обеспечивают комфортное перемещение опрыскивателя по территории.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <img src="./assets/images/our-equipments.png" alt="..." class="equipment" />
-                    </div>
-                    <div class="col-6">
-                        <h4>Опрыскиватель</h4>
+                        <div class="mobile-img">
+                            <img src="./assets/images/our-equipments.png" alt="..." class="equipment" />
+                        </div>
                         <p>
                             Опрыскиватель с удобной помповой системой используется для борьбы с вредителями и различными заболеваниями растений на садовых, огородных и приусадебных участках.
                         </p>
@@ -813,9 +1126,9 @@
                 <div class="col-12">
                     <h2>Схема работы компании:</h2>
                 </div>
-                <div class="col-xl-4 col-12">
+                <div class="col-xl-4 col-md-6 col-12">
                     <div class="schema-card">
-                        <img src="./assets/images/scheme-img-1.png" alt="..."/>
+                        <img src="./assets/images/scheme-img-1.png" alt="..." />
                         <div>
                             <h3>1. Обращение</h3>
                             <p>
@@ -824,9 +1137,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-12">
+                <div class="col-xl-4 col-md-6 col-12">
                     <div class="schema-card">
-                        <img src="./assets/images/scheme-img-2.png" alt="..."/>
+                        <img src="./assets/images/scheme-img-2.png" alt="..." />
                         <div>
                             <h3>2. Консультация</h3>
                             <p>
@@ -835,9 +1148,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-12">
+                <div class="col-xl-4 col-md-6 col-12">
                     <div class="schema-card">
-                        <img src="./assets/images/scheme-img-3.png" alt="..."/>
+                        <img src="./assets/images/scheme-img-3.png" alt="..." />
                         <div>
                             <h3>3. Обращение</h3>
                             <p>
@@ -846,9 +1159,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-12">
+                <div class="col-xl-4 col-md-6 col-12">
                     <div class="schema-card">
-                        <img src="./assets/images/scheme-img-4.png" alt="..."/>
+                        <img src="./assets/images/scheme-img-4.png" alt="..." />
                         <div>
                             <h3>4. Истребительные работы на участке</h3>
                             <p>
@@ -857,9 +1170,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-12">
+                <div class="col-xl-4 col-md-6 col-12">
                     <div class="schema-card">
-                        <img src="./assets/images/scheme-img-5.png" alt="..."/>
+                        <img src="./assets/images/scheme-img-5.png" alt="..." />
                         <div>
                             <h3>1. Обращение</h3>
                             <p>
@@ -868,9 +1181,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-12">
+                <div class="col-xl-4 col-md-6 col-12">
                     <div class="schema-card">
-                        <img src="./assets/images/scheme-img-6.png" alt="..."/>
+                        <img src="./assets/images/scheme-img-6.png" alt="..." />
                         <div>
                             <h3>1. Обращение</h3>
                             <p>
@@ -884,40 +1197,585 @@
     </div>
 
     <div id="s10">
-
+        <div class="container">
+            <h2>Отзывы о работе</h2>
+            <div class="owl-carousel carouselReviews">
+                <div class="card">
+                    <div class="vk">
+                        <img src="./assets/images/vk.png" alt="..." />
+                        <a href="#">Фамилия Имя</a>
+                    </div>
+                    <img src="./assets/images/review-bg-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-photo" style="background-image:url('./assets/images/review-img-1.jpg')">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Купили квартиру, и даже не могли предположить, что там окажутся тараканы, это был кошмар. Спреи не стали покупать, соседи сказали что это бесполезно, сразу вызвали Дезис</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="vk">
+                        <img src="./assets/images/vk.png" alt="..." />
+                        <a href="#">Фамилия Имя</a>
+                    </div>
+                    <img src="./assets/images/review-bg-2.png" class="card-img-top" alt="...">
+                    <div class="card-photo" style="background-image:url('./assets/images/review-img-2.jpg')">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Купили квартиру, и даже не могли предположить, что там окажутся тараканы, это был кошмар. Спреи не стали покупать, соседи сказали что это бесполезно, сразу вызвали Дезис</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="vk">
+                        <img src="./assets/images/vk.png" alt="..." />
+                        <a href="#">Фамилия Имя</a>
+                    </div>
+                    <img src="./assets/images/review-bg-3.png" class="card-img-top" alt="...">
+                    <div class="card-photo" style="background-image:url('./assets/images/review-img-1.jpg')">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Купили квартиру, и даже не могли предположить, что там окажутся тараканы, это был кошмар. Спреи не стали покупать, соседи сказали что это бесполезно, сразу вызвали Дезис</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="vk">
+                        <img src="./assets/images/vk.png" alt="..." />
+                        <a href="#">Фамилия Имя</a>
+                    </div>
+                    <img src="./assets/images/review-bg-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-photo" style="background-image:url('./assets/images/review-img-1.jpg')">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Купили квартиру, и даже не могли предположить, что там окажутся тараканы, это был кошмар. Спреи не стали покупать, соседи сказали что это бесполезно, сразу вызвали Дезис</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="s11">
-
+        <div class="container">
+            <h2>Калькулятор расчета стоимости услуг</h2>
+            <div class="form">
+                <div class="row">
+                    <div class="col-xl-7 col-12">
+                        <div class="form-container">
+                            <form id="calcForm" action="/">
+                                <div class="tab step-1">
+                                    <p>
+                                        Выберите тип вредителя
+                                    </p>
+                                    <div class="fields">
+                                        <div>
+                                            <input id="ch1" type="checkbox" name="" value="" />
+                                            <label for="ch1"><span>клопы</span></label>
+                                        </div>
+                                        <div>
+                                            <input id="ch2" type="checkbox" name="" value="" />
+                                            <label for="ch2"><span>комары</span></label>
+                                        </div>
+                                        <div>
+                                            <input id="ch3" type="checkbox" name="" value="" />
+                                            <label for="ch3"><span>моль/огневики</span></label>
+                                        </div>
+                                        <div>
+                                            <input id="ch4" type="checkbox" name="" value="" />
+                                            <label for="ch4"><span>блохи</span></label>
+                                        </div>
+                                        <div>
+                                            <input id="ch5" type="checkbox" name="" value="" />
+                                            <label for="ch5"><span>осы/шершни</span></label>
+                                        </div>
+                                        <div>
+                                            <input id="ch6" type="checkbox" name="" value="" />
+                                            <label for="ch6"><span>мыши/крысы</span></label>
+                                        </div>
+                                        <div>
+                                            <input id="ch7" type="checkbox" name="" value="" />
+                                            <label for="ch7"><span>бактерии</span></label>
+                                        </div>
+                                        <div>
+                                            <input id="ch8" type="checkbox" name="" value="" />
+                                            <label for="ch8"><span>мухи</span></label>
+                                        </div>
+                                        <div>
+                                            <input id="ch9" type="checkbox" name="" value="" />
+                                            <label for="ch9"><span>пест контроль</span></label>
+                                        </div>
+                                        <div>
+                                            <input id="ch10" type="checkbox" name="" value="" />
+                                            <label for="ch10"><span>коровед/усач</span></label>
+                                        </div>
+                                        <div>
+                                            <input id="ch11" type="checkbox" name="" value="" />
+                                            <label for="ch11"><span>Tarakany</span></label>
+                                        </div>
+                                        <div>
+                                            <input id="ch12" type="checkbox" name="" value="" />
+                                            <label for="ch12"><span>Tarakany</span></label>
+                                        </div>
+                                        <div>
+                                            <input id="ch13" type="checkbox" name="" value="" />
+                                            <label for="ch13"><span>Tarakany</span></label>
+                                        </div>
+                                        <div>
+                                            <input id="ch14" type="checkbox" name="" value="" />
+                                            <label for="ch14"><span>Tarakany</span></label>
+                                        </div>
+                                        <div>
+                                            <input id="ch15" type="checkbox" name="" value="" />
+                                            <label for="ch15"><span>Tarakany</span></label>
+                                        </div>
+                                        <div>
+                                            <input id="ch16" type="checkbox" name="" value="" />
+                                            <label for="ch16"><span>Tarakany</span></label>
+                                        </div>
+                                        <div>
+                                            <input id="ch17" type="checkbox" name="" value="" />
+                                            <label for="ch17"><span>Tarakany</span></label>
+                                        </div>
+                                        <div>
+                                            <input id="ch18" type="checkbox" name="" value="" />
+                                            <label for="ch18"><span>Tarakany</span></label>
+                                        </div>
+                                        <div>
+                                            <input id="ch19" type="checkbox" name="" value="" />
+                                            <label for="ch19"><span>Tarakany</span></label>
+                                        </div>
+                                        <div>
+                                            <input id="ch20" type="checkbox" name="" value="" />
+                                            <label for="ch20"><span>Tarakany</span></label>
+                                        </div>
+                                        <div>
+                                            <input id="ch21" type="checkbox" name="" value="" />
+                                            <label for="ch21"><span>Tarakany</span></label>
+                                        </div>
+                                        <div>
+                                            <input id="ch22" type="checkbox" name="" value="" />
+                                            <label for="ch22"><span>Tarakany</span></label>
+                                        </div>
+                                        <div>
+                                            <input id="ch23" type="checkbox" name="" value="" />
+                                            <label for="ch23"><span>Tarakany</span></label>
+                                        </div>
+                                        <div>
+                                            <input id="ch24" type="checkbox" name="" value="" />
+                                            <label for="ch24"><span>Tarakany</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab step-2">
+                                    <p>
+                                        Выберите тип помещения
+                                    </p>
+                                    <div class="fields">
+                                        <div>
+                                            <div class="area-img" style="background-image: url('./assets/images/type-area-img-1.png');"></div>
+                                            <input id="at1" type="checkbox" name="" value="" />
+                                            <label for="at1"><span>квартиры</span></label>
+                                        </div>
+                                        <div>
+                                            <div class="area-img" style="background-image: url('./assets/images/type-area-img-1.png');"></div>
+                                            <input id="at2" type="checkbox" name="" value="" />
+                                            <label for="at2"><span>частные дома</span></label>
+                                        </div>
+                                        <div>
+                                            <div class="area-img" style="background-image: url('./assets/images/type-area-img-1.png');"></div>
+                                            <input id="at3" type="checkbox" name="" value="" />
+                                            <label for="at3"><span>рестораны / кафе</span></label>
+                                        </div>
+                                        <div>
+                                            <div class="area-img" style="background-image: url('./assets/images/type-area-img-1.png');"></div>
+                                            <input id="at4" type="checkbox" name="" value="" />
+                                            <label for="at4"><span>дезинфекция</span></label>
+                                        </div>
+                                        <div>
+                                            <div class="area-img" style="background-image: url('./assets/images/type-area-img-1.png');"></div>
+                                            <input id="at5" type="checkbox" name="" value="" />
+                                            <label for="at5"><span>промышленное помещение</span></label>
+                                        </div>
+                                        <div>
+                                            <div class="area-img" style="background-image: url('./assets/images/type-area-img-1.png');"></div>
+                                            <input id="at6" type="checkbox" name="" value="" />
+                                            <label for="at6"><span>фитнес клубы</span></label>
+                                        </div>
+                                        <div>
+                                            <div class="area-img" style="background-image: url('./assets/images/type-area-img-1.png');"></div>
+                                            <input id="at7" type="checkbox" name="" value="" />
+                                            <label for="at7"><span>офис</span></label>
+                                        </div>
+                                        <div>
+                                            <div class="area-img" style="background-image: url('./assets/images/type-area-img-1.png');"></div>
+                                            <input id="at8" type="checkbox" name="" value="" />
+                                            <label for="at8"><span>агропромышленные комплексы</span></label>
+                                        </div>
+                                        <!-- <input type="text" name="" placeholder="First name..." oninput="this.className = ''" class="form-control" >
+                                        <input type="text" name="" placeholder="First name..." oninput="this.className = ''" class="form-control" > -->
+                                    </div>
+                                </div>
+                                <div class="tab step-3">
+                                    <p>
+                                        Площадь
+                                    </p>
+                                    <div class="fields">
+                                        <input type="text" name="area" placeholder="Введите площадь помещения в кв. м." class="form-control" oninput="this.className = ''">
+                                    </div>
+                                </div>
+                                <div class="tab step-4">
+                                    <p>
+                                        Пробовали бороться?
+                                    </p>
+                                    <div class="fields">
+                                        <div>
+                                            <div class="area-img" style="background-image: url('./assets/images/type-area-img-1.png');"></div>
+                                            <input id="at1" type="checkbox" name="" value="" />
+                                            <label for="at1"><span>Да, самостоятельно бытовыми средствами</span></label>
+                                        </div>
+                                        <div>
+                                            <div class="area-img" style="background-image: url('./assets/images/type-area-img-1.png');"></div>
+                                            <input id="at2" type="checkbox" name="" value="" />
+                                            <label for="at2"><span>Да, вызывал другую службу</span></label>
+                                        </div>
+                                        <div>
+                                            <div class="area-img" style="background-image: url('./assets/images/type-area-img-1.png');"></div>
+                                            <input id="at3" type="checkbox" name="" value="" />
+                                            <label for="at3"><span>Нет, пока ничего не предпринимал</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab step-5">
+                                    <p>
+                                        Площадь
+                                    </p>
+                                    <div class="fields">
+                                        <input type="text" name="name" placeholder="Введите имя" class="form-control" oninput="this.className = ''">
+                                        <input type="tel" name="tel" placeholder="Введите телефон" class="form-control" oninput="this.className = ''">
+                                        <input type="email" name="email" placeholder="Введите e-mail" class="form-control" oninput="this.className = ''">
+                                        <button type="submit" class="btn">Готово</button>
+                                    </div>
+                                </div>
+                                <div class="nav">
+                                    <!-- <div class="nav-buttons"> -->
+                                        <button type="button" id="prevBtn" onclick="nextPrev(-1)"><i class="fas fa-caret-left"></i></button>
+                                        <button type="button" id="nextBtn" onclick="nextPrev(1)"><i class="fas fa-caret-right"></i></button>
+                                    <!-- </div> -->
+                                </div>
+                                <div class="nav-steps">
+                                    <div class="steps">
+                                        <p>
+                                            <span class="orange">Шаг <span class="current"></span></span> из <span class="total"></span>
+                                        </p>
+                                    </div>
+                                    <div class="dots">
+                                        <span class="step"></span>
+                                        <span class="step"></span>
+                                        <span class="step"></span>
+                                        <span class="step"></span>
+                                        <span class="step"></span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-5 image">
+                        <img src="./assets/images/s11-tarakan.png" alt="..." />
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="s12">
-
+        <div class="container">
+            <h2>Цены выезда загород</h2>
+            <div class="images">
+                <img src="./assets/images/price-img-1.png" alt="..." />
+                <img src="./assets/images/price-img-2.png" alt="..." />
+            </div>
+        </div>
+        <div class="road">
+            <div class="container">
+                <ul>
+                    <li>
+                        <div>
+                            <p>&nbsp;</p>
+                            <p>до 20 км</p>
+                        </div>
+                        <p>
+                            <span>500</span> руб/км
+                        </p>
+                    </li>
+                    <li>
+                        <div>
+                            <p>от 20 км</p>
+                            <p>до 50 км</p>
+                        </div>
+                        <p>
+                            <span>400</span> руб/км
+                        </p>
+                    </li>
+                    <li>
+                        <div>
+                            <p>от 50 км</p>
+                            <p>до 80 км</p>
+                        </div>
+                        <p>
+                            <span>300</span> руб/км
+                        </p>
+                    </li>
+                    <li>
+                        <div>
+                            <p>от 80 км</p>
+                            <p>до 100 км</p>
+                        </div>
+                        <p>
+                            <span>200</span> руб/км
+                        </p>
+                    </li>
+                    <li>
+                        <div>
+                            <p>свыше</p>
+                            <p>100 км</p>
+                        </div>
+                        <p>
+                            Договорная
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <div id="s13">
+        <div class="container">
+            <div class="faq">
+                <div class="questions">
+                    <h2>ЧАВО</h2>
+                    <p class="subtitle">
+                        ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
+                    </p>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h3 data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Насколько безопасна процедура  выведения постельных клопов?
+                                </h3>
+                            </div>
 
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.  Leggings occaecat craft
+                                        beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h3 class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Разворачиваемая панель #2
+                                </h3>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.  Leggings occaecat craft
+                                        beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h3 class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Разворачиваемая панель #3
+                                </h3>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.  Leggings occaecat craft
+                                        beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="s14">
-
+        <div class="container">
+            <div class="d-flex">
+                <div class="image" style="background-image: url('./assets/images/review-img-1.jpg')"></div>
+                <div class="form">
+                    <p class="title">
+                        Бесплатная консультация специалиста
+                    </p>
+                    <form>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="tel" name="tel" class="form-control" placeholder="tel">
+                                <p class="prompt">
+                                    Остаьте заявку и мы перезвоним вам в течении 2х минут
+                                </p>
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="btn btn-green">Заказать звонок</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- <p class="prompt">
+                        Остаьте заявку и мы перезвоним вам в течении 2х минут
+                    </p> -->
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="s15">
-
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-12 order-xl-1 order-2">
+                    <div class="sert-images">
+                        <a data-fancybox="gallery" href="./assets/images/s15-sert.png"><img src="./assets/images/s15-sert.png"></a>
+                        <a data-fancybox="gallery" href="./assets/images/s15-sert.png"><img src="./assets/images/s15-sert.png"></a>
+                        <a data-fancybox="gallery" href="./assets/images/s15-sert.png"><img src="./assets/images/s15-sert.png"></a>
+                        <a data-fancybox="gallery" href="./assets/images/s15-sert.png"><img src="./assets/images/s15-sert.png"></a>
+                        <a data-fancybox="gallery" href="./assets/images/s15-sert.png"><img src="./assets/images/s15-sert.png"></a>
+                        <a data-fancybox="gallery" href="./assets/images/s15-sert.png"><img src="./assets/images/s15-sert.png"></a>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-12 order-xl-2 order-1">
+                    <h2>Наши сертификаты</h2>
+                    <div class="serts">
+                        <div class="sert">
+                            <img src="./assets/images/s15-img1.png" alt="..."/>
+                            <p>
+                                Мы полностью уверены в высоком качестве предлагаемых дезинфецирующих срелсв. А если их качество не будет соответствовать заявленному, мы бязуемся вернуть вам деньги
+                            </p>
+                        </div>
+                        <div class="sert">
+                            <img src="./assets/images/s15-img2.png" alt="..."/>
+                            <p>
+                                У нас имеются все сертификаты качества на дезинфициующие средства, так как наша компания работает с поставщиками официально
+                            </p>
+                        </div>
+                        <div class="sert">
+                            <img src="./assets/images/s15-img3.png" alt="..."/>
+                            <p>
+                                Мы полностью уверены в высоком качестве предлагаемых дезинфецирующих срелсв. А если их качество не будет соответствовать заявленному, мы бязуемся вернуть вам деньги
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 order-xl-3 order-3">
+                    <div class="warning">
+                        <div>
+                            <img src="./assets/images/s15-warning.png" alt="..."/>
+                            <div>
+                                <p>
+                                    Мы используем только сертифицированные средства мировых и российских производителей «Лекарь мкэ», «Форс-Сайт», «Цунами супер», «ЮРАКС-25% к.э.», «Дельтрин», «Хлорофос»,«МЕДИЛИС-ципер».
+                                </p>
+                                <p>
+                                    Все инсектициды соответствуют санитарно-эпидемиологическим и гигиеническим требованиям и имеют сертификаты, декларации и свидетельства о регистрации в Роспотребнадзоре.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="s16">
-
+        <div class="container">
+            <h2>Последние новости</h2>
+            <p class="subtitle">
+                Lorem Ipsum Dolor Sit Amet, Concetetur Adipisicing Elit, Sed do EiusMod Tempor Incididunt U Labore et Dolore Magna Aliqua.
+            </p>
+            <div class="row news">
+                <div class="owl-carousel carouselNews">
+                    <div class="-col-xl-4 -col-12">
+                        <a href="#">
+                            <div class="card">
+                                <div class="date">
+                                    <p>10.10.2020</p>
+                                </div>
+                                <img src="./assets/images/s16-new1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3>Почему он используется?</h3>
+                                    <p class="card-text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее станд <span>>></span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="-col-xl-4 -col-12">
+                        <a href="#">
+                            <div class="card">
+                                <div class="date">
+                                    <p>10.10.2020</p>
+                                </div>
+                                <img src="./assets/images/s16-new1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3>Почему он используется?</h3>
+                                    <p class="card-text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее станд <span>>></span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="-col-xl-4 -col-12">
+                        <a href="#">
+                            <div class="card">
+                                <div class="date">
+                                    <p>10.10.2020</p>
+                                </div>
+                                <img src="./assets/images/s16-new1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3>Почему он используется?</h3>
+                                    <p class="card-text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее станд <span>>></span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="s17">
-
+        <div class="container">
+            <h2>Наши работы в прошлом месяце</h2>
+            <div class="owl-carousel carouselLastWorks">
+                <div class="last-work">
+                    <h5>Дезинфекция помещения</h5>
+                    <p>
+                        г. Омск, ул. Кирова 3
+                    </p>
+                </div>
+                <div class="last-work">
+                    <h5>Дезинфекция помещения</h5>
+                    <p>
+                        г. Омск, ул. Кирова 3
+                    </p>
+                </div>
+                <div class="last-work">
+                    <h5>Дезинфекция помещения</h5>
+                    <p>
+                        г. Омск, ул. Кирова 3
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-
-
-
-
 
     <footer>
         <div class="footer">
@@ -1076,7 +1934,7 @@
                                 </p>
                             </div>
                         </address>
-                        <div class="copyright">
+                        <div class="copyright d-block d-md-none">
                             <p>
                                 Государственная мед. лицензия ЛО-02-01-006458 от 22.08.2018 г.
                             </p>
@@ -1096,6 +1954,44 @@
     <script src="./assets/js/owl-carousel/owl.carousel.min.js"></script>
     <script>
         $(document).ready(function() {
+            $(".carouselTariffs").owlCarousel({
+                center: true,
+                autoplay: false,
+                items: 3,
+                loop: true,
+                margin: 0,
+                nav:false,
+                dots:false,
+                responsive:{
+                    0:{
+                        items: 1
+                    },
+                    376:{
+                        items: 1,
+                        margin: 35,
+                        stagePadding: 55
+                    },
+                    500: {
+                        items: 1.5,
+                        margin: 40,
+                        stagePadding: 55
+                    },
+                    650:{
+                        items: 1.5,
+                        margin: 30,
+                        stagePadding: 125,
+                    },
+                    1024:{
+                        items: 1.5,
+                        margin: 150,
+                        stagePadding: 240,
+                    },
+                    1200:{
+                        items:2
+                    }
+                },
+                navText: ['<i class="fas fa-caret-left"></i>', '<i class="fas fa-caret-right"></i>']
+            });
             $(".carouselOurWorks").owlCarousel({
                 items: 3,
                 nav: true,
@@ -1103,23 +1999,58 @@
                 margin: 30,
                 center: true,
                 loop: true,
-                navText: ['<i class="fas fa-caret-left"></i>','<i class="fas fa-caret-right"></i>']
+                responsive:{
+                    0:{
+                        items: 1,
+                        margin: 10,
+                        stagePadding: 30
+                    },
+                    500: {
+                        items: 1,
+                        margin: 30,
+                        stagePadding: 55
+                    },
+                    768:{
+                        items: 1,
+                        margin: 60,
+                        stagePadding: 100,
+                    },
+                    1024:{
+                        items: 1.5,
+                        margin: 40,
+                        stagePadding: 75,
+                    },
+                    1200:{
+                        items: 2,
+                        margin: 50,
+                        stagePadding: 75,
+                    },
+                    1366: {
+                        items: 2,
+                    },
+                    1440: {
+                        items: 3,
+                        margin: 30,
+                        stagePadding: 0
+                    },
+                },
+                navText: ['<i class="fas fa-caret-left"></i>', '<i class="fas fa-caret-right"></i>']
             });
             $(".carouselSpecialists").owlCarousel({
                 items: 1,
                 nav: true,
-                dots: false,
+                dots: true,
                 margin: 0,
-                loop: true,
-                navText: ['<i class="fas fa-caret-left"></i>','<i class="fas fa-caret-right"></i>']
+                loop: false,
+                navText: ['<i class="fas fa-caret-left"></i>', '<i class="fas fa-caret-right"></i>']
             });
             $(".carouselEquipments").owlCarousel({
                 items: 1,
                 nav: true,
-                dots: false,
+                dots: true,
                 margin: 0,
-                loop: true,
-                navText: ['<i class="fas fa-caret-left"></i>','<i class="fas fa-caret-right"></i>']
+                loop: false,
+                navText: ['<i class="fas fa-caret-left"></i>', '<i class="fas fa-caret-right"></i>']
             });
             $(".carouselClients").owlCarousel({
                 items: 8,
@@ -1128,9 +2059,296 @@
                 margin: 30,
                 // center: true,
                 loop: true,
-                navText: ['<i class="fas fa-caret-left"></i>','<i class="fas fa-caret-right"></i>']
+                responsive:{
+                    0:{
+                        items: 2,
+                        margin: 0
+                    },
+                    600:{
+                        items: 3,
+                        margin: 0,
+                        // stagePadding: 100,
+                    },
+                    768:{
+                        items: 5,
+                        margin: 20,
+                        // stagePadding: 100,
+                    },
+                    1024:{
+                        items: 6,
+                        margin: 50,
+                        stagePadding: 0,
+                    },
+                    1200:{
+                        items: 2,
+                        margin: 50,
+                        stagePadding: 75,
+                    },
+                    1366: {
+                        items: 2,
+                    },
+                    1440: {
+                        items: 8,
+                        margin: 30,
+                    },
+                },
+                navText: ['<i class="fas fa-caret-left"></i>', '<i class="fas fa-caret-right"></i>']
+            });
+            $(".carouselReviews").owlCarousel({
+                items: 3,
+                nav: true,
+                dots: true,
+                margin: 30,
+                loop: false,
+                responsive:{
+                    0:{
+                        items: 1,
+                        margin: 20,
+                        stagePadding: 40,
+                        center: true,
+                        loop: true,
+                    },
+                    600: {
+                        items: 1,
+                        margin: 50,
+                        stagePadding: 100,
+                        center: true,
+                        loop: true,
+                    },
+                    800:{
+                        items: 2,
+                        margin: 50,
+                        stagePadding: 10,
+                        center: true,
+                        loop: true,
+                    },
+                    1024:{
+                        items: 2,
+                        margin: 50,
+                        stagePadding: 50,
+                        center: true,
+                        loop: true,
+                    },
+                    1200:{
+                        items:3
+                    }
+                },
+                navText: ['<i class="fas fa-caret-left"></i>', '<i class="fas fa-caret-right"></i>']
+            });
+            $(".carouselNews").owlCarousel({
+                items: 3,
+                nav: true,
+                dots: false,
+                margin: 30,
+                loop: false,
+                responsive:{
+                    0:{
+                        items: 1,
+                        margin: 20,
+                        stagePadding: 10,
+                        center: true,
+                        loop: true,
+                    },
+                    425: {
+                        items: 1,
+                        margin: 20,
+                        stagePadding: 60,
+                        center: true,
+                        loop: true,
+                    },
+                    600: {
+                        items: 1,
+                        margin: 20,
+                        stagePadding: 120,
+                        center: true,
+                        loop: true,
+                    },
+                    768: {
+                        items: 2,
+                        margin: 20,
+                        stagePadding: 30,
+                        center: true,
+                        loop: true,
+                    },
+                    800:{
+                        items: 2,
+                        margin: 50,
+                        stagePadding: 10,
+                        center: true,
+                        loop: true,
+                    },
+                    1024:{
+                        items: 2,
+                        margin: 50,
+                        stagePadding: 50,
+                        center: true,
+                        loop: true,
+                    },
+                    1200:{
+                        items:3
+                    }
+                },
+                navText: ['<i class="fas fa-caret-left"></i>', '<i class="fas fa-caret-right"></i>']
+            });
+            $(".carouselLastWorks").owlCarousel({
+                items: 2,
+                nav: true,
+                dots: false,
+                margin: 30,
+                loop: true,
+                responsive:{
+                    0:{
+                        items: 1,
+                        margin: 53,
+                        stagePadding: 50,
+                    },
+                    320:{
+                        items: 1,
+                        margin: 35,
+                        stagePadding: 30
+                    },
+                    1024:{
+                        items:2,
+                        margin: 52,
+                        stagePadding: 48
+                    },
+                    1200:{
+                        items:2,
+                        margin: 55,
+                        stagePadding: 48
+                    }
+                },
+                navText: ['<i class="fas fa-caret-left"></i>', '<i class="fas fa-caret-right"></i>']
+            });
+
+            var total = $('#s05 .carouselSpecialists .owl-dots .owl-dot').length;
+            $('#s05 .carouselSpecialists .owl-nav > button:first-child').after('<div class="pagination"></div>').trigger('refresh');
+            $('#s06 .carouselEquipments .owl-nav > button:first-child').after('<div class="pagination"></div>').trigger('refresh');
+            $('#s10 .carouselReviews .owl-nav > button:first-child').after('<div class="pagination"></div>').trigger('refresh');
+
+            $('#s05 .carouselSpecialists .owl-dots .owl-dot').each(function(i, elem) {
+                i++;
+                $(this).text(i);
+                $('#s05 .carouselSpecialists .owl-dots').detach().prependTo('#s05 .owl-nav > div.pagination');
+                if (i < 4) {
+                    $(this).addClass('show');
+                }
+            });
+            $('#s05 .owl-dots, #s05 .owl-nav').on('click', function() {
+                console.log('click');
+                $('.owl-carousel .pagination .owl-dots .owl-dot').removeClass('show');
+                $('.owl-carousel .pagination .owl-dots .owl-dot.active').next().addClass('show');
+                $('.owl-carousel .pagination .owl-dots .owl-dot.active').prev().addClass('show');
+            });
+
+            $('#s06 .carouselEquipments .owl-dots .owl-dot').each(function(i, elem) {
+                i++;
+                $(this).text(i);
+                $('#s06 .carouselEquipments .owl-dots').detach().prependTo('#s06 .owl-nav > div.pagination');
+                if (i < 4) {
+                    $(this).addClass('show');
+                }
+            });
+            $('#s06 .owl-dots, #s06 .owl-nav').on('click', function() {
+                console.log('click');
+                $('.owl-carousel .pagination .owl-dots .owl-dot').removeClass('show');
+                $('.owl-carousel .pagination .owl-dots .owl-dot.active').next().addClass('show');
+                $('.owl-carousel .pagination .owl-dots .owl-dot.active').prev().addClass('show');
+            });
+
+            $('#s10 .carouselReviews .owl-dots .owl-dot').each(function(i, elem) {
+                i++;
+                $(this).text(i);
+                $('#s10 .carouselReviews .owl-dots').detach().prependTo('#s10 .owl-nav > div.pagination');
+                if (i < 4) {
+                    $(this).addClass('show');
+                }
+            });
+            $('#s10 .owl-dots, #s10 .owl-nav').on('click', function() {
+                console.log('click');
+                $('#s10 .owl-carousel .pagination .owl-dots .owl-dot').removeClass('show');
+                $('#s10 .owl-carousel .pagination .owl-dots .owl-dot.active').next().addClass('show');
+                $('#s10 .owl-carousel .pagination .owl-dots .owl-dot.active').prev().addClass('show');
             });
         });
+
+        var currentTab = 0;
+        showTab(currentTab);
+
+        function showTab(n) {
+            // This function will display the specified tab of the form ...
+            var x = document.getElementsByClassName("tab");
+            x[n].style.display = "block";
+            // ... and fix the Previous/Next buttons:
+            if (n == 0) {
+                document.getElementById("prevBtn").style.display = "none";
+            } else {
+                document.getElementById("prevBtn").style.display = "inline";
+            }
+            if (n == (x.length - 1)) {
+                // document.getElementById("nextBtn").innerHTML = "Submit";
+                document.getElementById("nextBtn").style.display = "none";
+            } else {
+                document.getElementById("nextBtn").style.display = "inline";
+                document.getElementById("nextBtn").innerHTML = "<i class='fas fa-caret-right'></i>";
+            }
+            // ... and run a function that displays the correct step indicator:
+            fixStepIndicator(n)
+        }
+
+        function nextPrev(n) {
+            // This function will figure out which tab to display
+            var x = document.getElementsByClassName("tab");
+            // Exit the function if any field in the current tab is invalid:
+            if (n == 1 && !validateForm()) return false;
+            // Hide the current tab:
+            x[currentTab].style.display = "none";
+            // Increase or decrease the current tab by 1:
+            currentTab = currentTab + n;
+            // if you have reached the end of the form... :
+            if (currentTab >= x.length) {
+                //...the form gets submitted:
+                document.getElementById("regForm").submit();
+                return false;
+            }
+            // Otherwise, display the correct tab:
+            showTab(currentTab);
+        }
+
+        function validateForm() {
+            return true;
+            // This function deals with validation of the form fields
+            var x, y, i, valid = true;
+            x = document.getElementsByClassName("tab");
+            y = x[currentTab].getElementsByTagName("input");
+            // A loop that checks every input field in the current tab:
+            for (i = 0; i < y.length; i++) {
+                // If a field is empty...
+                if (y[i].value == "") {
+                    // add an "invalid" class to the field:
+                    y[i].className += " invalid";
+                    // and set the current valid status to false:
+                    valid = false;
+                }
+            }
+            // If the valid status is true, mark the step as finished and valid:
+            if (valid) {
+                document.getElementsByClassName("step")[currentTab].className += " finish";
+            }
+            return valid; // return the valid status
+        }
+
+        function fixStepIndicator(n) {
+            // This function removes the "active" class of all steps...
+            var i, x = document.getElementsByClassName("step");
+            for (i = 0; i < x.length; i++) {
+                x[i].className = x[i].className.replace(" active", "");
+            }
+            //... and adds the "active" class to the current step:
+            x[n].className += " active";
+            $('span.current').text(n + 1);
+            $('span.total').text(x.length);
+        }
     </script>
 </body>
 
