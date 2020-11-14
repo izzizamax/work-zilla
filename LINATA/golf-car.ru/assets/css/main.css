@@ -113,7 +113,7 @@ header nav.navbar .container-fluid .top-line {
 }
 header nav.navbar .container-fluid .top-line p {
   font-family: "Exo 2", sans-serif;
-  font-size: 35px;
+  font-size: 25px;
   font-weight: 600;
   color: #000;
   text-transform: uppercase;
@@ -125,7 +125,7 @@ header nav.navbar .container-fluid .top-line div.phone {
 }
 header nav.navbar .container-fluid .top-line div.phone > a {
   font-family: "Exo 2", sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 800;
 }
 header nav.navbar .container-fluid .top-line div.phone > a:link, header nav.navbar .container-fluid .top-line div.phone > a:visited {
@@ -148,7 +148,7 @@ header nav.navbar .container-fluid .bottom-line ul.navbar-nav {
 header nav.navbar .container-fluid .bottom-line ul.navbar-nav li.nav-item a.nav-link {
   font-family: "Exo 2", sans-serif;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   text-transform: uppercase;
 }
 header nav.navbar .container-fluid .bottom-line .callback {
