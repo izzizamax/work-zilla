@@ -26,7 +26,7 @@ h2.title {
 
 .btn-grey {
     font-family: 'Exo 2', sans-serif;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 600;
     color: #fff;
     border-radius: 0;
@@ -100,13 +100,14 @@ h2.title {
 header {
     nav.navbar {
         padding: .5rem 0 1.5rem;
-        .navbar-brand {
-            padding-left: 50px;
-        }
 
         .container-fluid {
             padding-left: 20px;
             padding-right: 0px;
+
+            .navbar-brand {
+                padding-left: 50px;
+            }
 
             & > div {
                 width: 100%;
@@ -208,31 +209,13 @@ header {
                         text-decoration: underline;
                     }
                 }
-
-                @media (max-width: 1366px) {
-                    ul.navbar-nav {
-                        li.nav-item {
-                            a.nav-link {
-                                font-size: 16px;
-                            }
-                        }
-                    }
-
-                    .callback {
-                        width: 210px;
-
-                        a {
-                            font-size: 16px;
-                        }
-                    }
-                }
             }
         }
     }
 
     #headerCarousel {
         position: relative;
-        height: calc(100vh - 150px);
+        height: calc(100vh - 128px);
         overflow: hidden;
 
         .carousel-inner {
@@ -259,49 +242,51 @@ header {
 
                     p.title {
                         font-family: 'Exo 2', sans-serif;
-                        font-size: 50px;
+                        font-size: 45px;
                         font-weight: 700;
                         color: #fff;
                         line-height: 120%;
                         margin-bottom: 30px;
+
+                        @media(max-width: 1440px) {
+                            & {
+                                font-size: 35px;
+                            }
+                        }
                     }
 
                     p.subtitle {
                         width: 80%;
                         font-family: 'Exo 2', sans-serif;
-                        font-size: 32px;
+                        font-size: 30px;
                         font-weight: 400;
                         color: #fff;
                         line-height: 110%;
                         margin-bottom: 40px;
+
+                        @media(max-width: 1440px) {
+                            & {
+                                width: 95%;
+                                font-size: 28px;
+                            }
+                        }
                     }
 
                     button {
-                        height: 75px;
+                        height: 60px;
                         line-height: 100%;
-                        padding-bottom: 12px;
-                    }
+                        padding: 0 30px 8px 30px;
 
-                    @media(max-width: 1440px) {
-                        p.title {
-                            font-size: 35px;
-                        }
-
-                        p.subtitle {
-                            width: 95%;
-                            font-size: 28px;
-                        }
-
-                        button {
-                            height: 65px;
-                            font-size: 22px;
-                            padding-left: 30px;
-                            padding-right: 30px;
+                        @media(max-width: 1440px) {
+                            & {
+                                height: 65px;
+                                font-size: 22px;
+                                padding-left: 30px;
+                                padding-right: 30px;
+                            }
                         }
                     }
                 }
-
-
             }
         }
 
