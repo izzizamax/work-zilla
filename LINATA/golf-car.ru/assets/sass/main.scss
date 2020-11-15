@@ -323,9 +323,10 @@ header {
                 background: linear-gradient(135deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 100%);
 
                 p {
-                    font-size: 14px;
+                    font-size: 19px;
                     color: #fff;
                     margin: 10px 0 0;
+                    text-shadow: 1px 1px 2px black;
                 }
             }
         }
@@ -359,6 +360,11 @@ header {
                             font-size: 20px;
                         }
                     }
+
+                    @media (max-width: 1366px) {
+                        font-size: 18px;
+                    }
+
                 }
 
                 &:before {
@@ -397,6 +403,10 @@ header {
                     p {
                         font-size: 20px;
                         margin-bottom: 0;
+
+                        @media (max-width: 1366px) {
+                            font-size: 18px;
+                        }
                     }
                 }
             }
@@ -621,11 +631,12 @@ header {
     h2.title {
         text-align: left;
         margin-bottom: 25px;
+        font-size: 36px;
     }
 
     p {
         font-family: 'Exo 2', sans-serif;
-        font-size: 28px;
+        font-size: 24px;
         font-weight: 400;
 
         &:first-child {
@@ -687,6 +698,14 @@ header {
         p {
             font-size: 22px;
             line-height: 150%;
+
+            @media (max-width: 1440px) {
+                font-size: 20px;
+            }
+
+            @media (max-width: 1366px) {
+                font-size: 18px;
+            }
         }
     }
 }
@@ -738,6 +757,11 @@ header {
                 height: 75px;
                 margin-right: auto;
                 margin-bottom: 30px;
+
+                @media(max-width: 1440px) {
+                    width: 60px;
+                    height: 60px;
+                }
             }
 
             span {
@@ -749,11 +773,19 @@ header {
                 color: #fff;
                 text-transform: uppercase;
 
+                @media(max-width: 1440px) {
+                    font-size: 36px;
+                }
+
                 &:after {
                     font-family: 'Font Awesome 5 Free';
                     font-weight: 700;
                     font-size: 35px;
                     content: '\f054';
+
+                    @media(max-width: 1440px) {
+                        font-size: 30px;
+                    }
                 }
             }
         }
@@ -788,6 +820,16 @@ footer {
                         font-size: 20px;
                         color: #000;
                         text-shadow: 2px 3px 15px #000;
+                    }
+
+                    @media(max-width: 1440px) {
+                        & {
+                            width: 610px;
+                        }
+                    }
+
+                    @media (max-width: 1366px) {
+                        width: 485px;
                     }
                 }
 
