@@ -626,7 +626,7 @@ footer .ss .subscribe p {
   color: #fff;
 }
 footer .ss .subscribe form input {
-  width: 795px;
+  width: 550px;
   height: 60px;
   font-size: 20px;
   color: #000;
@@ -645,11 +645,12 @@ footer .ss .subscribe form button {
 footer .ss .soc-icons {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 2.5px;
 }
 footer .ss .soc-icons img {
-  width: 60px;
-  height: 60px;
-  margin-left: 80px;
+  width: 55px;
+  height: 55px;
+  margin-left: 50px;
 }
 footer .navigation {
   display: flex;
