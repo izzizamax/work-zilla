@@ -143,6 +143,7 @@ header .container nav.navbar .navbar-toggler.mobile {
 @media (max-width: 600px) {
   header .container nav.navbar .navbar-toggler.mobile {
     display: block;
+    border: none;
   }
 }
 header .container nav.navbar > div {
@@ -812,7 +813,7 @@ header .container #headerCarousel .carousel-banners div.banner p {
     text-align: center;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   #s05 form {
     width: 100%;
   }
