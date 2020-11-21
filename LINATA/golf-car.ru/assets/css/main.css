@@ -3,40 +3,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 * {
   font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
   color: #333;
 }
 
 h2.title {
-  font-size: 42px;
+  font-size: 36px;
   font-weight: 600;
   text-align: center;
   margin-bottom: 40px;
 }
 h2.title span {
+  font-size: 36px;
   font-weight: 700;
   background: linear-gradient(90deg, #88898f 0%, #5f5e64 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+h3 {
+  font-size: 24px;
+}
+
 .btn-grey {
   font-family: "Exo 2", sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 600;
   color: #fff;
   border-radius: 0;
   background: linear-gradient(50deg, #85878d 0%, #969798 50%, #5f5e64 100%);
   text-shadow: 2px 2px 2px #5b5b5b;
 }
-.btn-grey:hover {
-  color: #fff;
-}
-
-.btn-grey {
+.btn-grey.animate {
   position: relative;
   overflow: hidden;
   -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
+}
+.btn-grey:hover {
+  color: #fff;
+}
+.btn-grey:hover:after {
+  color: #fff;
 }
 
 .btn-grey:hover:after {
@@ -82,6 +90,10 @@ h2.title span {
     margin-left: 80px;
   }
 }
+.container {
+  max-width: 1200px;
+}
+
 .container-fluid {
   padding-left: 10%;
   padding-right: 10%;
@@ -95,36 +107,31 @@ h2.title span {
 
 #s07, #s06, #s05, #s04, #s03, #s02, #s01 {
   margin-top: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
-header nav.navbar {
+header .container nav.navbar {
   padding: 0.5rem 0 1.5rem;
 }
-header nav.navbar .container-fluid {
-  padding-left: 20px;
-  padding-right: 0px;
-}
-header nav.navbar .container-fluid .navbar-brand {
+header .container nav.navbar .navbar-brand {
   padding-left: 50px;
 }
-header nav.navbar .container-fluid > div {
+header .container nav.navbar > div {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-header nav.navbar .container-fluid .top-line {
+header .container nav.navbar .top-line {
   display: flex;
   width: 95%;
   justify-content: flex-end;
   align-items: center;
-  padding: 0 50px;
   border-bottom: solid 5px #C4C4C4;
 }
-header nav.navbar .container-fluid .top-line p {
+header .container nav.navbar .top-line p {
   font-family: "Exo 2", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   color: #000;
   text-align: center;
@@ -133,50 +140,46 @@ header nav.navbar .container-fluid .top-line p {
   margin-bottom: 0;
   flex-grow: 1;
 }
-header nav.navbar .container-fluid .top-line div.phone {
-  width: 280px;
+header .container nav.navbar .top-line div.phone {
+  width: 205px;
 }
-header nav.navbar .container-fluid .top-line div.phone > a {
+header .container nav.navbar .top-line div.phone > a {
   font-family: "Exo 2", sans-serif;
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 800;
 }
-header nav.navbar .container-fluid .top-line div.phone > a:link, header nav.navbar .container-fluid .top-line div.phone > a:visited {
+header .container nav.navbar .top-line div.phone > a:link, header .container nav.navbar .top-line div.phone > a:visited {
   color: #333;
 }
-header nav.navbar .container-fluid .top-line div.phone > a:active, header nav.navbar .container-fluid .top-line div.phone > a:hover {
+header .container nav.navbar .top-line div.phone > a:active, header .container nav.navbar .top-line div.phone > a:hover {
   text-decoration: none;
   color: #3b5998;
 }
 @media (max-width: 1366px) {
-  header nav.navbar .container-fluid .top-line p {
-    font-size: 20px;
-  }
-  header nav.navbar .container-fluid .top-line div.phone {
+  header .container nav.navbar .top-line div.phone {
     width: 210px;
   }
-  header nav.navbar .container-fluid .top-line div.phone > a {
+  header .container nav.navbar .top-line div.phone > a {
     font-size: 22px;
   }
 }
-header nav.navbar .container-fluid .bottom-line {
+header .container nav.navbar .bottom-line {
   width: 95%;
   display: flex;
-  padding: 0 50px;
 }
-header nav.navbar .container-fluid .bottom-line ul.navbar-nav {
+header .container nav.navbar .bottom-line ul.navbar-nav {
   width: 100%;
   margin-left: auto;
   padding-right: 20px;
 }
-header nav.navbar .container-fluid .bottom-line ul.navbar-nav li.nav-item a.nav-link {
+header .container nav.navbar .bottom-line ul.navbar-nav li.nav-item a.nav-link {
   font-family: "Exo 2", sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   text-transform: uppercase;
 }
-header nav.navbar .container-fluid .bottom-line .callback {
-  width: 280px;
+header .container nav.navbar .bottom-line .callback {
+  width: 205px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -185,97 +188,97 @@ header nav.navbar .container-fluid .bottom-line .callback {
   text-align: center;
   border-radius: 50% 50% 0 0/100% 100% 0 0;
 }
-header nav.navbar .container-fluid .bottom-line .callback a {
+header .container nav.navbar .bottom-line .callback a {
   font-family: "Exo 2", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   color: #fff;
   text-decoration: underline;
 }
-header #headerCarousel {
+header .container #headerCarousel {
   position: relative;
-  height: calc(100vh - 128px);
+  height: 450px;
   overflow: hidden;
 }
-header #headerCarousel .carousel-inner {
+header .container #headerCarousel .carousel-inner {
   height: 100%;
 }
-header #headerCarousel .carousel-inner .carousel-item {
+header .container #headerCarousel .carousel-inner .carousel-item {
   height: 100%;
 }
-header #headerCarousel .carousel-inner .carousel-item div.image {
+header .container #headerCarousel .carousel-inner .carousel-item div.image {
   display: block;
   width: 100%;
   height: 100%;
   background-size: cover;
 }
-header #headerCarousel .carousel-inner .carousel-item .slide-text {
+header .container #headerCarousel .carousel-inner .carousel-item .slide-text {
   width: 50%;
   height: 100%;
   position: absolute;
-  padding: 75px 100px 0;
+  padding: 40px 25px 0 50px;
   top: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 25;
 }
-header #headerCarousel .carousel-inner .carousel-item .slide-text p.title {
+header .container #headerCarousel .carousel-inner .carousel-item .slide-text p.title {
   font-family: "Exo 2", sans-serif;
-  font-size: 45px;
+  font-size: 38px;
   font-weight: 700;
   color: #fff;
   line-height: 120%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 @media (max-width: 1440px) {
-  header #headerCarousel .carousel-inner .carousel-item .slide-text p.title {
+  header .container #headerCarousel .carousel-inner .carousel-item .slide-text p.title {
     font-size: 35px;
   }
 }
-header #headerCarousel .carousel-inner .carousel-item .slide-text p.subtitle {
-  width: 80%;
+header .container #headerCarousel .carousel-inner .carousel-item .slide-text p.subtitle {
+  width: 90%;
   font-family: "Exo 2", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
   color: #fff;
   line-height: 110%;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 @media (max-width: 1440px) {
-  header #headerCarousel .carousel-inner .carousel-item .slide-text p.subtitle {
+  header .container #headerCarousel .carousel-inner .carousel-item .slide-text p.subtitle {
     width: 95%;
-    font-size: 28px;
+    font-size: 25px;
   }
 }
-header #headerCarousel .carousel-inner .carousel-item .slide-text button {
-  height: 60px;
+header .container #headerCarousel .carousel-inner .carousel-item .slide-text button {
+  height: 55px;
   line-height: 100%;
   padding: 0 30px 8px 30px;
 }
 @media (max-width: 1440px) {
-  header #headerCarousel .carousel-inner .carousel-item .slide-text button {
+  header .container #headerCarousel .carousel-inner .carousel-item .slide-text button {
     height: 65px;
     font-size: 22px;
     padding-left: 30px;
     padding-right: 30px;
   }
 }
-header #headerCarousel .carousel-banners {
+header .container #headerCarousel .carousel-banners {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   position: absolute;
-  height: 120px;
+  height: 100px;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 50;
 }
-header #headerCarousel .carousel-banners div.banner {
+header .container #headerCarousel .carousel-banners div.banner {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 100%);
 }
-header #headerCarousel .carousel-banners div.banner p {
+header .container #headerCarousel .carousel-banners div.banner p {
   font-size: 14px;
   color: #fff;
   margin: 10px 0 0;
@@ -294,7 +297,7 @@ header #headerCarousel .carousel-banners div.banner p {
   background: linear-gradient(90deg, #88898f 0%, #5f5e64 100%);
 }
 #s01 div.categories div.block div.block-title h3 {
-  font-size: 24px;
+  font-size: 20px;
   color: #fff;
   text-align: center;
   margin-bottom: 0;
@@ -307,14 +310,14 @@ header #headerCarousel .carousel-banners div.banner p {
 #s01 div.categories div.block div.block-title:before {
   content: "";
   display: block;
-  width: 50px;
+  width: 30px;
   height: 2px;
   background: #fff;
 }
 #s01 div.categories div.block div.block-title:after {
   content: "";
   display: block;
-  width: 50px;
+  width: 30px;
   height: 2px;
   background: #fff;
 }
@@ -334,7 +337,6 @@ header #headerCarousel .carousel-banners div.banner p {
   margin: auto;
 }
 #s01 div.categories div.block div.block-content div p {
-  font-size: 20px;
   margin-bottom: 0;
 }
 
@@ -364,12 +366,9 @@ header #headerCarousel .carousel-banners div.banner p {
   padding: 10px 0;
 }
 #s02 .cars .car-card .content .params > div img {
-  min-width: 40px;
-  min-height: 40px;
   margin-right: 15px;
 }
 #s02 .cars .car-card .content .params > div p {
-  font-size: 20px;
   margin-bottom: 0;
 }
 #s02 .cars .car-card .footer {
@@ -389,7 +388,7 @@ header #headerCarousel .carousel-banners div.banner p {
 #s02 .cars .car-card .footer .link a.btn {
   position: relative;
   font-family: "Exo 2", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   display: block;
   margin: auto;
@@ -440,67 +439,54 @@ header #headerCarousel .carousel-banners div.banner p {
 }
 #s02 .btn-catalog a.btn-go-catalog.btn-grey {
   width: 25%;
-  height: 85px;
+  padding: 12px 15px;
   display: block;
   margin: auto;
-  line-height: 65px;
 }
 
 #s03 .last-news {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 25px;
+  grid-gap: 10px;
 }
 #s03 .last-news .news-card p.published {
   font-family: "Exo 2", sans-serif;
-  font-size: 17px;
+  font-size: 14px;
+  color: #808080;
+  margin-bottom: 7px;
 }
 #s03 .last-news .news-card > div {
   display: flex;
 }
 #s03 .last-news .news-card > div img {
-  min-width: 135px;
-  min-height: 135px;
-  width: 135px;
-  height: 135px;
-  margin-right: 25px;
+  min-width: 100px;
+  min-height: 100px;
+  width: 100px;
+  height: 100px;
+  margin-right: 15px;
 }
 #s03 .last-news .news-card > div > div p {
   font-family: "Exo 2", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 110%;
-}
-@media (max-width: 1440px) {
-  #s03 .last-news .news-card > div > div p {
-    font-size: 17px;
-  }
+  margin-bottom: 10px;
 }
 #s03 .last-news .news-card > div > div a {
   font-family: "Exo 2", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   background: linear-gradient(90deg, #88898f 0%, #5f5e64 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media (max-width: 1440px) {
-  #s03 .last-news .news-card > div > div a {
-    font-size: 17px;
-  }
-}
 #s03 .last-news .news-card > div > div a:after {
   font-family: "Font Awesome 5 Free";
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   content: "";
   margin-left: 10px;
   background: orange;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-@media (max-width: 1440px) {
-  #s03 .last-news .news-card > div > div a:after {
-    font-size: 17px;
-  }
 }
 #s03 .last-news .news-card > div > div a:hover {
   text-decoration: none;
@@ -516,31 +502,33 @@ header #headerCarousel .carousel-banners div.banner p {
 }
 #s05 p {
   font-family: "Exo 2", sans-serif;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 400;
 }
 #s05 p:first-child {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 #s05 form input {
-  font-size: 20px;
-  height: 60px;
-  width: 350px;
+  font-size: 18px;
+  height: 55px;
+  width: 315px;
   margin-right: 30px;
   border: none;
   border-radius: 0px;
   box-shadow: 0px 5px 15px rgba(215, 215, 215, 0.35);
 }
 #s05 form input::placeholder {
-  font-size: 20px;
+  font-size: 18px;
 }
 #s05 form button {
-  width: 350px;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  width: 315px;
+  height: 55px;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 #s05 img {
-  width: 470px;
+  width: 100%;
   margin-left: auto;
 }
 
@@ -562,7 +550,6 @@ header #headerCarousel .carousel-banners div.banner p {
   background-color: #6d6d72;
 }
 #s06 .about-us p {
-  font-size: 22px;
   line-height: 150%;
 }
 
@@ -596,14 +583,14 @@ header #headerCarousel .carousel-banners div.banner p {
   grid-gap: 25px;
 }
 #s07 div.trio a {
-  padding: 45px 45px 30px;
+  padding: 25px 25px 20px;
   text-align: left;
   background: linear-gradient(50deg, #57585b 0%, #5f6060 50%, #434346 100%);
 }
 #s07 div.trio a img {
   display: block;
-  width: 75px;
-  height: 75px;
+  width: 52px;
+  height: 52px;
   margin-right: auto;
   margin-bottom: 30px;
 }
@@ -612,14 +599,14 @@ header #headerCarousel .carousel-banners div.banner p {
   justify-content: space-between;
   align-items: center;
   font-family: "Exo 2", sans-serif;
-  font-size: 40px;
+  font-size: 32px;
   color: #fff;
   text-transform: uppercase;
 }
 #s07 div.trio a span:after {
   font-family: "Font Awesome 5 Free";
   font-weight: 700;
-  font-size: 35px;
+  font-size: 25px;
   content: "";
 }
 
@@ -639,7 +626,7 @@ footer .ss .subscribe p {
   color: #fff;
 }
 footer .ss .subscribe form input {
-  width: 795px;
+  width: 550px;
   height: 60px;
   font-size: 20px;
   color: #000;
@@ -658,11 +645,12 @@ footer .ss .subscribe form button {
 footer .ss .soc-icons {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 2.5px;
 }
 footer .ss .soc-icons img {
-  width: 60px;
-  height: 60px;
-  margin-left: 80px;
+  width: 55px;
+  height: 55px;
+  margin-left: 50px;
 }
 footer .navigation {
   display: flex;

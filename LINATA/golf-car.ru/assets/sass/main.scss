@@ -2,21 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 $link-hover-color: #3b5998;
-$s-mt: 50px;
-$s-mb: 100px;
+$s-mt: 50px; // Section margin top
+$s-mb: 50px; // Section margin bottom
 
 * {
     font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
     color: #333;
 }
 
 h2.title {
-    font-size: 42px;
+    font-size: 36px;
     font-weight: 600;
     text-align: center;
     margin-bottom: 40px;
 
     span {
+        font-size: 36px;
         font-weight: 700;
         background: linear-gradient(90deg, rgba(136,137,143,1) 0%, rgba(95,94,100,1) 100%);
         -webkit-background-clip: text;
@@ -24,25 +26,33 @@ h2.title {
     }
 }
 
+h3 {
+    font-size: 24px;
+}
+
 .btn-grey {
     font-family: 'Exo 2', sans-serif;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 600;
     color: #fff;
     border-radius: 0;
     background: linear-gradient(50deg, rgba(133,135,141,1) 0%, rgba(150,151,152,1) 50%, rgba(95,94,100,1) 100%);
     text-shadow: 2px 2px 2px #5b5b5b;
 
+    &.animate {
+        position: relative;
+        overflow: hidden;
+        -webkit-transition: ease 0.3s;
+        transition: ease 0.3s;
+    }
+
     &:hover {
         color: #fff;
     }
-}
 
-.btn-grey {
-    position: relative;
-    overflow: hidden;
-    -webkit-transition: ease 0.3s;
-    transition: ease 0.3s;
+    &:hover:after {
+        color: #fff;
+    }
 }
 
 .btn-grey:hover:after {
@@ -82,6 +92,10 @@ h2.title {
     100% { left: 110%; margin-left: 80px; }
 }
 
+.container {
+    max-width: 1200px;
+}
+
 .container-fluid {
     padding-left: 10%;
     padding-right: 10%;
@@ -98,12 +112,13 @@ h2.title {
 }
 
 header {
-    nav.navbar {
-        padding: .5rem 0 1.5rem;
+    .container {
+        nav.navbar {
+            padding: .5rem 0 1.5rem;
 
-        .container-fluid {
-            padding-left: 20px;
-            padding-right: 0px;
+            .navbar-brand {
+                padding-left: 50px;
+            }
 
             .navbar-brand {
                 padding-left: 50px;
@@ -121,12 +136,11 @@ header {
                 width: 95%;
                 justify-content: flex-end;
                 align-items: center;
-                padding: 0 50px;
                 border-bottom: solid 5px #C4C4C4;
 
                 p {
                     font-family: 'Exo 2', sans-serif;
-                    font-size: 25px;
+                    font-size: 20px;
                     font-weight: 600;
                     color: #000;
                     text-align: center;
@@ -137,11 +151,11 @@ header {
                 }
 
                 div.phone {
-                    width: 280px;
+                    width: 205px;
 
                     & > a {
                         font-family: 'Exo 2', sans-serif;
-                        font-size: 30px;
+                        font-size: 22px;
                         font-weight: 800;
                     }
 
@@ -155,15 +169,11 @@ header {
                         text-decoration: none;
                         color: $link-hover-color;
                     }
-                }
 
-                @media(max-width: 1366px) {
-                    p {
-                        font-size: 20px;
-                    }
-
-                    div.phone {
-                        width: 210px;
+                    @media(max-width: 1366px) {
+                        & {
+                            width: 210px;
+                        }
 
                         & > a {
                             font-size: 22px;
@@ -175,10 +185,10 @@ header {
             .bottom-line {
                 width: 95%;
                 display: flex;
-                padding: 0 50px;
+                // padding: 0 50px;
 
                 ul.navbar-nav {
-                    width: 100%; //65%;
+                    width: 100%;
                     margin-left: auto;
                     padding-right: 20px;
 
@@ -186,14 +196,14 @@ header {
                         a.nav-link {
                             font-family: "Exo 2", sans-serif;
                             font-weight: 500;
-                            font-size: 20px; //18px;
+                            font-size: 16px;
                             text-transform: uppercase;
                         }
                     }
                 }
 
                 .callback {
-                    width: 280px;
+                    width: 205px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -204,113 +214,113 @@ header {
 
                     a {
                         font-family: "Exo 2", sans-serif;
-                        font-size: 20px;
+                        font-size: 16px;
                         color: #fff;
                         text-decoration: underline;
                     }
                 }
             }
         }
-    }
 
-    #headerCarousel {
-        position: relative;
-        height: calc(100vh - 128px);
-        overflow: hidden;
+        #headerCarousel {
+            position: relative;
+            height: 450px;
+            overflow: hidden;
 
-        .carousel-inner {
-            height: 100%;
-
-            .carousel-item {
+            .carousel-inner {
                 height: 100%;
 
-                div.image {
-                    display: block;
-                    width: 100%;
+                .carousel-item {
                     height: 100%;
-                    background-size: cover;
-                }
 
-                .slide-text {
-                    width: 50%;
-                    height: 100%;
-                    position: absolute;
-                    padding: 75px 100px 0;
-                    top: 0;
-                    background-color: rgba(0, 0, 0, .5);
-                    z-index: 25;
-
-                    p.title {
-                        font-family: 'Exo 2', sans-serif;
-                        font-size: 45px;
-                        font-weight: 700;
-                        color: #fff;
-                        line-height: 120%;
-                        margin-bottom: 30px;
-
-                        @media(max-width: 1440px) {
-                            & {
-                                font-size: 35px;
-                            }
-                        }
+                    div.image {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        background-size: cover;
                     }
 
-                    p.subtitle {
-                        width: 80%;
-                        font-family: 'Exo 2', sans-serif;
-                        font-size: 30px;
-                        font-weight: 400;
-                        color: #fff;
-                        line-height: 110%;
-                        margin-bottom: 40px;
+                    .slide-text {
+                        width: 50%;
+                        height: 100%;
+                        position: absolute;
+                        padding: 40px 25px 0 50px;
+                        top: 0;
+                        background-color: rgba(0, 0, 0, .5);
+                        z-index: 25;
 
-                        @media(max-width: 1440px) {
-                            & {
-                                width: 95%;
-                                font-size: 28px;
+                        p.title {
+                            font-family: 'Exo 2', sans-serif;
+                            font-size: 38px;
+                            font-weight: 700;
+                            color: #fff;
+                            line-height: 120%;
+                            margin-bottom: 20px;
+
+                            @media(max-width: 1440px) {
+                                & {
+                                    font-size: 35px;
+                                }
                             }
                         }
-                    }
 
-                    button {
-                        height: 60px;
-                        line-height: 100%;
-                        padding: 0 30px 8px 30px;
+                        p.subtitle {
+                            width: 90%;
+                            font-family: 'Exo 2', sans-serif;
+                            font-size: 25px;
+                            font-weight: 400;
+                            color: #fff;
+                            line-height: 110%;
+                            margin-bottom: 30px;
 
-                        @media(max-width: 1440px) {
-                            & {
-                                height: 65px;
-                                font-size: 22px;
-                                padding-left: 30px;
-                                padding-right: 30px;
+                            @media(max-width: 1440px) {
+                                & {
+                                    width: 95%;
+                                    font-size: 25px;
+                                }
+                            }
+                        }
+
+                        button {
+                            height: 55px;
+                            line-height: 100%;
+                            padding: 0 30px 8px 30px;
+
+                            @media(max-width: 1440px) {
+                                & {
+                                    height: 65px;
+                                    font-size: 22px;
+                                    padding-left: 30px;
+                                    padding-right: 30px;
+                                }
                             }
                         }
                     }
                 }
             }
-        }
 
-        .carousel-banners {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            position: absolute;
-            height: 120px;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 50;
+            .carousel-banners {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                position: absolute;
+                height: 100px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 50;
 
-            div.banner {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                background: linear-gradient(135deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 100%);
+                div.banner {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    background: linear-gradient(135deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 100%);
 
-                p {
-                    font-size: 14px;
-                    color: #fff;
-                    margin: 10px 0 0;
+                    p {
+                        font-size: 14px;
+                        color: #fff;
+                        margin: 10px 0 0;
+                    }
                 }
             }
         }
@@ -334,7 +344,7 @@ header {
                 background: linear-gradient(90deg, rgba(136,137,143,1) 0%, rgba(95,94,100,1) 100%);
 
                 h3 {
-                    font-size: 24px;
+                    font-size: 20px;
                     color: #fff;
                     text-align: center;
                     margin-bottom: 0;
@@ -349,7 +359,7 @@ header {
                 &:before {
                     content: '';
                     display: block;
-                    width: 50px;
+                    width: 30px;
                     height: 2px;
                     background: #fff;
                 }
@@ -357,7 +367,7 @@ header {
                 &:after {
                     content: '';
                     display: block;
-                    width: 50px;
+                    width: 30px;
                     height: 2px;
                     background: #fff;
                 }
@@ -380,7 +390,6 @@ header {
                     }
 
                     p {
-                        font-size: 20px;
                         margin-bottom: 0;
                     }
                 }
@@ -420,13 +429,10 @@ header {
                     padding: 10px 0;
 
                     img {
-                        min-width: 40px;
-                        min-height: 40px;
                         margin-right: 15px;
                     }
 
                     p {
-                        font-size: 20px;
                         margin-bottom: 0;
                     }
                 }
@@ -450,7 +456,7 @@ header {
                     a.btn {
                         position: relative;
                         font-family: 'Exo 2', sans-serif;
-                        font-size: 24px;
+                        font-size: 20px;
                         font-weight: 600;
                         display: block;
                         margin: auto;
@@ -500,18 +506,16 @@ header {
 
     .btn-catalog {
         margin-top: 50px;
+
         @media(max-width: 1440px) {
-            & {
-                margin-bottom: 100px;
-            }
+            margin-bottom: 100px;
         }
 
         a.btn-go-catalog.btn-grey {
             width: 25%;
-            height: 85px;
+            padding: 12px 15px;
             display: block;
             margin: auto;
-            line-height: 65px;
         }
     }
 }
@@ -522,66 +526,51 @@ header {
     .last-news {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 25px;
+        grid-gap: 10px;
 
         .news-card {
             p.published {
                 font-family: 'Exo 2', sans-serif;
-                font-size: 17px;
+                font-size: 14px;
+                color: #808080;
+                margin-bottom: 7px;
             }
 
             & > div {
                 display: flex;
 
                 img {
-                    min-width: 135px;
-                    min-height: 135px;
-                    width: 135px;
-                    height: 135px;
-                    margin-right: 25px;
+                    min-width: 100px;
+                    min-height: 100px;
+                    width: 100px;
+                    height: 100px;
+                    margin-right: 15px;
                 }
 
                 & > div {
                     p {
                         font-family: 'Exo 2', sans-serif;
-                        font-size: 20px;
+                        font-size: 16px;
                         line-height: 110%;
-
-                        @media (max-width: 1440px) {
-                            & {
-                                font-size: 17px;
-                            }
-                        }
+                        margin-bottom: 10px;
                     }
 
                     a {
                         font-family: 'Exo 2', sans-serif;
-                        font-size: 20px;
+                        font-size: 16px;
                         background: linear-gradient(90deg, rgba(136,137,143,1) 0%, rgba(95,94,100,1) 100%);
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
 
-                        @media (max-width: 1440px) {
-                            & {
-                                font-size: 17px;
-                            }
-                        }
-
                         &:after {
                             font-family: 'Font Awesome 5 Free';
-                            font-size: 20px;
+                            font-size: 16px;
                             font-weight: 700;
                             content: '\f30b';
                             margin-left: 10px;
                             background: orange;
                             -webkit-background-clip: text;
                             -webkit-text-fill-color: transparent;
-
-                            @media (max-width: 1440px) {
-                                & {
-                                    font-size: 17px;
-                                }
-                            }
                         }
 
                         &:hover {
@@ -610,38 +599,40 @@ header {
 
     p {
         font-family: 'Exo 2', sans-serif;
-        font-size: 28px;
+        font-size: 26px;
         font-weight: 400;
 
         &:first-child {
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
     }
 
     form {
         input {
-            font-size: 20px;
-            height: 60px;
-            width: 350px;
+            font-size: 18px;
+            height: 55px;
+            width: 315px;
             margin-right: 30px;
             border: none;
             border-radius: 0px;
             box-shadow: 0px 5px 15px rgba(215, 215, 215, 0.35);
 
             &::placeholder {
-                font-size: 20px;
+                font-size: 18px;
             }
         }
 
         button {
-            width: 350px;
-            margin-top: 40px;
-            margin-bottom: 30px;
+            width: 315px;
+            height: 55px;
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
     }
 
     img {
-        width: 470px;
+        width: 100%;
         margin-left: auto;
     }
 }
@@ -670,7 +661,6 @@ header {
         }
 
         p {
-            font-size: 22px;
             line-height: 150%;
         }
     }
@@ -713,14 +703,14 @@ header {
         grid-gap: 25px;
 
         a {
-            padding: 45px 45px 30px;
+            padding: 25px 25px 20px;
             text-align: left;
             background: linear-gradient(50deg, rgba(87,88,91,1) 0%, rgba(95,96,96,1) 50%, rgba(67,67,70,1) 100%);
 
             img {
                 display: block;
-                width: 75px;
-                height: 75px;
+                width: 52px;
+                height: 52px;
                 margin-right: auto;
                 margin-bottom: 30px;
             }
@@ -730,14 +720,14 @@ header {
                 justify-content: space-between;
                 align-items: center;
                 font-family: 'Exo 2', sans-serif;
-                font-size: 40px;
+                font-size: 32px;
                 color: #fff;
                 text-transform: uppercase;
 
                 &:after {
                     font-family: 'Font Awesome 5 Free';
                     font-weight: 700;
-                    font-size: 35px;
+                    font-size: 25px;
                     content: '\f054';
                 }
             }
@@ -764,7 +754,7 @@ footer {
 
             form {
                 input {
-                    width: 795px;
+                    width: 550px;
                     height: 60px;
                     font-size: 20px;
                     color: #000;
@@ -788,11 +778,12 @@ footer {
         .soc-icons {
             display: flex;
             justify-content: space-between;
+            padding-bottom: 2.5px;
 
             img {
-                width: 60px;
-                height: 60px;
-                margin-left: 80px;
+                width: 55px;
+                height: 55px;
+                margin-left: 50px;
             }
         }
     }
