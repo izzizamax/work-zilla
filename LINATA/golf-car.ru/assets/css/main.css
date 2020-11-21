@@ -1073,6 +1073,7 @@ footer .ss .subscribe form button {
 @media (max-width: 425px) {
   footer .ss .subscribe form button {
     width: 100%;
+    box-shadow: 0px 1px 10px aliceblue;
   }
 }
 footer .ss .soc-icons {
