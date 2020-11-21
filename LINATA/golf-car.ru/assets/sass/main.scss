@@ -331,6 +331,10 @@ header {
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 2px;
 
+        @media(max-width: 425px) {
+            grid-template-columns: 1fr;
+        }
+
         div.block {
             div.block-title {
                 display: flex;
