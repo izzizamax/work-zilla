@@ -278,10 +278,16 @@ header .container #headerCarousel .carousel-banners div.banner {
   justify-content: center;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 100%);
 }
+<<<<<<< HEAD
 header .container #headerCarousel .carousel-banners div.banner p {
   font-size: 14px;
+=======
+header #headerCarousel .carousel-banners div.banner p {
+  font-size: 19px;
+>>>>>>> 7a03cd6d250db7b8c6fe96b562c89d17083b1497
   color: #fff;
   margin: 10px 0 0;
+  text-shadow: 1px 1px 2px black;
 }
 
 #s01 div.categories {
@@ -305,6 +311,11 @@ header .container #headerCarousel .carousel-banners div.banner p {
 @media (max-width: 1440px) {
   #s01 div.categories div.block div.block-title h3 {
     font-size: 20px;
+  }
+}
+@media (max-width: 1366px) {
+  #s01 div.categories div.block div.block-title h3 {
+    font-size: 18px;
   }
 }
 #s01 div.categories div.block div.block-title:before {
@@ -338,6 +349,11 @@ header .container #headerCarousel .carousel-banners div.banner p {
 }
 #s01 div.categories div.block div.block-content div p {
   margin-bottom: 0;
+}
+@media (max-width: 1366px) {
+  #s01 div.categories div.block div.block-content div p {
+    font-size: 18px;
+  }
 }
 
 #s02 .cars {
@@ -499,10 +515,15 @@ header .container #headerCarousel .carousel-banners div.banner p {
 #s05 h2.title {
   text-align: left;
   margin-bottom: 25px;
+  font-size: 36px;
 }
 #s05 p {
   font-family: "Exo 2", sans-serif;
+<<<<<<< HEAD
   font-size: 26px;
+=======
+  font-size: 24px;
+>>>>>>> 7a03cd6d250db7b8c6fe96b562c89d17083b1497
   font-weight: 400;
 }
 #s05 p:first-child {
@@ -552,6 +573,16 @@ header .container #headerCarousel .carousel-banners div.banner p {
 #s06 .about-us p {
   line-height: 150%;
 }
+@media (max-width: 1440px) {
+  #s06 .about-us p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1366px) {
+  #s06 .about-us p {
+    font-size: 18px;
+  }
+}
 
 #s07 {
   padding: 75px 0;
@@ -594,6 +625,12 @@ header .container #headerCarousel .carousel-banners div.banner p {
   margin-right: auto;
   margin-bottom: 30px;
 }
+@media (max-width: 1440px) {
+  #s07 div.trio a img {
+    width: 60px;
+    height: 60px;
+  }
+}
 #s07 div.trio a span {
   display: flex;
   justify-content: space-between;
@@ -603,11 +640,21 @@ header .container #headerCarousel .carousel-banners div.banner p {
   color: #fff;
   text-transform: uppercase;
 }
+@media (max-width: 1440px) {
+  #s07 div.trio a span {
+    font-size: 36px;
+  }
+}
 #s07 div.trio a span:after {
   font-family: "Font Awesome 5 Free";
   font-weight: 700;
   font-size: 25px;
   content: "";
+}
+@media (max-width: 1440px) {
+  #s07 div.trio a span:after {
+    font-size: 30px;
+  }
 }
 
 footer {
@@ -635,6 +682,16 @@ footer .ss .subscribe form input::placeholder {
   font-size: 20px;
   color: #000;
   text-shadow: 2px 3px 15px #000;
+}
+@media (max-width: 1440px) {
+  footer .ss .subscribe form input {
+    width: 610px;
+  }
+}
+@media (max-width: 1366px) {
+  footer .ss .subscribe form input {
+    width: 485px;
+  }
 }
 footer .ss .subscribe form button {
   width: 210px;
