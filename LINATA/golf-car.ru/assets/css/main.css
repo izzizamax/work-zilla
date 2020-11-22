@@ -6,7 +6,7 @@
   font-size: 18px;
   color: #333;
 }
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   * {
     font-size: 16px;
   }
@@ -499,7 +499,7 @@ header .container #headerCarousel .carousel-banners div.banner p {
     display: none;
   }
 }
-@media (max-width: 600px) and (max-width: 425px) {
+@media (max-width: 425px) {
   #s02 .cars {
     width: 100%;
   }
@@ -610,6 +610,11 @@ header .container #headerCarousel .carousel-banners div.banner p {
 @media (max-width: 600px) {
   #s02 .btn-catalog a.btn-go-catalog.btn-grey {
     width: 65%;
+  }
+}
+@media (max-width: 425px) {
+  #s02 .btn-catalog a.btn-go-catalog.btn-grey {
+    width: 100%;
   }
 }
 @media (max-width: 375px) {

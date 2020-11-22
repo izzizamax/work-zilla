@@ -10,7 +10,7 @@ $s-mb: 50px; // Section margin bottom
     font-size: 18px;
     color: #333;
 
-    @media(max-width: 375px) {
+    @media(max-width: 425px) {
         font-size: 16px;
     }
 }
@@ -547,11 +547,11 @@ header {
             & > .car-card:nth-of-type(n+4) {
                 display: none;
             }
+        }
 
         @media(max-width: 425px) {
             width: 100%;
         }
-    }
 
         .car-card {
             padding: 30px 15px 50px;
@@ -670,6 +670,10 @@ header {
 
             @media(max-width: 600px) {
                 width: 65%;
+            }
+
+            @media(max-width: 425px) {
+                width: 100%;
             }
 
             @media(max-width: 375px) {
