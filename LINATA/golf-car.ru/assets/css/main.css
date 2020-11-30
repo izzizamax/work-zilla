@@ -4,7 +4,6 @@
 * {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 18px;
-  color: #333;
 }
 @media only screen and (max-width: 425px) {
   * {
@@ -287,6 +286,15 @@ header .container nav.navbar .bottom-line ul.navbar-nav {
   width: 100%;
   margin-left: auto;
   padding-right: 10px;
+}
+header .container nav.navbar .bottom-line ul.navbar-nav .nav-item .dropdown-menu {
+  display: none;
+}
+header .container nav.navbar .bottom-line ul.navbar-nav .nav-item:hover .dropdown-menu {
+  display: block;
+}
+header .container nav.navbar .bottom-line ul.navbar-nav .navbar .nav-item .dropdown-menu {
+  margin-top: 0;
 }
 header .container nav.navbar .bottom-line ul.navbar-nav li.nav-item a.nav-link {
   font-family: "Exo 2", sans-serif;
@@ -1044,6 +1052,12 @@ header .container #headerCarousel .carousel-banners div.banner p {
   margin-right: 15px;
 }
 
+#listNews .card {
+  box-shadow: -5px 5px 8px #858585;
+  border-radius: 0;
+  margin-bottom: 50px;
+}
+
 footer {
   border-top: solid 2px #fff;
   background: linear-gradient(50deg, #85878d 0%, #969798 50%, #5e5d63 100%);
@@ -1081,7 +1095,12 @@ footer .ss .subscribe p {
   }
 }
 footer .ss .subscribe form .row {
-  flex-direction: column;
+  flex-direction: row;
+}
+@media only screen and (max-width: 425px) {
+  footer .ss .subscribe form .row {
+    flex-direction: column;
+  }
 }
 footer .ss .subscribe form input {
   width: 550px;
