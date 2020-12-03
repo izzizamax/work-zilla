@@ -11,6 +11,20 @@
   }
 }
 
+h1.title {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+}
+h1.title span {
+  font-size: 36px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #88898f 0%, #5f5e64 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 h2.title {
   font-size: 36px;
   font-weight: 600;
@@ -109,7 +123,7 @@ h3 {
   }
 }
 
-#s07, #s06, #s05, #s04, #s03, #s02, #s01 {
+#catalog, #golf-car, #s07, #s06, #s05, #s04, #s03, #s02, #s01 {
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -1056,6 +1070,249 @@ header .container #headerCarousel .carousel-banners div.banner p {
   box-shadow: -5px 5px 8px #858585;
   border-radius: 0;
   margin-bottom: 50px;
+}
+
+#golf-car h1 {
+  text-align: center;
+}
+#golf-car img.golf-image {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+#golf-car .gallery {
+  margin: 30px 0;
+  padding: 30px 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  border-top: solid 4px #c4c4c4;
+}
+@media only screen and (max-width: 800px) {
+  #golf-car .gallery {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media only screen and (max-width: 600px) {
+  #golf-car .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 425px) {
+  #golf-car .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 375px) {
+  #golf-car .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 320px) {
+  #golf-car .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+#golf-car .gallery img {
+  max-width: 100%;
+}
+#golf-car .params .params_block {
+  margin-bottom: 40px;
+}
+#golf-car .params .params_block .params-block-title {
+  margin: 1px;
+  padding: 5px 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(50deg, #6a6c71 0%, #777879 50%, #4c4c4e 100%);
+}
+#golf-car .params .params_block .paramRow {
+  display: flex;
+}
+@media only screen and (max-width: 425px) {
+  #golf-car .params .params_block .paramRow {
+    flex-direction: column;
+  }
+}
+#golf-car .params .params_block .paramRow .paramTitle {
+  width: 50%;
+  margin: 1px;
+  padding: 5px 15px;
+  font-weight: bold;
+  background-color: #e0e0e0;
+}
+@media only screen and (max-width: 425px) {
+  #golf-car .params .params_block .paramRow .paramTitle {
+    width: 100%;
+    text-align: center;
+  }
+}
+#golf-car .params .params_block .paramRow .paramValue {
+  width: 50%;
+  margin: 1px;
+  padding: 5px 15px;
+  font-weight: normal;
+  background-color: rgba(233, 233, 233, 0.65);
+}
+@media only screen and (max-width: 425px) {
+  #golf-car .params .params_block .paramRow .paramValue {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #golf-car .params .additional_options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #golf-car .params .additional_options {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+  }
+}
+#golf-car .params .additional_options div.block-title {
+  background-color: #e5e5e5;
+  padding: 5px 15px;
+}
+#golf-car .params .additional_options div.block-title h5 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+#clients {
+  margin: 50px 0;
+}
+#clients .clients {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+#clients .clients .client-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#clients .clients .client-card h5 {
+  text-align: center;
+}
+#clients .clients .client-card .client-image img {
+  max-width: 220px;
+  max-height: 220px;
+  width: 220px;
+  height: 220px;
+  display: block;
+  margin: auto;
+}
+#clients .clients .client-card .client-description p {
+  text-align: center;
+  font-size: 14px;
+}
+#clients .clients .client-card .more {
+  text-align: center;
+}
+#clients .clients .client-card .more a {
+  width: 50%;
+  font-size: 16px;
+}
+
+#catalog h1 {
+  text-align: center;
+  font-weight: bold;
+}
+#catalog .catalog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+#catalog .catalog .car-card {
+  padding: 30px 15px 50px;
+  box-shadow: 0px 5px 15px rgba(215, 215, 215, 0.35);
+}
+#catalog .catalog .car-card h3 {
+  text-align: center;
+}
+#catalog .catalog .car-card .content {
+  padding: 0 25px;
+}
+#catalog .catalog .car-card .content > img {
+  display: block;
+  margin: 15px auto;
+}
+#catalog .catalog .car-card .content .params > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 0;
+}
+#catalog .catalog .car-card .content .params > div img {
+  margin-right: 15px;
+}
+#catalog .catalog .car-card .content .params > div p {
+  margin-bottom: 0;
+}
+#catalog .catalog .car-card .footer {
+  padding-top: 25px;
+}
+#catalog .catalog .car-card .footer .border-wrap {
+  position: relative;
+  max-width: 50%;
+  background: linear-gradient(90deg, #88898f 0%, #5f5e64 100%);
+  padding: 3px;
+  margin: auto;
+}
+#catalog .catalog .car-card .footer .link {
+  background: #fff;
+  color: white;
+}
+#catalog .catalog .car-card .footer .link a.btn {
+  position: relative;
+  font-family: "Exo 2", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+  margin: auto;
+  background: linear-gradient(90deg, #88898f 0%, #5f5e64 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media only screen and (max-width: 1440px) {
+  #catalog .catalog .car-card .footer .link a.btn {
+    font-size: 20px;
+  }
+}
+#catalog .catalog .car-card .footer .link a.btn:hover:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 60px;
+  margin-left: 60px;
+  background: #fff;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.17) 100%);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.17) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.17) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#b3ffffff", endColorstr="#b3ffffff",GradientType=0 );
+  position: absolute;
+  left: -40px;
+  top: 0;
+  z-index: 1;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-animation-name: slideme;
+  animation-name: slideme;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 footer {
