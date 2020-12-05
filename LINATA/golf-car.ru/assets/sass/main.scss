@@ -1634,6 +1634,7 @@ header {
 
                 & > img {
                     display: block;
+                    width: 225px;
                     margin: 15px auto;
                 }
 
@@ -1726,6 +1727,170 @@ header {
         }
     }
 }
+
+#gallery {
+    @extend %section-margin;
+
+    .galleries {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+
+        div.album-out {
+            background: linear-gradient(90deg, #88898f 0%, #5f5e64 100%);
+            padding: 35px;
+
+            div.album-in {
+                background: #fff;
+                padding: 30px;
+            }
+        }
+
+
+        div {
+            position: relative;
+
+            // &:hover {
+            //     &:before {
+            //         position: absolute;
+            //         content: '';
+            //         top:0;
+            //         bottom: 0;
+            //         left: 0;
+            //         right: 0;
+            //         background: linear-gradient(50deg, rgba(133, 135, 141, 0.5) 0%, hsla(210, 1%, 59.2%, 0.5) 50%, hsla(250, 3.1%, 37.6%, 0.5) 100%);
+            //     }
+            // }
+
+
+            img {
+                width: 70%;
+                display: block;
+                margin: auto;
+            }
+
+            a {
+                display: block;
+                margin: auto;
+                width: 60%
+            }
+        }
+    }
+}
+
+#contacts {
+    @extend %section-margin;
+
+    .cards {
+        .card {
+            margin-bottom: 40px;
+            box-shadow: 0 0 30px #000;
+            border-radius: 0px;
+
+            img {
+                border-radius: 0px;
+            }
+
+            .card-title {
+                margin-bottom: 5px;
+                font-size: 32px;
+                font-weight: bold;
+
+                span {
+                    font-size: 28px;
+                    color: gray
+                }
+            }
+            .card-text {
+
+                p {
+                    font-size: 24px;
+                    padding-left: 12px;
+                    margin-bottom: 2rem;
+                }
+
+                address {
+                    & > div {
+                        display: flex;
+                        margin-bottom: 16px;
+                        align-items: center;
+
+                        i {
+                            font-size: 50px;
+                            margin-right: 15px;
+                            width: 55px;
+                            text-align: center;
+                            background: -webkit-linear-gradient(#eee, #333);
+                              -webkit-background-clip: text;
+                              -webkit-text-fill-color: transparent;
+                        }
+
+                        p {
+                            font-size: 20px;
+                            margin-bottom: 0;
+                        }
+
+                        p.small {
+                            font-size: 15px;
+                            color: gray;
+                        }
+
+                        a {
+                            font-size: 24px;
+                            color: #333;
+                            text-decoration: underline;
+
+                            &:hover {
+                                color: #000;
+                                font-weight: 700;
+                            }
+                        }
+
+
+                    }
+                }
+            }
+        }
+
+        .cards-sm {
+            .card {
+                .card-image {
+                    position: relative;
+                    display: flex;
+                    padding: 15px;
+                    align-items: flex-end;
+                    color: #fff;
+                    width: 100%;
+                    height: 200px;
+                    background: url('https://32.img.avito.st/640x480/4793447832.jpg'); background-size: cover; background-repeat: no-repeat;
+
+                    .overlay {
+                        position:absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.75));
+                    }
+
+                    p {
+                        font-size: 22px;
+                        font-weight: bold;
+                        position: relative;
+                        margin: 0;
+
+                            span {
+                                font-size: 22px;
+                                text-transform: uppercase;
+                            }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 
 footer {
     border-top: solid 2px #fff;

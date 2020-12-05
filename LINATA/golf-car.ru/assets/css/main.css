@@ -123,7 +123,7 @@ h3 {
   }
 }
 
-#catalog, #golf-car, #s07, #s06, #s05, #s04, #s03, #s02, #s01 {
+#contacts, #gallery, #catalog, #golf-car, #s07, #s06, #s05, #s04, #s03, #s02, #s01 {
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -1242,6 +1242,7 @@ header .container #headerCarousel .carousel-banners div.banner p {
 }
 #catalog .catalog .car-card .content > img {
   display: block;
+  width: 225px;
   margin: 15px auto;
 }
 #catalog .catalog .car-card .content .params > div {
@@ -1313,6 +1314,117 @@ header .container #headerCarousel .carousel-banners div.banner p {
   animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+}
+
+#gallery .galleries {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+}
+#gallery .galleries div.album-out {
+  background: linear-gradient(90deg, #88898f 0%, #5f5e64 100%);
+  padding: 35px;
+}
+#gallery .galleries div.album-out div.album-in {
+  background: #fff;
+  padding: 30px;
+}
+#gallery .galleries div {
+  position: relative;
+}
+#gallery .galleries div img {
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+#gallery .galleries div a {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+#contacts .cards .card {
+  margin-bottom: 40px;
+  box-shadow: 0 0 30px #000;
+  border-radius: 0px;
+}
+#contacts .cards .card img {
+  border-radius: 0px;
+}
+#contacts .cards .card .card-title {
+  margin-bottom: 5px;
+  font-size: 32px;
+  font-weight: bold;
+}
+#contacts .cards .card .card-title span {
+  font-size: 28px;
+  color: gray;
+}
+#contacts .cards .card .card-text p {
+  font-size: 24px;
+  padding-left: 12px;
+  margin-bottom: 2rem;
+}
+#contacts .cards .card .card-text address > div {
+  display: flex;
+  margin-bottom: 16px;
+  align-items: center;
+}
+#contacts .cards .card .card-text address > div i {
+  font-size: 50px;
+  margin-right: 15px;
+  width: 55px;
+  text-align: center;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#contacts .cards .card .card-text address > div p {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+#contacts .cards .card .card-text address > div p.small {
+  font-size: 15px;
+  color: gray;
+}
+#contacts .cards .card .card-text address > div a {
+  font-size: 24px;
+  color: #333;
+  text-decoration: underline;
+}
+#contacts .cards .card .card-text address > div a:hover {
+  color: #000;
+  font-weight: 700;
+}
+#contacts .cards .cards-sm .card .card-image {
+  position: relative;
+  display: flex;
+  padding: 15px;
+  align-items: flex-end;
+  color: #fff;
+  width: 100%;
+  height: 200px;
+  background: url("https://32.img.avito.st/640x480/4793447832.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#contacts .cards .cards-sm .card .card-image .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));
+}
+#contacts .cards .cards-sm .card .card-image p {
+  font-size: 22px;
+  font-weight: bold;
+  position: relative;
+  margin: 0;
+}
+#contacts .cards .cards-sm .card .card-image p span {
+  font-size: 22px;
+  text-transform: uppercase;
 }
 
 footer {
