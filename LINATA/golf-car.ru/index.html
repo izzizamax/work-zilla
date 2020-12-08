@@ -20,7 +20,7 @@
                 <a class="navbar-brand" href="/">
                     <img src="./assets/images/logo.jpg" alt="golf-car.ru">
                 </a>
-                <a>
+                <a class="mobile-phone">
                     <i class="fas fa-phone"></i>
                 </a>
                 <div>
@@ -93,6 +93,7 @@
                 </div>
             </nav>
             <div id="headerCarousel" class="carousel slide d-none d-xl-block" data-ride="carousel">
+                <div class="night"></div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="image" style="background-image: url('./assets/images/carousel/slide-1-1.jpg'); position: relative;">
@@ -756,6 +757,12 @@
     <script src="./assets/js/wow.min.js"></script>
     <script>
         new WOW().init();
+        setTimeout(function() {
+            $('.night').fadeOut('slow');
+        }, 1500);
+        setTimeout(function() {
+            $('.carousel-banners').css('bottom','0px');
+        }, 3000);
     </script>
 </body>
 

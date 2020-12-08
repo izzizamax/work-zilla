@@ -150,12 +150,6 @@ header {
                 box-shadow: 0 5px 20px #7d7d7d,
             )
         ));
-        // @media(max-width: 600px) {
-        //     // position: fixed;
-        //     // top: 0;
-        //     box-shadow: 0 5px 20px #7d7d7d;
-        //     // z-index: 9999;
-        // }
         nav.navbar {
             @include media((
                 '600': (
@@ -169,7 +163,7 @@ header {
             & i.fas {
                 @include media((
                     '600': (
-                        font-size: 600px,
+                        font-size: 50px,
                     ),
                     '375': (
                         font-size: 30px,
@@ -179,12 +173,14 @@ header {
 
             .navbar-brand {
                 @include media((
-                    '800': (
+                    '1024': (
+                        margin-right: 0,
                         padding-left: 0,
                         padding-right: 0,
                     )
                 ));
-                padding-left: 50px;
+
+                padding-left: 0px;
 
                 // @media(max-width: 800px) {
                 //     padding-left: 0;
@@ -193,7 +189,7 @@ header {
 
                 img {
                     @include media((
-                        '800': (
+                        '1024': (
                             width: 115px,
                         )
                     ))
@@ -201,6 +197,16 @@ header {
                     //     width: 115px;
                     // }
                 }
+            }
+
+            a.mobile-phone {
+                @include media((
+                    '600': (
+                        display: block,
+                        color: #333,
+                    )
+                ));
+                display: none;
             }
 
             .navbar-toggler.mobile {
@@ -223,6 +229,9 @@ header {
                 @include media((
                     '800': (
                         width: 85%,
+                    ),
+                    '600': (
+                        width: 100%,
                     )
                 ));
                 width: 100%;
@@ -260,6 +269,11 @@ header {
 
                 p {
                     @include media((
+                        '1024': (
+                            font-size: 18px,
+                            padding: 0 5px
+                        ),
+
                         '800': (
                             text-align: left,
                             padding: 0 5px,
@@ -426,8 +440,9 @@ header {
                     li.nav-item {
                         a.nav-link {
                             font-family: "Exo 2", sans-serif;
-                            font-weight: 500;
+                            font-weight: 700;
                             font-size: 16px;
+                            color: rgba(0, 0, 0, .7);
                             text-transform: uppercase;
 
                             @media(max-width: 800px) {
@@ -468,31 +483,29 @@ header {
             .mobile-menu {
                 @include media((
                     '600': (
+                        width: 100%,
                         display: block,
                     )
                 ));
                 display: none;
             }
 
-            // @media(max-width: 600px) {
-            //     padding-left: 20px;
-            //     padding-right: 20px;
-            //     i.fas {
-            //         font-size: 40px;
-            //     }
-            // }
-            //
-            // @media(max-width: 375px) {
-            //     i.fas {
-            //         font-size: 30px;
-            //     }
-            // }
         }
 
         #headerCarousel {
             position: relative;
             height: 450px;
             overflow: hidden;
+
+            .night {
+                position: absolute;
+                top:0;
+                bottom: 0;
+                right: 0;
+                left:0;
+                background-color: rgba(0, 0, 0, .8);
+                z-index: 100;
+            }
 
             .carousel-inner {
                 height: 100%;
@@ -594,8 +607,9 @@ header {
                 height: 100px;
                 left: 0;
                 right: 0;
-                bottom: 0;
+                bottom: -100px;
                 z-index: 50;
+                transition: 1.5s;
 
                 div.banner {
                     display: flex;
@@ -606,7 +620,7 @@ header {
 
                     p {
                         font-size: 14px;
-                        color: #fff;
+                        color: #000;
                         margin: 10px 0 0;
                     }
                 }
@@ -645,7 +659,11 @@ header {
                     @include media((
                         '1440': (
                             font-size: 20px,
+                        ),
+                        '1024': (
+                            padding: 0 20px
                         )
+
                     ));
 
                     font-size: 20px;
@@ -1778,6 +1796,68 @@ header {
     }
 }
 
+#album {
+    @extend %section-margin;
+
+    .images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+
+        .image {
+            position: relative;
+            background-size: cover;
+            width: 100%;
+            // height: 400px;
+            // border: solid 2px #000;
+
+            .overlay {
+                display: none;
+                position: absolute;
+                display: flex;
+                align-items: flex-end;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                cursor: pointer;
+                background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+                // -webkit-animation: zoomin 10s linear;
+                opacity: 0;
+                transition: all .25s ease;
+
+                p {
+                    margin: 0px;
+                    padding: 20px;
+                    color: #fff;
+                }
+            }
+
+            &:hover {
+                .overlay {
+                    opacity: 1;
+                }
+            }
+
+            img {
+                max-width: 100%;
+                visibility: hidden;
+            }
+
+            // @-webkit-keyframes zoomin {
+            //   0% {
+            //     -webkit-transform: scale(1);
+            //     transform: scale(1);
+            //   }
+            //   100% {
+            //     -webkit-transform: scale(2);
+            //     transform: scale(2);
+            //   }
+            // }
+        }
+    }
+}
+
 #contacts {
     @extend %section-margin;
 
@@ -1861,7 +1941,7 @@ header {
                     align-items: flex-end;
                     color: #fff;
                     width: 100%;
-                    height: 200px;
+                    height: 230px;
                     background: url('https://32.img.avito.st/640x480/4793447832.jpg'); background-size: cover; background-repeat: no-repeat;
 
                     .overlay {
@@ -1883,6 +1963,61 @@ header {
                                 font-size: 22px;
                                 text-transform: uppercase;
                             }
+                    }
+                }
+
+                .card-body {
+                    h5.card-title {
+                        font-size: 22px;
+                        margin-bottom: 20px;
+                    }
+
+                    .card-text {
+                        address {
+                            i {
+                                font-size: 28px;
+                                margin-right: 0;
+                            }
+
+                            p {
+                                font-size: 18px;
+
+                                a {
+                                    font-size: 18px;
+                                }
+                            }
+
+                            p.small {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+
+                .card-footer {
+                    margin-top: 20px;
+                    background-color: transparent;
+
+                    & > div {
+                        display: flex;
+                        justify-content: flex-end;
+
+                        & > div {
+                            display: flex;
+                            align-items: center;
+                            margin-left: 15px;
+
+                            i {
+                                font-size: 24px;
+                                color: #959595;
+                                margin-right: 10px;
+                            }
+
+                            p {
+                                font-size: 18px;
+                                margin: 0;
+                            }
+                        }
                     }
                 }
             }
