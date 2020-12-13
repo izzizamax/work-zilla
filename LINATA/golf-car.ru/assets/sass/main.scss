@@ -1968,12 +1968,12 @@ header {
 }
 
 #contacts {
-    @extend %section-margin;
+    margin: 0px;
 
     .cards {
         .card {
             margin-bottom: 40px;
-            box-shadow: 0 0 30px #000;
+            box-shadow: 0 0 3px #000;
             border-radius: 0px;
 
             img {
@@ -2126,6 +2126,41 @@ header {
                                 font-size: 18px;
                                 margin: 0;
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .feedback {
+        border: solid 7px #ffcf00;
+        margin-bottom: 50px;
+        padding: 50px;
+        display: flex;
+
+        .soc-icons {
+            min-width: 350px;
+
+            .icons {
+                display: flex;
+                flex-wrap: wrap;
+
+                & > div {
+                    width: 26%;
+                    margin-bottom: 25px;
+                    text-align: center;
+
+                    a {
+                        text-decoration: none;
+
+                        i {
+                            font-size: 40px;
+                            // color: grey;
+                            background: linear-gradient(90deg, #88898f 0%, #5f5e64 100%);
+                            background-clip: border-box;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
                         }
                     }
                 }

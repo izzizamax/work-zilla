@@ -211,7 +211,7 @@ a:active, a:hover {
   }
 }
 
-#contacts, #album, #gallery, #catalog, #golf-car, #s07, #s06, #s05, #s04, #s03, #s02, #s01 {
+#album, #gallery, #catalog, #golf-car, #s07, #s06, #s05, #s04, #s03, #s02, #s01 {
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -1511,9 +1511,12 @@ header .container #headerCarousel .carousel-banners div.banner p {
   visibility: hidden;
 }
 
+#contacts {
+  margin: 0px;
+}
 #contacts .cards .card {
   margin-bottom: 40px;
-  box-shadow: 0 0 30px #000;
+  box-shadow: 0 0 3px #000;
   border-radius: 0px;
 }
 #contacts .cards .card img {
@@ -1632,6 +1635,34 @@ header .container #headerCarousel .carousel-banners div.banner p {
 #contacts .cards .cards-sm .card .card-footer > div > div p {
   font-size: 18px;
   margin: 0;
+}
+#contacts .feedback {
+  border: solid 7px #ffcf00;
+  margin-bottom: 50px;
+  padding: 50px;
+  display: flex;
+}
+#contacts .feedback .soc-icons {
+  min-width: 350px;
+}
+#contacts .feedback .soc-icons .icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+#contacts .feedback .soc-icons .icons > div {
+  width: 26%;
+  margin-bottom: 25px;
+  text-align: center;
+}
+#contacts .feedback .soc-icons .icons > div a {
+  text-decoration: none;
+}
+#contacts .feedback .soc-icons .icons > div a i {
+  font-size: 40px;
+  background: linear-gradient(90deg, #88898f 0%, #5f5e64 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #about_us article .partners {
