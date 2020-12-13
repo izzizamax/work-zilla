@@ -17,6 +17,11 @@ h1.title {
   text-align: center;
   margin-bottom: 40px;
 }
+h1.title:before {
+  content: "";
+  border-right: solid 7px #ffcf00;
+  margin-right: 10px;
+}
 h1.title span {
   font-size: 36px;
   font-weight: 700;
@@ -31,6 +36,24 @@ h2.title {
   text-align: center;
   margin-bottom: 40px;
 }
+@media only screen and (max-width: 600px) {
+  h2.title {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  h2.title {
+    font-size: 26px;
+  }
+}
+h2.title:before {
+  content: "";
+  border-right: solid 7px #ffcf00;
+  margin-right: 10px;
+}
+h2.title.title.no-border:before {
+  display: none;
+}
 h2.title span {
   font-size: 36px;
   font-weight: 700;
@@ -38,9 +61,74 @@ h2.title span {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media only screen and (max-width: 600px) {
+  h2.title span {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  h2.title span {
+    font-size: 26px;
+  }
+}
 
 h3 {
   font-size: 24px;
+}
+
+h3.section-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+h3.section-title:before {
+  content: "";
+  border-right: solid 7px #ffcf00;
+  margin-right: 10px;
+}
+h3.section-title span {
+  font-size: 30px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #88898f 0%, #5f5e64 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a {
+  color: #ddb305;
+}
+a:active, a:hover {
+  color: #ffcf00;
+}
+
+.pagination {
+  justify-content: center;
+}
+.pagination .page-item .page-link {
+  color: #ffc90f;
+  border: none;
+  border-radius: 0;
+  margin: 0 5px;
+  background: linear-gradient(50deg, #85878d 0%, #969798 50%, #5e5d63 100%);
+  font-weight: bold;
+  font-size: 130%;
+}
+.pagination .page-item.active .page-link {
+  color: #8a8a8a;
+  background: #ffc90f !important;
+  border: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .order-sm-1 {
+    order: 1 !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .order-sm-2 {
+    order: 2 !important;
+  }
 }
 
 .btn-grey {
@@ -128,6 +216,11 @@ h3 {
   margin-bottom: 50px;
 }
 
+@media only screen and (max-width: 600px) {
+  header {
+    margin-bottom: 40px;
+  }
+}
 @media only screen and (max-width: 600px) {
   header .container {
     box-shadow: 0 5px 20px #7d7d7d;
@@ -1539,6 +1632,201 @@ header .container #headerCarousel .carousel-banners div.banner p {
 #contacts .cards .cards-sm .card .card-footer > div > div p {
   font-size: 18px;
   margin: 0;
+}
+
+#about_us article .partners {
+  margin: 75px 0;
+  align-items: center;
+}
+#about_us article .partners h2.title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#about_us article .partners p {
+  text-align: justify;
+}
+#about_us article .partners .gem-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about_us article .footer-about p {
+  text-align: center;
+  font-weight: bold;
+}
+#about_us article .footer-about p a.btn-phone {
+  display: block;
+  font-size: 24px;
+  width: 250px;
+  margin: 18px auto 0;
+  background: linear-gradient(50deg, #85878d 0%, #969798 50%, #5e5d63 100%);
+  padding: 7px 0;
+}
+#about_us article .footer-about p a.btn-phone:link, #about_us article .footer-about p a.btn-phone:visited {
+  color: #fff;
+}
+#about_us article .footer-about p a.btn-phone:active, #about_us article .footer-about p a.btn-phone:hover {
+  color: #ffcf00;
+}
+#about_us .icons {
+  display: flex;
+  justify-content: center;
+}
+#about_us .icons a {
+  margin: 0 15px;
+}
+#about_us .icons a:link, #about_us .icons a:visited {
+  color: #ddb305;
+}
+#about_us .icons a i {
+  font-size: 30px;
+}
+#about_us .contacts {
+  padding: 50px 0px;
+}
+#about_us .contacts .address div {
+  padding: 20px 10px;
+}
+#about_us .contacts .address ul {
+  list-style: none;
+  padding-left: 20px;
+}
+@media only screen and (max-width: 375px) {
+  #about_us .contacts .address ul {
+    padding-left: 0px;
+  }
+}
+#about_us .contacts .address ul li {
+  margin-bottom: 12px;
+}
+#about_us .contacts .address ul li a {
+  font-size: 21px;
+  color: #333;
+}
+@media only screen and (max-width: 1024px) {
+  #about_us .contacts .address ul li a {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  #about_us .contacts .address ul li a {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #about_us .contacts .address ul li a {
+    font-size: 14px;
+  }
+}
+#about_us .contacts .address ul li a:hover {
+  text-decoration: none;
+}
+#about_us .contacts .address ul li a:hover span {
+  color: #ffcf00;
+}
+#about_us .contacts .address ul li a i {
+  font-size: 29px;
+  color: #85868c;
+  margin-right: 10px;
+}
+#about_us .contacts .address ul li a span {
+  font-size: 21px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-bottom: dashed 1px grey;
+}
+@media only screen and (max-width: 1024px) {
+  #about_us .contacts .address ul li a span {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  #about_us .contacts .address ul li a span {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #about_us .contacts .address ul li a span {
+    font-size: 17px;
+  }
+}
+#about_us .contacts .group {
+  position: relative;
+  margin-bottom: 30px;
+}
+#about_us .contacts input {
+  font-size: 16px;
+  padding: 10px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+#about_us .contacts input:focus {
+  outline: none;
+}
+#about_us .contacts input:focus ~ label, #about_us .contacts input:focus:valid ~ label {
+  top: -15px;
+  font-size: 14px;
+  color: #333;
+}
+#about_us .contacts input:focus ~ .bar:before, #about_us .contacts input:focus ~ .bar:after {
+  width: 50%;
+}
+#about_us .contacts textarea {
+  padding: 7px;
+}
+#about_us .contacts textarea:focus {
+  border: solid 2px #ffcf00;
+}
+#about_us .contacts label {
+  color: #999;
+  font-size: 18px;
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 15px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+#about_us .contacts .bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+#about_us .contacts .bar:before, #about_us .contacts .bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background: #ffcf00;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+#about_us .contacts .bar:before {
+  left: 50%;
+}
+#about_us .contacts .bar:after {
+  right: 50%;
+}
+#about_us .contacts .feedback {
+  padding: 20px 10px;
+}
+#about_us .contacts .feedback form div.name {
+  margin: 20px 15px 30px;
+}
+#about_us .contacts .feedback form div.email {
+  margin: 0px 15px 30px;
+}
+#about_us .contacts .feedback form div.class {
+  margin: 0px 15px 30px;
+}
+#about_us .contacts .feedback form div.message {
+  margin: 0px 15px 30px;
 }
 
 footer {
