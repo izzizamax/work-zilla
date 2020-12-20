@@ -301,6 +301,11 @@ header .container nav.navbar .top-line {
   align-items: center;
   border-bottom: solid 5px #C4C4C4;
 }
+@media only screen and (max-width: 1024px) {
+  header .container nav.navbar .top-line {
+    width: 97%;
+  }
+}
 @media only screen and (max-width: 800px) {
   header .container nav.navbar .top-line {
     border-bottom: 0;
@@ -368,6 +373,11 @@ header .container nav.navbar .bottom-line {
   width: 95%;
   display: flex;
 }
+@media only screen and (max-width: 1024px) {
+  header .container nav.navbar .bottom-line {
+    width: 97%;
+  }
+}
 @media only screen and (max-width: 800px) {
   header .container nav.navbar .bottom-line {
     background: linear-gradient(90deg, #88898f 0%, #5f5e64 100%);
@@ -430,6 +440,11 @@ header .container nav.navbar .bottom-line ul.navbar-nav li.nav-item a.nav-link {
   font-size: 16px;
   color: rgba(0, 0, 0, 0.7);
   text-transform: uppercase;
+}
+@media only screen and (max-width: 1024px) {
+  header .container nav.navbar .bottom-line ul.navbar-nav li.nav-item a.nav-link {
+    font-size: 14px;
+  }
 }
 @media (max-width: 800px) {
   header .container nav.navbar .bottom-line ul.navbar-nav li.nav-item a.nav-link {
@@ -1247,6 +1262,18 @@ header .container #headerCarousel .carousel-banners div.banner p {
 #golf-car .gallery img {
   max-width: 100%;
 }
+#golf-car .params .nav-tabs .nav-link {
+  color: #939393;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+#golf-car .params .nav-tabs .nav-link:hover {
+  color: #f3c80c;
+}
+#golf-car .params .nav-tabs .nav-link.active {
+  color: #f3c80c;
+  background: linear-gradient(50deg, #6a6c71 0%, #777879 50%, #4c4c4e 100%);
+  border-color: #dee2e6 #dee2e6 #fff;
+}
 #golf-car .params .params_block {
   margin-bottom: 40px;
 }
@@ -1519,30 +1546,55 @@ header .container #headerCarousel .carousel-banners div.banner p {
   box-shadow: 0 0 3px #000;
   border-radius: 0px;
 }
-#contacts .cards .card img {
-  border-radius: 0px;
+#contacts .cards .card .office-image {
+  height: 100%;
+  background-size: cover;
 }
-#contacts .cards .card .card-title {
+#contacts .cards .card .card-body {
+  padding-bottom: 0;
+}
+#contacts .cards .card .card-body .card-title {
   margin-bottom: 5px;
   font-size: 32px;
   font-weight: bold;
 }
-#contacts .cards .card .card-title span {
-  font-size: 28px;
-  color: gray;
+@media only screen and (max-width: 1024px) {
+  #contacts .cards .card .card-body .card-title {
+    font-size: 26px;
+  }
 }
-#contacts .cards .card .card-text p {
+#contacts .cards .card .card-body .card-title span {
+  font-size: 28px;
+  color: grey;
+}
+@media only screen and (max-width: 1024px) {
+  #contacts .cards .card .card-body .card-title span {
+    font-size: 22px;
+  }
+}
+#contacts .cards .card .card-body .card-text p {
   font-size: 24px;
   padding-left: 12px;
   margin-bottom: 2rem;
 }
-#contacts .cards .card .card-text address > div {
+@media only screen and (max-width: 1024px) {
+  #contacts .cards .card .card-body .card-text p {
+    margin-bottom: 1rem;
+    font-size: 18px;
+  }
+}
+#contacts .cards .card .card-body .card-text address > div {
   display: flex;
   margin-bottom: 16px;
   align-items: center;
 }
-#contacts .cards .card .card-text address > div i {
-  font-size: 50px;
+@media only screen and (max-width: 1024px) {
+  #contacts .cards .card .card-body .card-text address > div {
+    margin-bottom: 10px;
+  }
+}
+#contacts .cards .card .card-body .card-text address > div i {
+  font-size: 45px;
   margin-right: 15px;
   width: 55px;
   text-align: center;
@@ -1550,28 +1602,78 @@ header .container #headerCarousel .carousel-banners div.banner p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#contacts .cards .card .card-text address > div p {
+@media only screen and (max-width: 1024px) {
+  #contacts .cards .card .card-body .card-text address > div i {
+    font-size: 30px;
+    margin-right: 0;
+  }
+}
+#contacts .cards .card .card-body .card-text address > div p {
   font-size: 20px;
   margin-bottom: 0;
 }
-#contacts .cards .card .card-text address > div p.small {
+@media only screen and (max-width: 1024px) {
+  #contacts .cards .card .card-body .card-text address > div p {
+    font-size: 17px;
+  }
+}
+#contacts .cards .card .card-body .card-text address > div p.small {
   font-size: 15px;
   color: gray;
 }
-#contacts .cards .card .card-text address > div a {
+#contacts .cards .card .card-body .card-text address > div a {
   font-size: 24px;
   color: #333;
   text-decoration: underline;
 }
-#contacts .cards .card .card-text address > div a:hover {
+@media only screen and (max-width: 1024px) {
+  #contacts .cards .card .card-body .card-text address > div a {
+    font-size: 18px;
+  }
+}
+#contacts .cards .card .card-body .card-text address > div a:hover {
   color: #000;
   font-weight: 700;
+}
+#contacts .cards .card .card-footer {
+  background-color: transparent;
+  margin-top: 20px;
+}
+#contacts .cards .card .card-footer > div {
+  display: flex;
+  justify-content: flex-end;
+}
+#contacts .cards .card .card-footer > div > div {
+  align-items: center;
+  font-size: 14px;
+  margin-left: 15px;
+}
+#contacts .cards .card .card-footer > div > div i {
+  font-size: 24px;
+  color: #959595;
+  margin-right: 10px;
+}
+#contacts .cards .card .card-footer > div > div p {
+  margin: 0;
+  font-size: 18px;
+}
+@media only screen and (max-width: 1024px) {
+  #contacts .cards .card .card-footer > div > div p {
+    font-size: 16px;
+  }
+}
+#contacts .cards .cards-sm > div[class*=col] {
+  display: flex;
+}
+#contacts .cards .cards-sm .card {
+  width: 100%;
 }
 #contacts .cards .cards-sm .card .card-image {
   position: relative;
   display: flex;
+  flex-direction: column;
   padding: 15px;
-  align-items: flex-end;
+  justify-content: flex-end;
   color: #fff;
   width: 100%;
   height: 230px;
@@ -1636,33 +1738,107 @@ header .container #headerCarousel .carousel-banners div.banner p {
   font-size: 18px;
   margin: 0;
 }
-#contacts .feedback {
+#contacts .feedback-block {
   border: solid 7px #ffcf00;
   margin-bottom: 50px;
   padding: 50px;
   display: flex;
 }
-#contacts .feedback .soc-icons {
+#contacts .feedback-block .soc-icons {
   min-width: 350px;
 }
-#contacts .feedback .soc-icons .icons {
+#contacts .feedback-block .soc-icons .icons {
   display: flex;
   flex-wrap: wrap;
 }
-#contacts .feedback .soc-icons .icons > div {
+#contacts .feedback-block .soc-icons .icons > div {
   width: 26%;
   margin-bottom: 25px;
   text-align: center;
 }
-#contacts .feedback .soc-icons .icons > div a {
+#contacts .feedback-block .soc-icons .icons > div a {
   text-decoration: none;
 }
-#contacts .feedback .soc-icons .icons > div a i {
+#contacts .feedback-block .soc-icons .icons > div a i {
   font-size: 40px;
   background: linear-gradient(90deg, #88898f 0%, #5f5e64 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+#contacts .feedback-block .group {
+  position: relative;
+  margin-bottom: 30px;
+}
+#contacts .feedback-block input {
+  font-size: 16px;
+  padding: 10px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+#contacts .feedback-block input:focus {
+  outline: none;
+}
+#contacts .feedback-block input:focus ~ label, #contacts .feedback-block input:focus:valid ~ label {
+  top: -15px;
+  font-size: 14px;
+  color: #333;
+}
+#contacts .feedback-block input:focus ~ .bar:before, #contacts .feedback-block input:focus ~ .bar:after {
+  width: 50%;
+}
+#contacts .feedback-block textarea {
+  padding: 7px;
+}
+#contacts .feedback-block textarea:focus {
+  border: solid 2px #ffcf00;
+}
+#contacts .feedback-block label {
+  color: #999;
+  font-size: 18px;
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 15px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+#contacts .feedback-block .bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+#contacts .feedback-block .bar:before, #contacts .feedback-block .bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background: #ffcf00;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+#contacts .feedback-block .bar:before {
+  left: 50%;
+}
+#contacts .feedback-block .bar:after {
+  right: 50%;
+}
+#contacts .feedback-block .feedback form div.name {
+  margin: 20px 15px 30px;
+}
+#contacts .feedback-block .feedback form div.email {
+  margin: 0px 15px 30px;
+}
+#contacts .feedback-block .feedback form div.class {
+  margin: 0px 15px 30px;
+}
+#contacts .feedback-block .feedback form div.message {
+  margin: 0px 15px 30px;
 }
 
 #about_us article .partners {
