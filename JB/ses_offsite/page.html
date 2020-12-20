@@ -252,8 +252,68 @@
                             </article>
                         </div>
                     </div>
-                    <div class="reviews">
-
+                </div>
+            </div>
+            <div class="reviews">
+                <div class="container">
+                    <h2 class="title">Отзывы</h2>
+                    <div class="owl-carousel carouselReviews">
+                        <div class="review-card">
+                            <h5>Иванов Иван<br/>
+                                ООО “Иванов”</h5>
+                            <p>
+                                “Компания “Название” качественно и быстро проводит выведение насекомых в квартире, на складе или участке. Команде профессиональных дезинсекторов по печу любые объемы и площади. Обработк от вредителей до 100% результата с гарантией - прописано в договоре.
+                            </p>
+                        </div>
+                        <div class="review-card">
+                            <h5>Иванов Иван<br/>
+                                ООО “Иванов”</h5>
+                            <p>
+                                “Компания “Название” качественно и быстро проводит выведение насекомых в квартире, на складе или участке. Команде профессиональных дезинсекторов по печу любые объемы и площади. Обработк от вредителей до 100% результата с гарантией - прописано в договоре.
+                            </p>
+                        </div>
+                        <div class="review-card">
+                            <h5>Иванов Иван<br/>
+                                ООО “Иванов”</h5>
+                            <p>
+                                “Компания “Название” качественно и быстро проводит выведение насекомых в квартире, на складе или участке. Команде профессиональных дезинсекторов по печу любые объемы и площади. Обработк от вредителей до 100% результата с гарантией - прописано в договоре.
+                            </p>
+                        </div>
+                        <div class="review-card">
+                            <h5>Иванов Иван<br/>
+                                ООО “Иванов”</h5>
+                            <p>
+                                “Компания “Название” качественно и быстро проводит выведение насекомых в квартире, на складе или участке. Команде профессиональных дезинсекторов по печу любые объемы и площади. Обработк от вредителей до 100% результата с гарантией - прописано в договоре.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="s03">
+                <div class="container">
+                    <div>
+                        <div>
+                            <h2 class="title">Наши сертификаты</h2>
+                            <div class="owl-carousel carouselCertificates">
+                                <a href=""><img src="./assets/images/cert.svg" alt="..." /></a>
+                                <a href=""><img src="./assets/images/cert.svg" alt="..." /></a>
+                                <a href=""><img src="./assets/images/cert.svg" alt="..." /></a>
+                                <a href=""><img src="./assets/images/cert.svg" alt="..." /></a>
+                                <a href=""><img src="./assets/images/cert.svg" alt="..." /></a>
+                                <a href=""><img src="./assets/images/cert.svg" alt="..." /></a>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="title">Наши клиенты</h2>
+                            <div class="owl-carousel carouselClients">
+                                <a href=""><img src="./assets/images/client-1.svg" alt="..." /></a>
+                                <a href=""><img src="./assets/images/client-2.svg" alt="..." /></a>
+                                <a href=""><img src="./assets/images/client-3.svg" alt="..." /></a>
+                                <a href=""><img src="./assets/images/client-1.svg" alt="..." /></a>
+                                <a href=""><img src="./assets/images/client-2.svg" alt="..." /></a>
+                                <a href=""><img src="./assets/images/client-3.svg" alt="..." /></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -329,8 +389,10 @@
                         <div class="social">
                             <a href="#"><img src="./assets/images/viber.svg" alt="viber" /></a>
                             <a href="#"><img src="./assets/images/whatsapp.svg" alt="whatsapp" /></a>
-                            <a href="#"><img src="./assets/images/skype.svg" alt="skype" /></a>
-                            <a href="#"><img src="./assets/images/telegram.svg" alt="telegram" /></a>
+                            <a href="#"><img src="./assets/images/instagram.svg" alt="instagram" /></a>
+                            <a href="#"><img src="./assets/images/facebook.svg" alt="facebook" /></a>
+                            <a href="#"><img src="./assets/images/vk.svg" alt="vk" /></a>
+                            <a href="#"><img src="./assets/images/odnoklassniki.svg" alt="odnoklassniki" /></a>
                         </div>
                         <div class="policy">
                             <a href="">Политика конфиденциальности</a>
@@ -365,23 +427,12 @@
             }
 
             $(document).ready(function(){
-                $('.slickOurWorks').slick({
+                $('.carouselReviews').owlCarousel({
+                    nav: true,
                     dots: false,
-                    arrows: false,
-                    autoplay: true,
-                    vertical: true,
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    verticalSwiping: true,
-                    // centerMode: true,
-                    // responsive: [
-                    //     {
-                    //         breakpoint: 1025,
-                    //         settings: {
-                    //             slidesToShow: 2
-                    //         }
-                    //     }
-                    // ]
+                    autoplay: false,
+                    margin: 30,
+                    items: 3,
                 });
 
                 $('.carouselEquipments').owlCarousel({

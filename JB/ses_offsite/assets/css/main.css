@@ -15,6 +15,13 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 120%;
+  color: #179EFF;
+}
+
 h2.title {
   font-weight: 900;
   font-size: 30px;
@@ -28,7 +35,7 @@ h2.title {
 }
 
 ul li::marker {
-  color: #F4B74A;
+  color: #179EFF;
 }
 
 article h2 {
@@ -47,6 +54,11 @@ article h2 {
   article h2 {
     font-size: 18px;
   }
+}
+article h3 {
+  color: #179EFF;
+  font-size: 18px;
+  font-weight: bold;
 }
 @media only screen and (max-width: 1024px) {
   article h3 {
@@ -1468,6 +1480,92 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
     margin-bottom: 10px;
   }
 }
+#s01 div.container .contacts h1 {
+  margin-bottom: 5px;
+}
+#s01 div.container .contacts address {
+  font-style: normal;
+  margin-bottom: 20px;
+}
+#s01 div.container .contacts address p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 0;
+}
+#s01 div.container .contacts address p span {
+  font-weight: bold;
+  color: #179EFF;
+}
+#s01 div.container .contacts h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+}
+#s01 div.container .contacts h2.contacts-title {
+  font-size: 30px;
+  margin: 50px 0 15px;
+}
+#s01 div.container .contacts img {
+  margin: 15px 0;
+  width: 100%;
+}
+#s01 div.container .contacts .feedback-form {
+  margin-top: 20px;
+  padding: 20px;
+  background: #179EFF;
+}
+#s01 div.container .contacts .feedback-form h2 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: none;
+  margin: 0 0 20px 0;
+}
+#s01 div.container .contacts .feedback-form form .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 25px;
+  margin-bottom: 10px;
+}
+#s01 div.container .contacts .feedback-form form input {
+  background: #FFFFFF;
+  border: 1px solid #DEDEDE;
+  width: 100%;
+  height: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#s01 div.container .contacts .feedback-form form input::placeholder {
+  font-size: 11px;
+  color: #928C89;
+}
+#s01 div.container .contacts .feedback-form form textarea {
+  width: 100%;
+  padding: 15px;
+}
+#s01 div.container .contacts .feedback-form form textarea::placeholder {
+  font-size: 11px;
+  line-height: 13px;
+  color: #928C89;
+}
+#s01 div.container .contacts .feedback-form form button {
+  border: none;
+  width: 150px;
+  display: block;
+  margin: auto;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 8px 0;
+  margin-top: 12px;
+  background: #E42442;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 #s02 {
   margin-top: 100px;
@@ -1588,7 +1686,7 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
 }
 
 #s03 {
-  margin-bottom: 40px;
+  margin: 120px 0 150px;
 }
 #s03 .container > div {
   display: flex;
@@ -1739,8 +1837,93 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
   color: #000000;
   font-weight: normal;
 }
+
+.reviews {
+  border-top: 1px solid #D1D1D1;
+  margin: 30px 0 80px;
+}
+.reviews h2 {
+  text-align: center;
+}
+.reviews .review-card {
+  padding: 20px;
+  border: 1px solid #D1D1D1;
+  border-radius: 15px;
+}
+.reviews .review-card h5 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #333333;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.reviews .review-card p {
+  font-size: 12px;
+  line-height: 150%;
+  color: #4E4E4E;
+  margin: 0;
+}
+
+#articles h1 {
+  text-align: center;
+}
+#articles .listArticles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+#articles .listArticles .card {
+  padding: 20px;
+  border: 2px solid #C4C4C4;
+  border-radius: 0;
+}
+#articles .listArticles .card .card-header h3 {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 110%;
+  color: #179EFF;
+  margin: 0;
+}
+#articles .listArticles .card .card-header p {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 110%;
+  color: #000000;
+}
+#articles .listArticles .card .card-body {
+  margin-bottom: 30px;
+}
+#articles .listArticles .card .card-body div.image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#articles .listArticles .card .card-body p {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #000000;
+}
+#articles .listArticles .card .card-footer a.btn-red {
+  width: 175px;
+  padding: 10px;
+  background: #C81E51;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-left: auto;
+  display: block;
+}
+
 footer {
   background-color: #179EFF;
+  padding-bottom: 40px;
 }
 footer .footer {
   display: grid;
@@ -1994,7 +2177,8 @@ footer .footer div.requisites-block .requisites p {
   }
 }
 footer .footer div.requisites-block .social {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
+  width: 150px;
 }
 @media only screen and (max-width: 1024px) {
   footer .footer div.requisites-block .social {
@@ -2008,12 +2192,15 @@ footer .footer div.requisites-block .social {
   }
 }
 footer .footer div.requisites-block .social a:not(:last-child) {
-  margin-right: 25px;
+  margin-right: 18px;
 }
 @media only screen and (max-width: 1024px) {
   footer .footer div.requisites-block .social a:not(:last-child) {
     margin-right: 15px;
   }
+}
+footer .footer div.requisites-block .social a img {
+  margin-bottom: 15px;
 }
 @media only screen and (max-width: 1024px) {
   footer .footer div.requisites-block .social a img {
