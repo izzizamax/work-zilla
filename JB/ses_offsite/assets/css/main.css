@@ -1335,8 +1335,14 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
 #s01 div.container .right-sidebar .calc {
   margin-bottom: 7px;
 }
+#s01 div.container .right-sidebar .calc a {
+  text-decoration: none;
+}
 #s01 div.container .right-sidebar .news {
   margin-bottom: 7px;
+}
+#s01 div.container .right-sidebar .news a {
+  text-decoration: none;
 }
 #s01 div.container .right-sidebar .our-works {
   margin-bottom: 7px;
