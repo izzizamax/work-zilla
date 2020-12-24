@@ -273,18 +273,22 @@
                             </div>
                         </div>
                         <div class="buttons">
-                            <div class="b-block">
-                                <p>
-                                    Расчитать стоимость работ?
-                                </p>
-                                <img src="./assets/images/icon5.svg" alt="...">
-                            </div>
-                            <div class="b-block">
-                                <p>
-                                    Новости
-                                </p>
-                                <img src="./assets/images/icon6.svg" alt="...">
-                            </div>
+                            <a href="#">
+                                <div class="b-block">
+                                    <p>
+                                        Расчитать стоимость работ?
+                                    </p>
+                                    <img src="./assets/images/icon5.svg" alt="...">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="b-block">
+                                    <p>
+                                        Новости
+                                    </p>
+                                    <img src="./assets/images/icon6.svg" alt="...">
+                                </div>
+                            </a>
                         </div>
                         <article>
                             <p>
@@ -991,33 +995,6 @@
             </div>
         </div>
 
-        <!-- <div class="modal fade" id="modalWindow" tabindex="-1" role="dialog" aria-labelledby="ModalWindow" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div style="border: solid 15px #fff; padding: 25px;">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="ModalWindow">Оставить заявку</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <form id="order" action="[[~[[*id]]]]" method="post">
-                                <div class="form-group">
-                                    <input type="text" name="name" class="form-control" placeholder="Ваше имя">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" name="contact" placeholder="Ваш e-mail или телефон">
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button form="order" type="submit" class="btn orange">Отправить</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
         <footer>
             <div class="container">
                 <div class="footer">
@@ -1175,14 +1152,18 @@
                 $('.carouselCertificates').owlCarousel({
                     items: 3,
                     dots: false,
-                    nav: false,
-                    autoplay: true,
+                    nav: true,
+                    autoplay: false,
                     margin: 10,
                     loop: true,
                     responsive : {
                         0: {
                             items: 2,
+                            nav: false,
                             dots: true,
+                        },
+                        600: {
+                            nav: true,
                         },
                         768: {
                             items: 3,
@@ -1195,6 +1176,8 @@
                     dots: false,
                     nav: false,
                     autoplay: true,
+                    autoplayTimeout: 1,
+                    autoplaySpeed: 10,
                     margin: 20,
                     loop: true,
                     responsive : {
