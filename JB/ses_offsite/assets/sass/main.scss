@@ -182,13 +182,19 @@ article {
 
 .breadcrumbs {
     margin: 30px 0;
-    p {
-        @include media((
-            '1024': (
-                font-size: 12px,
-            )
-        ));
-        margin: 0;
+    ol {
+        list-style: none;
+        display: flex;
+        padding: 0;
+
+        li {
+            @include media((
+                '1024': (
+                    font-size: 12px,
+                )
+            ));
+            margin: 0;
+        }
     }
 }
 
