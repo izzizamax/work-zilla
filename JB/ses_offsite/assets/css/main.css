@@ -16,10 +16,16 @@ body {
 }
 
 h1 {
+  font-family: "Noto Sans", sans-serif;
   font-weight: bold;
   font-size: 30px;
   line-height: 120%;
   color: #179EFF;
+}
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 24px;
+  }
 }
 
 h2.title {
@@ -163,6 +169,11 @@ article ul li {
 }
 .breadcrumbs p {
   margin: 0;
+}
+@media only screen and (max-width: 1024px) {
+  .breadcrumbs p {
+    font-size: 12px;
+  }
 }
 
 .accordion-title {
@@ -505,6 +516,11 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
 #s01 {
   margin: 25px 0px 50px;
 }
+@media only screen and (max-width: 600px) {
+  #s01 {
+    margin: 5px 0px 50px;
+  }
+}
 #s01 div.container {
   display: grid;
   grid-template-columns: 260px 1fr 260px;
@@ -826,7 +842,7 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
 }
 @media only screen and (max-width: 1024px) {
   #s01 div.container .main-content .offsite div.offsite-advantages > div img {
-    margin: 0;
+    margin: 5px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1065,6 +1081,9 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
   line-height: 150%;
   color: #4E4E4E;
   margin-bottom: 10px;
+}
+#s01 div.container .main-content .specialists .content .card .card-body ul li::marker {
+  color: orange;
 }
 #s01 div.container .main-content .chemical {
   display: none;
@@ -1483,6 +1502,18 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
 #s01 div.container .contacts h1 {
   margin-bottom: 5px;
 }
+@media only screen and (max-width: 1024px) {
+  #s01 div.container .contacts p {
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  #s01 div.container .contacts ul li {
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
 #s01 div.container .contacts address {
   font-style: normal;
   margin-bottom: 20px;
@@ -1492,6 +1523,11 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
   font-weight: 400;
   line-height: 25px;
   margin: 0;
+}
+@media only screen and (max-width: 1024px) {
+  #s01 div.container .contacts address p {
+    font-size: 12px;
+  }
 }
 #s01 div.container .contacts address p span {
   font-weight: bold;
@@ -1503,18 +1539,28 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
   font-weight: bold;
   margin: 0;
 }
+@media only screen and (max-width: 1024px) {
+  #s01 div.container .contacts h2 {
+    font-size: 12px;
+  }
+}
 #s01 div.container .contacts h2.contacts-title {
   font-size: 30px;
   margin: 50px 0 15px;
 }
-#s01 div.container .contacts img {
-  margin: 15px 0;
+#s01 div.container .contacts .map img {
   width: 100%;
+  margin: 15px 0;
 }
 #s01 div.container .contacts .feedback-form {
   margin-top: 20px;
   padding: 20px;
   background: #179EFF;
+}
+@media only screen and (max-width: 600px) {
+  #s01 div.container .contacts .feedback-form {
+    margin-bottom: 30px;
+  }
 }
 #s01 div.container .contacts .feedback-form h2 {
   font-weight: bold;
@@ -1531,6 +1577,12 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
   grid-gap: 25px;
   margin-bottom: 10px;
 }
+@media only screen and (max-width: 600px) {
+  #s01 div.container .contacts .feedback-form form .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+}
 #s01 div.container .contacts .feedback-form form input {
   background: #FFFFFF;
   border: 1px solid #DEDEDE;
@@ -1539,18 +1591,43 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
   padding-left: 15px;
   padding-right: 15px;
 }
+@media only screen and (max-width: 600px) {
+  #s01 div.container .contacts .feedback-form form input {
+    height: 50px;
+  }
+}
 #s01 div.container .contacts .feedback-form form input::placeholder {
   font-size: 11px;
   color: #928C89;
+}
+@media only screen and (max-width: 600px) {
+  #s01 div.container .contacts .feedback-form form input::placeholder {
+    font-size: 14px;
+  }
 }
 #s01 div.container .contacts .feedback-form form textarea {
   width: 100%;
   padding: 15px;
 }
+@media only screen and (max-width: 1024px) {
+  #s01 div.container .contacts .feedback-form form textarea {
+    height: 110px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #s01 div.container .contacts .feedback-form form textarea {
+    height: 205px;
+  }
+}
 #s01 div.container .contacts .feedback-form form textarea::placeholder {
   font-size: 11px;
   line-height: 13px;
   color: #928C89;
+}
+@media only screen and (max-width: 600px) {
+  #s01 div.container .contacts .feedback-form form textarea::placeholder {
+    font-size: 14px;
+  }
 }
 #s01 div.container .contacts .feedback-form form button {
   border: none;
@@ -1576,6 +1653,11 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
   width: 100%;
   padding: 25px 40px;
   border: solid 1px #C4C4C4;
+}
+@media only screen and (max-width: 600px) {
+  #s02 .faq {
+    padding: 10px;
+  }
 }
 #s02 .faq:after {
   content: "";
@@ -1688,19 +1770,49 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
 #s03 {
   margin: 120px 0 150px;
 }
+@media only screen and (max-width: 600px) {
+  #s03 {
+    margin: 40px 5px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #s03 h2 {
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 120%;
+    text-transform: uppercase;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #s03 h2.clients {
+    margin-top: 50px;
+  }
+}
 #s03 .container > div {
   display: flex;
   padding: 20px;
   border: solid 2px #179EFF;
 }
-#s03 .container > div > div {
-  width: 50%;
+@media only screen and (max-width: 600px) {
+  #s03 .container > div {
+    flex-direction: column;
+    border: 1px solid #c4c4c4;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #s03 .container > div > div {
+    border: none !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
 }
 #s03 .container > div > div:first-child {
+  width: 50%;
   padding-right: 20px;
   border-right: solid 1px #179EFF;
 }
 #s03 .container > div > div:last-child {
+  width: 50%;
   padding-left: 20px;
 }
 #s03 .container > div .carouselClients {
@@ -1728,13 +1840,41 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
 #page .news {
   display: flex;
 }
+@media only screen and (max-width: 600px) {
+  #page .news {
+    flex-direction: column;
+  }
+}
 #page .news .sidebar {
   min-width: 385px;
   width: 385px;
   padding-right: 30px;
 }
+@media only screen and (max-width: 1024px) {
+  #page .news .sidebar {
+    min-width: 230px;
+    width: 230px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #page .news .sidebar {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #page .news .sidebar {
+    min-width: 100%;
+    padding-right: 0;
+  }
+}
 #page .news .sidebar .last-news {
   border: 2px solid #C4C4C4;
+}
+@media only screen and (max-width: 600px) {
+  #page .news .sidebar .last-news {
+    border: solid 2px #179EFF;
+    margin-bottom: 30px;
+  }
 }
 #page .news .sidebar .last-news .title {
   background: #179EFF;
@@ -1747,8 +1887,39 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
   padding: 35px;
   margin: 0;
 }
+@media only screen and (max-width: 1024px) {
+  #page .news .sidebar .last-news .title h2 {
+    font-size: 15px;
+    padding: 20px;
+  }
+}
 #page .news .sidebar .last-news .list-news {
   padding: 25px;
+}
+@media only screen and (max-width: 1024px) {
+  #page .news .sidebar .last-news .list-news {
+    padding: 15px;
+  }
+}
+#page .news .sidebar .last-news .list-news .toggle {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  #page .news .sidebar .last-news .list-news .toggle {
+    display: block;
+    text-align: center;
+    height: 25px;
+  }
+}
+#page .news .sidebar .last-news .list-news .toggle:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "";
+}
+#page .news .sidebar .last-news .list-news .toggle.active:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "";
 }
 #page .news .sidebar .last-news .list-news a {
   display: flex;
@@ -1760,11 +1931,28 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
   height: 90px;
   text-decoration: none;
 }
+@media only screen and (max-width: 1024px) {
+  #page .news .sidebar .last-news .list-news a {
+    padding-left: 15px;
+    padding-right: 10px;
+    height: 57px;
+    margin-bottom: 15px;
+    line-height: 100%;
+  }
+}
 #page .news .sidebar .last-news .list-news a.active {
   background: #179EFF;
 }
 #page .news .sidebar .last-news .list-news a.active .news-card span {
   color: #FFFFFF;
+}
+@media only screen and (max-width: 600px) {
+  #page .news .sidebar .last-news .list-news a:nth-of-type(n+4) {
+    display: none;
+  }
+}
+#page .news .sidebar .last-news .list-news a.show {
+  display: flex !important;
 }
 #page .news .sidebar .last-news .list-news a .news-card span {
   font-weight: bold;
@@ -1772,8 +1960,23 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
   line-height: 150%;
   color: #333333;
 }
+@media only screen and (max-width: 1024px) {
+  #page .news .sidebar .last-news .list-news a .news-card span {
+    font-size: 9px;
+  }
+}
 #page .news .sidebar .last-news .show-more {
   padding: 0 25px 25px;
+}
+@media only screen and (max-width: 1024px) {
+  #page .news .sidebar .last-news .show-more {
+    padding: 0 15px 25px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #page .news .sidebar .last-news .show-more {
+    display: none;
+  }
 }
 #page .news .sidebar .last-news .show-more a.btn-red {
   display: block;
@@ -1786,6 +1989,14 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
   text-decoration: none;
   background: #C81E51;
 }
+@media only screen and (max-width: 1024px) {
+  #page .news .sidebar .last-news .show-more a.btn-red {
+    width: 115px;
+    height: 30px;
+    font-size: 11px;
+    padding: 7px;
+  }
+}
 #page .news .content article h1 {
   font-family: "Noto Sans", sans-serif;
   font-weight: bold;
@@ -1794,9 +2005,37 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
   color: #179EFF;
   margin-top: 0;
 }
+@media only screen and (max-width: 1024px) {
+  #page .news .content article h1 {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #page .news .content article h1 {
+    font-size: 18px;
+  }
+}
 #page .news .content article img {
   width: 470px;
   height: 200px;
+}
+@media only screen and (max-width: 1024px) {
+  #page .news .content article img {
+    width: 330px;
+    height: 155px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #page .news .content article img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #page .news .content article img {
+    width: 100%;
+    height: auto;
+  }
 }
 #page .news .content article p {
   font-family: "Noto Sans", sans-serif;
@@ -1805,11 +2044,34 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
   color: #000000;
   font-weight: normal;
 }
+@media only screen and (max-width: 1024px) {
+  #page .news .content article p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #page .news .content article p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
 #page .news .content article h3 {
   font-family: "Noto Sans", sans-serif;
   font-weight: bold;
   font-size: 20px;
   line-height: 35px;
+}
+@media only screen and (max-width: 1024px) {
+  #page .news .content article h3 {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #page .news .content article h3 {
+    font-size: 16px;
+  }
 }
 #page .news .content article table {
   width: 100%;
@@ -1817,6 +2079,11 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
 }
 #page .news .content article table tr {
   height: 65px;
+}
+@media only screen and (max-width: 1024px) {
+  #page .news .content article table tr {
+    height: 40px;
+  }
 }
 #page .news .content article table th, #page .news .content article table td {
   padding: 10px;
@@ -1827,8 +2094,30 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
 #page .news .content article table thead th, #page .news .content article table thead td {
   font-weight: bold;
 }
+@media only screen and (max-width: 1024px) {
+  #page .news .content article table thead th, #page .news .content article table thead td {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #page .news .content article table thead th, #page .news .content article table thead td {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
 #page .news .content article table tbody tr:nth-child(2n) {
   background-color: #F0F0F0;
+}
+@media only screen and (max-width: 1024px) {
+  #page .news .content article table tbody td {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #page .news .content article table tbody td {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 #page .news .content article ul li {
   font-family: "Noto Sans", sans-serif;
@@ -1837,13 +2126,35 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
   color: #000000;
   font-weight: normal;
 }
+@media only screen and (max-width: 1024px) {
+  #page .news .content article ul li {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #page .news .content article ul li {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
 
 .reviews {
   border-top: 1px solid #D1D1D1;
   margin: 30px 0 80px;
 }
+@media only screen and (max-width: 1024px) {
+  .reviews .container {
+    max-width: 100%;
+    width: 100%;
+  }
+}
 .reviews h2 {
   text-align: center;
+}
+@media only screen and (max-width: 1024px) {
+  .reviews h2 {
+    font-size: 20px;
+  }
 }
 .reviews .review-card {
   padding: 20px;
@@ -1860,6 +2171,11 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
   margin-top: 0;
   margin-bottom: 12px;
 }
+@media only screen and (max-width: 1024px) {
+  .reviews .review-card h5 {
+    font-size: 13px;
+  }
+}
 .reviews .review-card p {
   font-size: 12px;
   line-height: 150%;
@@ -1875,10 +2191,26 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
 }
+@media only screen and (max-width: 1024px) {
+  #articles .listArticles {
+    grid-gap: 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #articles .listArticles {
+    grid-gap: 15px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 #articles .listArticles .card {
   padding: 20px;
   border: 2px solid #C4C4C4;
   border-radius: 0;
+}
+@media only screen and (max-width: 1024px) {
+  #articles .listArticles .card {
+    padding: 12px;
+  }
 }
 #articles .listArticles .card .card-header h3 {
   font-weight: bold;
@@ -1887,14 +2219,39 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
   color: #179EFF;
   margin: 0;
 }
+@media only screen and (max-width: 1024px) {
+  #articles .listArticles .card .card-header h3 {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #articles .listArticles .card .card-header h3 {
+    font-size: 18px;
+  }
+}
 #articles .listArticles .card .card-header p {
   font-weight: 300;
   font-size: 12px;
   line-height: 110%;
   color: #000000;
 }
+@media only screen and (max-width: 1024px) {
+  #articles .listArticles .card .card-header p {
+    font-size: 7.5px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #articles .listArticles .card .card-header p {
+    font-size: 14px;
+  }
+}
 #articles .listArticles .card .card-body {
   margin-bottom: 30px;
+}
+@media only screen and (max-width: 1024px) {
+  #articles .listArticles .card .card-body {
+    margin-bottom: 15px;
+  }
 }
 #articles .listArticles .card .card-body div.image {
   width: 100%;
@@ -1902,11 +2259,43 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media only screen and (max-width: 1024px) {
+  #articles .listArticles .card .card-body div.image {
+    height: 120px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #articles .listArticles .card .card-body div.image {
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  #articles .listArticles .card .card-body div.image {
+    height: 160px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #articles .listArticles .card .card-body div.image {
+    height: 120px;
+  }
+}
 #articles .listArticles .card .card-body p {
   font-size: 18px;
   line-height: 20px;
   font-weight: 300;
   color: #000000;
+}
+@media only screen and (max-width: 1024px) {
+  #articles .listArticles .card .card-body p {
+    font-size: 11px;
+    line-height: 110%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #articles .listArticles .card .card-body p {
+    font-size: 14px;
+    line-height: 110%;
+  }
 }
 #articles .listArticles .card .card-footer a.btn-red {
   width: 175px;
@@ -1919,6 +2308,183 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
   text-decoration: none;
   margin-left: auto;
   display: block;
+}
+@media only screen and (max-width: 1024px) {
+  #articles .listArticles .card .card-footer a.btn-red {
+    font-size: 11px;
+    width: 110px;
+    padding: 5px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #articles .listArticles .card .card-footer a.btn-red {
+    font-size: 14px;
+  }
+}
+
+#q-form {
+  margin: 50px 0;
+}
+#q-form .q-form {
+  display: none;
+  padding: 20px;
+  background-color: #179EFF;
+}
+@media only screen and (max-width: 600px) {
+  #q-form .q-form {
+    display: block;
+  }
+}
+#q-form .q-form h2 {
+  font-weight: 900;
+  font-size: 23.6375px;
+  line-height: 120%;
+  text-align: center;
+  color: #FFFFFF;
+}
+@media only screen and (max-width: 600px) {
+  #q-form .q-form h2 {
+    font-size: 24px;
+    line-height: 22px;
+  }
+}
+#q-form .q-form form {
+  width: 90%;
+  margin: auto;
+}
+#q-form .q-form form input[type=tel] {
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  color: #179EFF;
+}
+#q-form .q-form form input[type=tel]::placeholder {
+  font-size: 24px;
+  color: #179EFF;
+}
+@media only screen and (max-width: 600px) {
+  #q-form .q-form form input[type=tel]::placeholder {
+    font-size: 24px;
+  }
+}
+#q-form .q-form form p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
+}
+#q-form .q-form form button {
+  display: block;
+  width: 350px;
+  height: 60px;
+  margin: auto;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  background-color: #E42442;
+}
+@media only screen and (max-width: 600px) {
+  #q-form .q-form form button {
+    width: 100%;
+    height: 42px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+#modalWindow {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Black w/ opacity */
+}
+#modalWindow .modal-dialog {
+  max-width: 900px;
+  margin: 100px auto;
+  border-radius: 0px;
+}
+#modalWindow .modal-dialog .modal-content {
+  background: #179EFF;
+  border: 1px solid #fff;
+  border-radius: 0px;
+  background-position: -200px 11%;
+  padding: 20px 15px;
+}
+#modalWindow .modal-dialog .modal-content .modal-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dee2e6;
+}
+#modalWindow .modal-dialog .modal-content .modal-header h5 {
+  color: #fff;
+  font-size: 30px;
+  margin: 0 0 20px;
+}
+#modalWindow .modal-dialog .modal-content .modal-header span {
+  color: #fff;
+}
+#modalWindow .modal-dialog .modal-content .modal-body form {
+  margin: 30px;
+}
+#modalWindow .modal-dialog .modal-content .modal-body form .form-group {
+  margin-bottom: 15px;
+}
+#modalWindow .modal-dialog .modal-content .modal-body form .form-group input {
+  margin-bottom: 15px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#modalWindow .modal-dialog .modal-content .modal-footer {
+  padding-top: 20px;
+  border-top: 1px solid #dee2e6;
+}
+#modalWindow .modal-dialog .modal-content .modal-footer button {
+  display: block;
+  min-width: 250px;
+  width: 250px;
+  padding: 10px 0;
+  margin-left: auto;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  background-color: #E42442;
+}
+#modalWindow .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+#modalWindow .close:hover, #modalWindow .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 footer {
@@ -2182,11 +2748,13 @@ footer .footer div.requisites-block .social {
 }
 @media only screen and (max-width: 1024px) {
   footer .footer div.requisites-block .social {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    width: 100px;
   }
 }
 @media only screen and (max-width: 600px) {
   footer .footer div.requisites-block .social {
+    width: 115px;
     margin-top: 15px;
     order: 2;
   }
@@ -2200,7 +2768,7 @@ footer .footer div.requisites-block .social a:not(:last-child) {
   }
 }
 footer .footer div.requisites-block .social a img {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 @media only screen and (max-width: 1024px) {
   footer .footer div.requisites-block .social a img {
