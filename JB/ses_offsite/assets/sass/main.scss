@@ -2498,6 +2498,86 @@ header {
             margin: 0;
         }
     }
+
+    .owl-nav {
+        @include media((
+            '1024': (
+                top: 20px,
+                left: -35px,
+            ),
+            '600': (
+                top: 72px,
+                left: -35px,
+            )
+        ));
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: -50px;
+
+        button.owl-prev {
+            @include media((
+                '1024': (
+                    width: 30px,
+                    height: 30px,
+                    margin-bottom: 17px,
+                )
+            ));
+            width: 50px;
+            height: 50px;
+            margin-bottom: 30px;
+            border-radius: 50px;
+            background: #EEEFF0 !important;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+
+            &:before {
+                @include media((
+                    '1024': (
+                        font-size: 12px,
+                    )
+                ));
+                font-family: 'Font Awesome 5 Free';
+                font-weight: bold;
+                font-size: 18px;
+                content: '\f0d9';
+                color: $color-light-blue;
+            }
+            span {
+                display: none;
+            }
+        }
+
+        button.owl-next {
+            @include media((
+                '1024': (
+                    width: 30px,
+                    height: 30px,
+                )
+            ));
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background: #EEEFF0 !important;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+
+            &:before {
+                @include media((
+                    '1024': (
+                        font-size: 12px,
+                    )
+                ));
+                font-family: 'Font Awesome 5 Free';
+                font-weight: bold;
+                font-size: 18px;
+                content: '\f0da';
+                color: $color-light-blue;
+            }
+            span {
+                display: none;
+            }
+        }
+    }
 }
 
 #articles {
@@ -2537,19 +2617,27 @@ header {
                 h3 {
                     @include media((
                         '1024': (
+                            height: 32px,
                             font-size: 14px,
                         ),
                         '600': (
+                            height: auto,
                             font-size: 18px,
                         ),
 
                     ));
 
+                    height: 73px;
                     font-weight: bold;
                     font-size: 22px;
                     line-height: 110%;
                     color: #179EFF;
                     margin: 0;
+
+                    a {
+                        text-decoration: none;
+                        color: #179EFF;
+                    }
                 }
 
                 p {

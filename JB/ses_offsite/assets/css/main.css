@@ -2200,6 +2200,83 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
   color: #4E4E4E;
   margin: 0;
 }
+.reviews .owl-nav {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  left: -50px;
+}
+@media only screen and (max-width: 1024px) {
+  .reviews .owl-nav {
+    top: 20px;
+    left: -35px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .reviews .owl-nav {
+    top: 72px;
+    left: -35px;
+  }
+}
+.reviews .owl-nav button.owl-prev {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 30px;
+  border-radius: 50px;
+  background: #EEEFF0 !important;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+@media only screen and (max-width: 1024px) {
+  .reviews .owl-nav button.owl-prev {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 17px;
+  }
+}
+.reviews .owl-nav button.owl-prev:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  font-size: 18px;
+  content: "";
+  color: #179EFF;
+}
+@media only screen and (max-width: 1024px) {
+  .reviews .owl-nav button.owl-prev:before {
+    font-size: 12px;
+  }
+}
+.reviews .owl-nav button.owl-prev span {
+  display: none;
+}
+.reviews .owl-nav button.owl-next {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: #EEEFF0 !important;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+@media only screen and (max-width: 1024px) {
+  .reviews .owl-nav button.owl-next {
+    width: 30px;
+    height: 30px;
+  }
+}
+.reviews .owl-nav button.owl-next:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  font-size: 18px;
+  content: "";
+  color: #179EFF;
+}
+@media only screen and (max-width: 1024px) {
+  .reviews .owl-nav button.owl-next:before {
+    font-size: 12px;
+  }
+}
+.reviews .owl-nav button.owl-next span {
+  display: none;
+}
 
 #articles h1 {
   text-align: center;
@@ -2231,6 +2308,7 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
   }
 }
 #articles .listArticles .card .card-header h3 {
+  height: 73px;
   font-weight: bold;
   font-size: 22px;
   line-height: 110%;
@@ -2239,13 +2317,19 @@ header .navigation div.callback a:link, header .navigation div.callback a:visite
 }
 @media only screen and (max-width: 1024px) {
   #articles .listArticles .card .card-header h3 {
+    height: 32px;
     font-size: 14px;
   }
 }
 @media only screen and (max-width: 600px) {
   #articles .listArticles .card .card-header h3 {
+    height: auto;
     font-size: 18px;
   }
+}
+#articles .listArticles .card .card-header h3 a {
+  text-decoration: none;
+  color: #179EFF;
 }
 #articles .listArticles .card .card-header p {
   font-weight: 300;
