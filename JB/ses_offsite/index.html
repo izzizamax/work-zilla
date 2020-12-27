@@ -192,6 +192,21 @@
                                 </p>
                                 <div class="owl-carousel carouselChemical">
                                     <div class="card">
+                                        <div class="card-overlay">
+                                            <p>
+                                                asdfj jsdfhgsdfkjgh dfkgh kdjg dkjgh ksdfjghsdf
+                                            </p>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>
+                                                Средство спрей для мытья плитки и сантехники — Sir Derz 750мл
+                                            </p>
+                                        </div>
+                                        <div class="card-img">
+                                            <img src="./assets/images/chem.svg" alt="..." />
+                                        </div>
+                                    </div>
+                                    <!-- <div class="card">
                                         <div class="card-body">
                                             <p>
                                                 Средство спрей для мытья плитки и сантехники — Sir Derz 750мл
@@ -220,17 +235,7 @@
                                         <div class="card-img">
                                             <img src="./assets/images/chem.svg" alt="..." />
                                         </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p>
-                                                Средство спрей для мытья плитки и сантехники — Sir Derz 750мл
-                                            </p>
-                                        </div>
-                                        <div class="card-img">
-                                            <img src="./assets/images/chem.svg" alt="..." />
-                                        </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -624,19 +629,80 @@
                     </div>
                     <div class="right-sidebar">
                         <div class="calc">
-                            <div class="b-block">
+                            <div class="b-block accordion accordion-title">
                                 <p>
                                     Расчитать стоимость работ?
                                 </p>
                                 <img src="./assets/images/icon5.svg" alt="...">
                             </div>
+                            <div class="accordion-body">
+                                <div class="content">
+                                    <p>Заполните форму и наш специалист свяжется с Вами в ближайшее время</p>
+                                    <form action="index.html" method="post">
+                                        <div class="field">
+                                            <input type="text" name="name" value="" placeholder="Введите имя">
+                                        </div>
+                                        <div class="field">
+                                            <input type="tel" name="contact" value="" placeholder="Введите телефон" class="phone"  >
+                                        </div>
+                                        <div class="field">
+                                            <select class="" name="pest">
+                                                <option value="" disabled selected>выберите тип вредителя</option>
+                                                <option value="">вредитель 1</option>
+                                                <option value="">вредитель 2</option>
+                                                <option value="">вредитель 3</option>
+                                                <option value="">вредитель 4</option>
+                                                <option value="">вредитель 5</option>
+                                            </select>
+                                        </div>
+                                        <div class="field">
+                                            <select class="" name="type_premises">
+                                                <option value="" disabled selected>выберите тип помещения</option>
+                                                <option value="">помещение 1</option>
+                                                <option value="">помещение 2</option>
+                                                <option value="">помещение 3</option>
+                                                <option value="">помещение 4</option>
+                                                <option value="">помещение 5</option>
+                                            </select>
+                                        </div>
+                                        <div class="field">
+                                            <input type="number" name="area" value="" placeholder="Площадь м. кв." class="" >
+                                        </div>
+                                        <div class="field">
+                                            <button type="submit" name="button">Подать заявку</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                         <div class="news">
-                            <div class="b-block">
+                            <div class="b-block accordion accordion-title">
                                 <p>
                                     Новости
                                 </p>
                                 <img src="./assets/images/icon6.svg" alt="...">
+                            </div>
+                            <div class="accordion-body">
+                                <div class="content">
+                                    <div class="owl-carousel carouselNews">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h3>Почему он используется?</h3>
+                                                <p>
+                                                    Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее станд <a href="[[~[[+id]]]]">>></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h3>Почему он используется?</h3>
+                                                <p>
+                                                    Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее станд <a href="[[~[[+id]]]]">>></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="our-works">
@@ -1130,6 +1196,13 @@
                     items: 1,
                 });
 
+                $('.carouselNews').owlCarousel({
+                    nav: false,
+                    dots: true,
+                    autoplay: false,
+                    items: 1,
+                });
+
                 $('.carouselOurWorks').owlCarousel({
                     nav: false,
                     dots: true,
@@ -1189,6 +1262,14 @@
                             items: 3,
                         }
                     }
+                });
+
+                $('.card').on('mouseover', function() {
+                    $(this).children('.card-overlay').show();
+                });
+
+                $('.card').on('mouseout', function() {
+                    $(this).children('.card-overlay').hide();
                 });
 
                 // Get the modal
