@@ -1,0 +1,49 @@
+/* .owl-nav {
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+    top: calc(50% - 50px);
+}
+
+.owl-nav button {
+    position: absolute;
+}
+
+.owl-nav button.owl-prev {
+    left: 0;
+}
+
+.owl-nav button.owl-next {
+    right: 0;
+}
+
+.owl-nav button i {
+    color: #FFBD15;
+    text-shadow: 2px 2px 5px #8c8c8c;
+    font-size: 100px;
+}
+
+.owl-nav button:focus {
+    outline: none;
+} */
+
+.owl-dots {
+    text-align: center;
+}
+
+.owl-dots button span {
+    width: 6px;
+    height: 6px;
+    display: block;
+    border-radius: 50%;
+    margin: 0 2px;
+    background-color: #C4C4C4;
+}
+
+.owl-dots button:focus {
+    outline: none;
+}
+
+.owl-dots button.active span {
+    background: #179EFF;
+}
