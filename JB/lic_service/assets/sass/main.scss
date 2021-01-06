@@ -13,6 +13,41 @@ h2.title {
     text-transform: uppercase;
     color: $color-blue;
     text-align: center;
+
+    span {
+        color: #636363;
+    }
+}
+
+button.btn-blue {
+    background: linear-gradient(180deg, #7AA9D5 0%, #3278B9 25.52%, #075AA8 100%);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    padding: 0 15px;
+
+    &:after {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 23px;
+        width: 23px;
+        min-height: 23px;
+        height: 23px;
+        background-color: #0D5EAA;
+        border-radius: 50%;
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 700;
+        content: '\f105';
+        color: #fff;
+        text-align: center;
+    }
+
+    span {
+        color: #FFFFFF;
+    }
 }
 
 .container {
@@ -80,7 +115,7 @@ header {
         }
     }
 
-    p{
+    p {
         margin-bottom: 0;
     }
 
@@ -440,35 +475,10 @@ header {
                                 margin-top: 0,
                             )
                         ));
-                        background: linear-gradient(180deg, #7AA9D5 0%, #3278B9 25.52%, #075AA8 100%);
-                        border-radius: 4px;
                         width: 150px;
                         height: 40px;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        border: none;
-                        padding: 0 15px;
                         margin-top: 30px;
                         margin-left: auto;
-
-                        &:after {
-                            min-width: 23px;
-                            width: 23px;
-                            min-height: 23px;
-                            height: 23px;
-                            background-color: #0D5EAA;
-                            border-radius: 50%;
-                            font-family: 'Font Awesome 5 Free';
-                            font-weight: 700;
-                            content: '\f105';
-                            color: #fff;
-                            text-align: center;
-                        }
-
-                        span {
-                            color: #FFFFFF;
-                        }
                     }
                 }
             }
@@ -779,7 +789,7 @@ header {
 }
 
 #s02 {
-    padding: 70px 0;
+    padding: 70px 0 120px;
 
     h2 {
         margin-bottom: 30px;
@@ -787,7 +797,8 @@ header {
 
     .advantages {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+        // grid-template-columns: repeat(3, 1fr);
         grid-gap: 35px;
 
         .a-card {
@@ -822,6 +833,156 @@ header {
             }
         }
     }
+}
+
+#s03 {
+    h2.title {
+        margin-bottom: 15px;
+    }
+
+    .pests-wrap {
+        padding: 35px 0;
+        background: #F2F7FE;
+
+        .pests {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            grid-gap: 35px;
+
+            .pest {
+                background-color: #fff;
+
+                .icon img {
+                    display: block;
+                    width: 117px;
+                    height: 101px;
+                    margin: auto;
+                }
+
+                span {
+                    display: block;
+                    padding-bottom: 1rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+#s04 {
+    padding: 70px 0;
+    .card {
+        max-width: 370px;
+        border: none;
+
+        img {
+            width: 90%;
+            display: block;
+            margin: auto;
+        }
+
+        .description {
+            h5 {
+                color: $color-blue;
+                font-family: 'HelveticaNeueCyr';
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 120%;
+                text-align: center;
+                text-transform: uppercase;
+
+
+                span.before {
+                    display: block;
+                    font-size: 14px;
+                    color: #4E4E4E;
+                }
+
+                span.after {
+                    display: block;
+                    font-weight: normal;
+                    font-size: 14px;
+                    color: #979797;
+                    text-transform: none;
+                }
+            }
+        }
+    }
+}
+
+#s18 {
+    padding: 50px 0;
+
+    .form {
+        background-image: url('../images/quiz-man.png');
+        background-color: $color-blue;
+        background-repeat: no-repeat;
+        background-position: 96% 100%;
+        border-radius: 15px;
+        padding: 30px;
+        color: #fff;
+
+
+        h3 {
+            font-family: 'HelveticaNeueCyr';
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 115%;
+            text-transform: uppercase;
+        }
+        p {
+            font-family: 'HelveticaNeueCyr';
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 115%;
+            color: #F0F0F0;
+            padding: 20px 0;
+        }
+
+        form {
+
+            input{
+                height: 55px;
+                margin-bottom: 30px;
+
+                &::placeholder {
+                    font-family: 'HelveticaNeueCyr';
+                    font-weight: normal;
+                    font-size: 18px;
+                    color: #979797;
+                }
+            }
+
+            button.btn-blue {
+                width: 280px;
+                height: 50px;
+                margin-left: auto;
+
+                &:after {
+                    min-width: 32px;
+                    width: 32px;
+                    min-height: 32px;
+                    height: 32px;
+                    background-color: #0D5EAA;
+                    border-radius: 50%;
+                    font-size: 25px;
+                    line-height: 100%;
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 700;
+                    content: '\f105';
+                    color: #fff;
+                    text-align: center;
+                }
+
+                span {
+                    font-family: 'HelveticaNeueCyr';
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
 }
 
 footer {

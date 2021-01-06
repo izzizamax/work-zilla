@@ -8,6 +8,38 @@ h2.title {
   color: #0071E3;
   text-align: center;
 }
+h2.title span {
+  color: #636363;
+}
+
+button.btn-blue {
+  background: linear-gradient(180deg, #7AA9D5 0%, #3278B9 25.52%, #075AA8 100%);
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  padding: 0 15px;
+}
+button.btn-blue:after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 23px;
+  width: 23px;
+  min-height: 23px;
+  height: 23px;
+  background-color: #0D5EAA;
+  border-radius: 50%;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "";
+  color: #fff;
+  text-align: center;
+}
+button.btn-blue span {
+  color: #FFFFFF;
+}
 
 .container {
   position: relative;
@@ -408,15 +440,8 @@ header .header .container .form form input::placeholder {
   color: #636363;
 }
 header .header .container .form form button {
-  background: linear-gradient(180deg, #7AA9D5 0%, #3278B9 25.52%, #075AA8 100%);
-  border-radius: 4px;
   width: 150px;
   height: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: none;
-  padding: 0 15px;
   margin-top: 30px;
   margin-left: auto;
 }
@@ -424,22 +449,6 @@ header .header .container .form form button {
   header .header .container .form form button {
     margin-top: 0;
   }
-}
-header .header .container .form form button:after {
-  min-width: 23px;
-  width: 23px;
-  min-height: 23px;
-  height: 23px;
-  background-color: #0D5EAA;
-  border-radius: 50%;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 700;
-  content: "";
-  color: #fff;
-  text-align: center;
-}
-header .header .container .form form button span {
-  color: #FFFFFF;
 }
 header .header .container .scroll {
   position: absolute;
@@ -737,14 +746,14 @@ header .header .wrapper div.advantages-icons div:not(:last-child) img {
 }
 
 #s02 {
-  padding: 70px 0;
+  padding: 70px 0 120px;
 }
 #s02 h2 {
   margin-bottom: 30px;
 }
 #s02 .advantages {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   grid-gap: 35px;
 }
 #s02 .advantages .a-card {
@@ -774,6 +783,130 @@ header .header .wrapper div.advantages-icons div:not(:last-child) img {
   line-height: 100%;
   color: #4E4E4E;
   margin-bottom: 0;
+}
+
+#s03 h2.title {
+  margin-bottom: 15px;
+}
+#s03 .pests-wrap {
+  padding: 35px 0;
+  background: #F2F7FE;
+}
+#s03 .pests-wrap .pests {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-gap: 35px;
+}
+#s03 .pests-wrap .pests .pest {
+  background-color: #fff;
+}
+#s03 .pests-wrap .pests .pest .icon img {
+  display: block;
+  width: 117px;
+  height: 101px;
+  margin: auto;
+}
+#s03 .pests-wrap .pests .pest span {
+  display: block;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+#s04 {
+  padding: 70px 0;
+}
+#s04 .card {
+  max-width: 370px;
+  border: none;
+}
+#s04 .card img {
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+#s04 .card .description h5 {
+  color: #0071E3;
+  font-family: "HelveticaNeueCyr";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+}
+#s04 .card .description h5 span.before {
+  display: block;
+  font-size: 14px;
+  color: #4E4E4E;
+}
+#s04 .card .description h5 span.after {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  color: #979797;
+  text-transform: none;
+}
+
+#s18 {
+  padding: 50px 0;
+}
+#s18 .form {
+  background-image: url("../images/quiz-man.png");
+  background-color: #0071E3;
+  background-repeat: no-repeat;
+  background-position: 96% 100%;
+  border-radius: 15px;
+  padding: 30px;
+  color: #fff;
+}
+#s18 .form h3 {
+  font-family: "HelveticaNeueCyr";
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 115%;
+  text-transform: uppercase;
+}
+#s18 .form p {
+  font-family: "HelveticaNeueCyr";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 115%;
+  color: #F0F0F0;
+  padding: 20px 0;
+}
+#s18 .form form input {
+  height: 55px;
+  margin-bottom: 30px;
+}
+#s18 .form form input::placeholder {
+  font-family: "HelveticaNeueCyr";
+  font-weight: normal;
+  font-size: 18px;
+  color: #979797;
+}
+#s18 .form form button.btn-blue {
+  width: 280px;
+  height: 50px;
+  margin-left: auto;
+}
+#s18 .form form button.btn-blue:after {
+  min-width: 32px;
+  width: 32px;
+  min-height: 32px;
+  height: 32px;
+  background-color: #0D5EAA;
+  border-radius: 50%;
+  font-size: 25px;
+  line-height: 100%;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "";
+  color: #fff;
+  text-align: center;
+}
+#s18 .form form button.btn-blue span {
+  font-family: "HelveticaNeueCyr";
+  font-weight: bold;
+  font-size: 18px;
 }
 
 footer {
