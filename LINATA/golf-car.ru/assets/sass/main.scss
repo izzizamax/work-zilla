@@ -126,6 +126,12 @@ a {
     }
 }
 
+ol.breadcrumb {
+    background-color: #fff;
+    border-top: solid 1px gray;
+    border-bottom: solid 1px gray;
+}
+
 .pagination {
     justify-content: center;
 
@@ -878,6 +884,50 @@ header {
                     p {
                         margin-bottom: 0;
                     }
+
+                    &:hover {
+                        z-index: 10;
+                    }
+
+                    &:before, &:after {
+                        // content: "";
+                        // display: block;
+                        // position: absolute;
+                        // background: yellow;
+                        // top:  50%;
+                        // left: 50%;
+                        // transform: translate(-50%, -50%);
+                        // animation-iteration-count: 1;
+                        // transform-origin: 50% 50%;
+                        // opacity: 1;
+                    }
+                    &:before {
+                        width: calc(100% + 2px);
+                        height: 100%;
+                        z-index: 1;
+                        transition: height 1s ease, opacity .8s ease;
+                    }
+
+                    &:after {
+                        height: calc(100% + 2px);
+                        width: 100%;
+                        z-index: 1;
+                        transition: width 1s ease, opacity .8s ease;
+                    }
+
+                    &:hover, &:focus{
+                        &:before {
+                            transition: height .2s ease , opacity .3s ease;
+                            height: 85%;
+                            opacity: .7;
+                        }
+
+                        &:after {
+                            transition: width .2s ease,  opacity .3s ease;
+                            width: 85%;
+                            opacity: .8;
+                        }
+                    }
                 }
             }
         }
@@ -1558,7 +1608,7 @@ header {
     }
 
     h1 {
-        font-size: 24px;
+        // font-size: 24px;
     }
 
     p.published {
@@ -1577,13 +1627,19 @@ header {
 }
 
 #listNews {
+    .card {
+        box-shadow: -5px 5px 8px #858585;
+        border-radius: 0;
+        margin-bottom: 50px;
 
-}
+        h5 {
+            font-size: 1.25rem;
 
-#listNews .card {
-    box-shadow: -5px 5px 8px #858585;
-    border-radius: 0;
-    margin-bottom: 50px;
+            a {
+                font-size: 1.25rem;
+            }
+        }
+    }
 }
 
 #golf-car {
@@ -1597,6 +1653,34 @@ header {
         display: block;
         margin: auto;
         max-width: 100%;
+    }
+
+    .advantages {
+        padding-top: 30px;
+        & > div {
+
+            i {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .colors {
+        padding-top: 30px;
+        h3 {
+
+        }
+        .color-items {
+            display: flex;
+
+            div.color {
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                margin-right: 7px;
+            }
+
+        }
     }
 
     .gallery {
@@ -1730,6 +1814,11 @@ header {
 
 #clients {
     margin: 50px 0;
+
+    h1 {
+        text-align: center;
+    }
+
     .clients {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -1775,7 +1864,7 @@ header {
 }
 
 #catalog {
-    @extend %section-margin;
+    margin-bottom: 50px;
 
     h1 {
         text-align: center;
@@ -1808,7 +1897,7 @@ header {
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
-                    padding: 10px 0;
+                    padding: 5px 0;
 
                     img {
                         margin-right: 15px;
@@ -1822,7 +1911,7 @@ header {
 
             .footer {
 
-                padding-top: 25px;
+                padding-top: 12px;
 
                 .border-wrap {
                     position: relative;

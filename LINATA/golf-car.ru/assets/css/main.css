@@ -102,6 +102,12 @@ a:active, a:hover {
   color: #000;
 }
 
+ol.breadcrumb {
+  background-color: #fff;
+  border-top: solid 1px gray;
+  border-bottom: solid 1px gray;
+}
+
 .pagination {
   justify-content: center;
 }
@@ -212,7 +218,7 @@ a:active, a:hover {
   }
 }
 
-#album, #gallery, #catalog, #golf-car, #s07, #s06, #s05, #s04, #s03, #s02, #s01 {
+#album, #gallery, #golf-car, #s07, #s06, #s05, #s04, #s03, #s02, #s01 {
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -661,6 +667,31 @@ header .container #headerCarousel .carousel-banners div.banner p {
 }
 #s01 div.categories div.block div.block-content div p {
   margin-bottom: 0;
+}
+#s01 div.categories div.block div.block-content div:hover {
+  z-index: 10;
+}
+#s01 div.categories div.block div.block-content div:before {
+  width: calc(100% + 2px);
+  height: 100%;
+  z-index: 1;
+  transition: height 1s ease, opacity 0.8s ease;
+}
+#s01 div.categories div.block div.block-content div:after {
+  height: calc(100% + 2px);
+  width: 100%;
+  z-index: 1;
+  transition: width 1s ease, opacity 0.8s ease;
+}
+#s01 div.categories div.block div.block-content div:hover:before, #s01 div.categories div.block div.block-content div:focus:before {
+  transition: height 0.2s ease, opacity 0.3s ease;
+  height: 85%;
+  opacity: 0.7;
+}
+#s01 div.categories div.block div.block-content div:hover:after, #s01 div.categories div.block div.block-content div:focus:after {
+  transition: width 0.2s ease, opacity 0.3s ease;
+  width: 85%;
+  opacity: 0.8;
 }
 
 #s02 .cars {
@@ -1197,9 +1228,6 @@ header .container #headerCarousel .carousel-banners div.banner p {
   text-transform: uppercase;
   margin-bottom: 6px;
 }
-#page h1 {
-  font-size: 24px;
-}
 #page p.published {
   font-size: 14px;
   margin-bottom: 0;
@@ -1217,6 +1245,12 @@ header .container #headerCarousel .carousel-banners div.banner p {
   border-radius: 0;
   margin-bottom: 50px;
 }
+#listNews .card h5 {
+  font-size: 1.25rem;
+}
+#listNews .card h5 a {
+  font-size: 1.25rem;
+}
 
 #golf-car h1 {
   text-align: center;
@@ -1225,6 +1259,24 @@ header .container #headerCarousel .carousel-banners div.banner p {
   display: block;
   margin: auto;
   max-width: 100%;
+}
+#golf-car .advantages {
+  padding-top: 30px;
+}
+#golf-car .advantages > div i {
+  font-size: 30px;
+}
+#golf-car .colors {
+  padding-top: 30px;
+}
+#golf-car .colors .color-items {
+  display: flex;
+}
+#golf-car .colors .color-items div.color {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 7px;
 }
 #golf-car .gallery {
   margin: 30px 0;
@@ -1346,6 +1398,9 @@ header .container #headerCarousel .carousel-banners div.banner p {
 #clients {
   margin: 50px 0;
 }
+#clients h1 {
+  text-align: center;
+}
 #clients .clients {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1379,6 +1434,9 @@ header .container #headerCarousel .carousel-banners div.banner p {
   font-size: 16px;
 }
 
+#catalog {
+  margin-bottom: 50px;
+}
 #catalog h1 {
   text-align: center;
   font-weight: bold;
@@ -1407,7 +1465,7 @@ header .container #headerCarousel .carousel-banners div.banner p {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 #catalog .catalog .car-card .content .params > div img {
   margin-right: 15px;
@@ -1416,7 +1474,7 @@ header .container #headerCarousel .carousel-banners div.banner p {
   margin-bottom: 0;
 }
 #catalog .catalog .car-card .footer {
-  padding-top: 25px;
+  padding-top: 12px;
 }
 #catalog .catalog .car-card .footer .border-wrap {
   position: relative;
