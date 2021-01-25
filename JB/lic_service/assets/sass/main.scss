@@ -1098,8 +1098,30 @@ header {
 #s04 {
     padding: 70px 0;
 
+    .container {
+        @include media((
+            '1024': (
+                padding: 0 50px,
+            ),
+            '600': (
+                padding: 0 25px,
+            ),
+            '375': (
+                padding: 0 15px,
+            )
+        ));
+    }
+
+    h2.title {
+        @include media((
+            '375': (
+                font-size: 24px,
+            )
+        ));
+    }
+
     .card {
-        max-width: 370px;
+        // max-width: 370px;
         border: none;
 
         img {

@@ -1036,8 +1036,27 @@ header .header .wrapper div.advantages-icons div:not(:last-child) img {
 #s04 {
   padding: 70px 0;
 }
+@media only screen and (max-width: 1024px) {
+  #s04 .container {
+    padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #s04 .container {
+    padding: 0 25px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  #s04 .container {
+    padding: 0 15px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  #s04 h2.title {
+    font-size: 24px;
+  }
+}
 #s04 .card {
-  max-width: 370px;
   border: none;
 }
 #s04 .card img {
