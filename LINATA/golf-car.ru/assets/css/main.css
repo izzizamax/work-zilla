@@ -95,10 +95,11 @@ h3.section-title span {
 }
 
 a {
-  color: #ddb305;
+  color: #000;
 }
 a:active, a:hover {
-  color: #ffcf00;
+  font-weight: bold;
+  color: #000;
 }
 
 .pagination {
@@ -446,10 +447,8 @@ header .container nav.navbar .bottom-line ul.navbar-nav li.nav-item a.nav-link {
     font-size: 14px;
   }
 }
-@media (max-width: 800px) {
-  header .container nav.navbar .bottom-line ul.navbar-nav li.nav-item a.nav-link {
-    color: #fff;
-  }
+header .container nav.navbar .bottom-line ul.navbar-nav li.nav-item a.nav-link:hover {
+  color: #000;
 }
 header .container nav.navbar .bottom-line .callback {
   width: 205px;
@@ -576,9 +575,10 @@ header .container #headerCarousel .carousel-banners div.banner {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 100%);
 }
 header .container #headerCarousel .carousel-banners div.banner p {
-  font-size: 14px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 16px;
   color: #000;
-  margin: 10px 0 0;
+  margin: 5px 0 0;
 }
 
 #s01 div.categories {
@@ -1884,7 +1884,7 @@ header .container #headerCarousel .carousel-banners div.banner p {
   margin: 0 15px;
 }
 #about_us .icons a:link, #about_us .icons a:visited {
-  color: #ddb305;
+  color: #000;
 }
 #about_us .icons a i {
   font-size: 30px;

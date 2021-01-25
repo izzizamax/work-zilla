@@ -7,9 +7,10 @@ $color-orange: #ffcf00;
 $link-hover-color: #3b5998;
 
 
-$link-color-orange: #ddb305;
-$link-hover-color-orange: #ffcf00;
-
+// $link-color-orange: #ddb305;
+// $link-hover-color-orange: #ffcf00;
+$link-color-orange: #000;
+$link-hover-color-orange: #000;
 
 
 $s-mt: 50px; // Section margin top
@@ -120,6 +121,7 @@ a {
     color: $link-color-orange;
 
     &:active, &:hover {
+        font-weight: bold;
         color: $link-hover-color-orange;
     }
 }
@@ -574,9 +576,13 @@ header {
                             color: rgba(0, 0, 0, .7);
                             text-transform: uppercase;
 
-                            @media(max-width: 800px) {
-                                color: #fff;
+                            &:hover {
+                                color: #000;
                             }
+
+                            // @media(max-width: 800px) {
+                            //     color: #fff;
+                            // }
                         }
                     }
                 }
@@ -748,9 +754,10 @@ header {
                     background: linear-gradient(135deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 100%);
 
                     p {
-                        font-size: 14px;
+                        font-family: "Exo 2", sans-serif;
+                        font-size: 16px;
                         color: #000;
-                        margin: 10px 0 0;
+                        margin: 5px 0 0;
                     }
                 }
             }
