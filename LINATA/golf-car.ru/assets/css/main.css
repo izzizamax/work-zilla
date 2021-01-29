@@ -1564,6 +1564,9 @@ header .container #headerCarousel .carousel-banners div.banner p {
   text-align: center;
   font-weight: bold;
 }
+#catalog #products {
+  margin-bottom: 50px;
+}
 #catalog .catalog {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1657,16 +1660,26 @@ header .container #headerCarousel .carousel-banners div.banner p {
 
 #gallery .galleries {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
 }
 #gallery .galleries div.album-out {
   background: linear-gradient(135deg, #fff 55%, #5f5e64 100%);
   padding: 7px;
 }
+#gallery .galleries div.album-out h2.title {
+  font-size: 28px;
+}
+#gallery .galleries div.album-out h2.title span {
+  font-size: 28px;
+}
 #gallery .galleries div.album-out div.album-in {
   background: #fff;
   padding: 30px;
+}
+#gallery .galleries div.album-out div.album-in a.btn-grey {
+  width: 70%;
+  font-size: 18px;
 }
 #gallery .galleries div {
   position: relative;
@@ -2267,6 +2280,11 @@ footer .ss .subscribe form input {
   font-size: 20px;
   color: #000;
 }
+@media only screen and (max-width: 1024px) {
+  footer .ss .subscribe form input {
+    width: 420px;
+  }
+}
 footer .ss .subscribe form input::placeholder {
   font-size: 20px;
   color: #000;
@@ -2349,8 +2367,9 @@ footer .navigation {
   margin-top: 40px;
   padding: 30px;
   border-top: solid 2px #fff;
+  justify-content: space-between;
 }
-@media (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   footer .navigation {
     flex-direction: column;
   }
@@ -2361,22 +2380,17 @@ footer .navigation {
   }
 }
 footer .navigation .menu {
-  padding-right: 150px;
-}
-@media (max-width: 800px) {
-  footer .navigation .menu {
-    padding-right: 85px;
-  }
-}
-@media (max-width: 600px) {
-  footer .navigation .menu {
-    padding-right: 0px;
-  }
+  display: flex;
 }
 footer .navigation .menu ul {
-  width: 150px;
+  margin-right: 50px;
   list-style: none;
   padding: 0;
+}
+@media only screen and (max-width: 800px) {
+  footer .navigation .menu ul {
+    width: 33%;
+  }
 }
 @media (max-width: 600px) {
   footer .navigation .menu ul {
@@ -2397,8 +2411,7 @@ footer .navigation .menu ul li {
 }
 @media (max-width: 600px) {
   footer .navigation .menu ul li {
-    width: 33%;
-    padding: 0 0 15px 0;
+    padding: 0 0 5px 0;
   }
 }
 @media (max-width: 425px) {
@@ -2413,6 +2426,19 @@ footer .navigation .menu ul li a:link, footer .navigation .menu ul li a:visited 
   font-size: 20px;
   font-weight: bold;
   color: #fff;
+}
+@media only screen and (max-width: 600px) {
+  footer .navigation .menu ul li a:link, footer .navigation .menu ul li a:visited {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  footer .navigation a.buro23 {
+    text-align: center;
+  }
+}
+footer .navigation a.buro23 img {
+  width: 175px;
 }
 footer .navigation .services h3 {
   font-size: 20px;
